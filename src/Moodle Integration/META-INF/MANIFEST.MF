@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MoodleConnector-Node extension for KNIME Workbench
+Bundle-SymbolicName: org.knime.moodle.nodes.connector; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: moodleconnector.jar,
+ libraries/json-20220320.jar
+Bundle-Activator: org.knime.moodle.nodes.connector.MoodleConnectorNodePlugin
+Bundle-Vendor: Fran Gil
+Require-Bundle: org.eclipse.core.runtime,
+ org.knime.workbench.core,
+ org.knime.workbench.repository,
+ org.knime.base
+Bundle-ActivationPolicy: lazy
+Export-Package: org.knime.moodle.nodes.connector
+

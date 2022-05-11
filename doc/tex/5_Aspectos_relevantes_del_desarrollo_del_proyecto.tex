@@ -1,0 +1,90 @@
+\capitulo{5}{Aspectos relevantes del desarrollo del proyecto}
+
+Este apartado pretende recoger los aspectos más interesantes del desarrollo del proyecto, comentados por los autores del mismo.
+Debe incluir desde la exposición del ciclo de vida utilizado, hasta los detalles de mayor relevancia de las fases de análisis, diseño e implementación.
+Se busca que no sea una mera operación de copiar y pegar diagramas y extractos del código fuente, sino que realmente se justifiquen los caminos de solución que se han tomado, especialmente aquellos que no sean triviales.
+Puede ser el lugar más adecuado para documentar los aspectos más interesantes del diseño y de la implementación, con un mayor hincapié en aspectos tales como el tipo de arquitectura elegido, los índices de las tablas de la base de datos, normalización y desnormalización, distribución en ficheros3, reglas de negocio dentro de las bases de datos (EDVHV GH GDWRV DFWLYDV), aspectos de desarrollo relacionados con el WWW...
+Este apartado, debe convertirse en el resumen de la experiencia práctica del proyecto, y por sí mismo justifica que la memoria se convierta en un documento útil, fuente de referencia para los autores, los tutores y futuros alumnos.
+
+
+
+\section{Soluciones de acceso a datos en Moodle}
+
+Comentar aquí solución web services, limitaciones tanto de acceso a datos como de 
+
+Finalmente se opta por web scraping utilizando la cuenta del profesor para acceder a los logs. 
+
+Login con webservice de la APP de Moodle. Esto implica que la implementación de Moodle debe tener activa la opción de acceso de la APP. 
+
+
+
+\section{Desarrollo de nodos en Knime}
+
+
+Extensión: 
+
+- KNIME Moodle Integration
+
+
+Nodos desarrollados:
+
+- Moodle Connector. 
+
+Establece la conexión con una plataforma Moodle. Requiere una cuenta con perfil de profesor. 
+Requiere que la plataforma Moodle tenga activado el acceso a la aplicación Móvil. 
+
+Output Ports. 
+
+0. A connection that can be used to access Moodle's API.
+
+URL
+usuario
+contraseña
+
+
+Salida: token
+
+- Moodle Courses. 
+
+core\_course\_get\_courses
+core\_course\_get\_courses\_by\_field
+core\_course\_search\_courses
+
+Input Ports: 
+
+0 Connection to Moodle's API (token)
+1 Table containing... 
+
+Output Ports: 
+
+0 Información de cursos (ID cursos)
+
+
+
+- Moodle Users. 
+
+core\_enrol\_get\_enrolled\_users
+anonymization
+
+
+- Moodle Reports
+
+logs
+Live logs
+Activity Reports
+Overview Statistics
+Course Participation
+Activity completion
+Statistics
+
+
+Workflows desarrollados: 
+
+Nota: los workflows compartidos son casi tan importantes como los nodos desarrollados, ya que permiten el uso directo de soluciones 
+
+- Workflow básico (extraer logs)
+- Workflow clasificación
+- Workflow clustering
+
+
+\section{Acceso a datos en Moodle}
