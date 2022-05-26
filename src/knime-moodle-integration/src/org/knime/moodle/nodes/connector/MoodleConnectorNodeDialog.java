@@ -1,77 +1,147 @@
 package org.knime.moodle.nodes.connector;
 
+import org.knime.core.node.NodeDialogPane;
+import org.knime.core.node.NodeLogger;
+import org.knime.core.node.NodeSettingsRO;
+import org.knime.core.node.NotConfigurableException;
 import org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane;
 import org.knime.core.node.defaultnodesettings.DialogComponentString;
 import org.knime.core.node.defaultnodesettings.SettingsModelString;
+import org.knime.core.node.port.PortObjectSpec;
+import org.knime.core.node.defaultnodesettings.DialogComponentPasswordField;
 
-import org.knime.core.node.NodeLogger;
+
+import javax.crypto.BadPaddingException;
+import javax.crypto.IllegalBlockSizeException;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.security.InvalidKeyException;
+
+
+import org.knime.core.node.InvalidSettingsException;
+import org.knime.core.node.NodeDialogPane;
+import org.knime.core.node.NodeSettingsRO;
+import org.knime.core.node.NodeSettingsWO;
+import org.knime.core.node.NotConfigurableException;
+import org.knime.core.node.port.PortObjectSpec;
+import org.knime.core.util.KnimeEncryption;
 
 /**
  * This is an example implementation of the node dialog of the
  * "MoodleConnector" node.
- *
- * This node dialog derives from {@link DefaultNodeSettingsPane} which allows
- * creation of a simple dialog with standard components. If you need a more
- * complex dialog please derive directly from
- * {@link org.knime.core.node.NodeDialogPane}. In general, one can create an
- * arbitrary complex dialog using Java Swing.
  * 
  * @author Fran Gil
  */
-public class MoodleConnectorNodeDialog extends DefaultNodeSettingsPane {
+// public class MoodleConnectorNodeDialog extends DefaultNodeSettingsPane {
 
-	/**
-	 * New dialog pane for configuring the node. The dialog created here
-	 * will show up when double clicking on a node in KNIME Analytics Platform.
-	 */
-    protected MoodleConnectorNodeDialog() {
-        super();
-        
-        /*
-		 * The DefaultNodeSettingsPane provides methods to add simple standard
-		 * components to the dialog pane via the addDialogComponent(...) method. This
-		 * method expects a new DialogComponet object that should be added to the dialog
-		 * pane. There are many already predefined components for the most commonly used
-		 * configuration needs like a text box (DialogComponentString) to enter some
-		 * String or a number spinner (DialogComponentNumber) to enter some number in a
-		 * specific range and step size.
-		 * 
-		 * The dialog components are connected to the node model via settings model
-		 * objects that can easily load and save their settings to the node settings.
-		 * Depending on the type of input the dialog component should receive, the
-		 * constructor of the component requires a suitable settings model object. E.g.
-		 * the DialogComponentString requires a SettingsModelString. Additionally,
-		 * dialog components sometimes allow to further configure the behavior of the
-		 * component in the constructor. E.g. to disallow empty inputs (like below).
-		 * Here, the loading/saving in the dialog is already taken care of by the
-		 * DefaultNodeSettingsPane. It is important to use the same key for the settings
-		 * model here as used in the node model implementation (it does not need to be
-		 * the same object). One best practice is to use package private static methods
-		 * to create the settings model as we did in the node model implementation (see
-		 * createNumberFormatSettingsModel() in the NodeModel class).
-		 * 
-		 * Here we create a simple String DialogComponent that will display a label
-		 * String besides a text box in which the use can enter a value. The
-		 * DialogComponentString has additional options to disallow empty inputs, hence
-		 * we do not need to worry about that in the model implementation anymore.
-		 * 
-		 */
-		// First, create a new settings model using the create method from the node model.
-		SettingsModelString stringSettings = MoodleConnectorNodeModel.createNumberFormatSettingsModel();
-		// Add a new String component to the dialog.
-		addDialogComponent(new DialogComponentString(stringSettings, "Moodle URL", true, 150));
-		addDialogComponent(new DialogComponentString(stringSettings, "Username", true, 100));
-		addDialogComponent(new DialogComponentString(stringSettings, "Password", true, 40));
+public class MoodleConnectorNodeDialog extends NodeDialogPane{
 	
-		// Hacer login aquí (solo para probar): 
+	 private JTextField m_hostname = new JTextField(40);    
+	 
+	 private JTextField m_username = new JTextField(40);
+	    
+	 //private JPasswordField m_password = new JPasswordField(40);
+
+	 private JTextField m_password = new JTextField(40);
+	 
+	 
+	 NodeLogger logger=NodeLogger.getLogger("Moodle Integration");
+
+     MoodleConnectorNodeDialog() {
+	        JPanel panel = new JPanel(new GridBagLayout());
+	        GridBagConstraints gbc = new GridBagConstraints();
+	        gbc.insets = new Insets(5, 5, 5, 5);
+	        gbc.anchor = GridBagConstraints.NORTHWEST;
+	        gbc.fill = GridBagConstraints.BOTH;
+	        gbc.weightx = 0;
+	        gbc.weighty = 0;
+	        gbc.gridx = 0;
+	        gbc.gridy = 0;
+	        panel.add(new JLabel("Host name:"), gbc);
+	        gbc.weightx = 1;
+	        gbc.gridx++;
+	        panel.add(m_hostname, gbc);
+	        gbc.weightx = 0;
+	        gbc.gridx = 0;
+	        gbc.gridy++;
+	        panel.add(new JLabel("Username:"), gbc);
+	        gbc.weightx = 1;
+	        gbc.gridx++;
+	        panel.add(m_username, gbc);
+	        gbc.weightx = 0;
+	        gbc.gridx = 0;
+	        gbc.gridy++;
+	        panel.add(new JLabel("Password:"), gbc);
+	        gbc.weightx = 1;
+	        gbc.gridx++;
+	        panel.add(m_password, gbc);
+	        gbc.weightx = 0;
+	        gbc.gridx = 0;
+	        gbc.gridy++;
+	        addTab("Credentials", panel);
+	    }
+
+	    /**
+	     * {@inheritDoc}
+	     */
+	    @Override
+	    protected void loadSettingsFrom(NodeSettingsRO settings, PortObjectSpec[] specs) throws NotConfigurableException {
+	        MoodleConnectorConfiguration config = new MoodleConnectorConfiguration();
+	        
+	        config.loadInDialog(settings);
+	        
+	        m_username.setText(config.getUsername());
+	        m_hostname.setText(config.getHostname());
+	        m_password.setText(config.getPassword());
+	        
+	    }
+
+	    /**
+	     * {@inheritDoc}
+	     */
+	    @Override
+	    protected void saveSettingsTo(NodeSettingsWO settings) throws InvalidSettingsException {
+	        MoodleConnectorConfiguration config = new MoodleConnectorConfiguration();
+	        
+	        config.setUsername(m_username.getText());
+	        config.setPassword(m_password.getText());
+	        config.setHostname(m_hostname.getText());
+			
+	        config.save(settings);
+	    }	
+	
+	
+	
+	
+	/*
+	
+	private final SettingsModelString hostnameModel =
+			MoodleConnectorNodeSettingsModel.createHostnameModel();
+    private final SettingsModelString m_username =
+    		MoodleConnectorNodeSettingsModel.createUsernameModel();
+    private final SettingsModelPassword passwordModel =
+    		MoodleConnectorNodeSettingsModel.createPasswordModel();
+
+	protected MoodleConnectorNodeDialog() {
+       // super();
+        
+		createNewGroup("Moodle Credentials");
+		addDialogComponent(new DialogComponentString(hostnameModel, "Hostname", true, 20));
+        addDialogComponent(new DialogComponentString(m_username, "Username", true, 20));
+        addDialogComponent(new DialogComponentPasswordField(passwordModel, "Password"));
+        closeCurrentGroup();
 		
-		
-		// TODO: Credentials: https://forum.knime.com/t/extension-node-with-credentials-need-code-example/21465
 		
     }
+	
+*/
 }
-
-
-
-
 

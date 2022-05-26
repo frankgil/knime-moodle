@@ -4,7 +4,14 @@ Bundle-Name: MoodleConnector-Node extension for KNIME Workbench
 Bundle-SymbolicName: org.knime.moodle.nodes.connector; singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: moodleconnector.jar,
- libraries/json-20220320.jar
+ libraries/json-20220320.jar,
+ libraries/UBUMonitor.v2.10.2.jar,
+ libraries/controlsfx-8.40.17.jar,
+ libraries/javafx-base-11.0.1-linux.jar,
+ libraries/javafx-controls-11.0.1-linux.jar,
+ libraries/javafx-graphics-11.0.1-linux.jar,
+ libraries/javafx-media-11.0.1-linux.jar,
+ libraries/javafx-web-11.0.1-linux.jar
 Bundle-Activator: org.knime.moodle.nodes.connector.MoodleConnectorNodePlugin
 Bundle-Vendor: Fran Gil
 Require-Bundle: org.eclipse.core.runtime,

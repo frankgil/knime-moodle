@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry including="**/*.java" kind="src" output="target/classes" path="src">
-		<attributes>
-			<attribute name="optional" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="libraries/javafx-base-11.0.1-linux.jar"/>
+	<classpathentry exported="true" kind="lib" path="libraries/javafx-controls-11.0.1-linux.jar"/>
+	<classpathentry exported="true" kind="lib" path="libraries/javafx-graphics-11.0.1-linux.jar"/>
+	<classpathentry exported="true" kind="lib" path="libraries/javafx-media-11.0.1-linux.jar"/>
+	<classpathentry exported="true" kind="lib" path="libraries/javafx-web-11.0.1-linux.jar"/>
+	<classpathentry exported="true" kind="lib" path="libraries/controlsfx-8.40.17.jar"/>
+	<classpathentry exported="true" kind="lib" path="libraries/UBUMonitor.v2.10.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="libraries/json-20220320.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
-		<attributes>
-			<attribute name="module" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
-	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="output" path="target/classes"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>
