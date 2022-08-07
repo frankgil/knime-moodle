@@ -8,7 +8,70 @@ Este apartado, debe convertirse en el resumen de la experiencia práctica del pr
 
 
 
-\section{Soluciones de acceso a datos en Moodle}
+\section{Análisis}
+
+
+En la fase de análisis nos tenemos que asegurar de que se podrán cumplir los objetivos del proyecto: 
+
+- Acceso a Moodle para extracción de datos
+- Implementación y ejecución de nodos de forma aislada y en combinación con otros nodos de Knime, dentro de un workflow.
+
+
+
+
+Fuente de datos real
+
+- Explicar opciones de extracción de datos de Moodle. 
+- Acotar el alcance de información a extraer de Moodle
+
+
+
+Cursos de prueba
+
+Posibilidad de incorporar fuentes de datos reales (asignatura)
+
+Estudio de nodo de prueba y otros nodos similares (ejemplo paquete Twitter)
+
+Programación en JAVA. 
+
+
+Estudio de métodos de acceso a los datos de Moodle. En este punto se detecta que los servicios web de Moodle no ofrecen acceso a todos los
+datos que se pueden visualizar desde la APP de Moodle. Aquí se puede hablar también de APP de Moodle y de acceso por Web Scraping. 
+
+
+
+
+
+\section{Diseño}
+
+- Opciones de reutilización de código: 
+   UBUMonitor
+   APP de Moodle 
+
+
+- Análisis mediante Insomnia de los datos obtenidos a través de la API
+
+- Organizar los sprints para abordar el proyecto de forma organizada
+
+
+
+- Diseño de nodos. 
+
+Se descubre que los nodos no se pueden ejecutar a nivel de código. Esto es, no podemos inyectar la funcionalidad completa de un nodo 
+dentro de otro, ejecutándolo internamente. Knime ha impuesto esta restricción de diseño para evitar la alta dependencia entre nodos 
+y los problemas que ello conllevaría a nivel de mantenimiento cuando un nodo queda obsoleto. 
+
+
+
+
+
+
+\section{Implementación}
+
+
+
+\subsection{Acceso a datos en Moodle}
+
 
 Comentar aquí solución web services, limitaciones tanto de acceso a datos como de 
 
@@ -18,7 +81,18 @@ Login con webservice de la APP de Moodle. Esto implica que la implementación de
 
 
 
-\section{Desarrollo de nodos en Knime}
+\subsection{Desarrollo de nodos en Knime}
+
+Entorno de desarrollo:
+
+Cómo montar el entorno de desarrollo según Knime
+Nodo de muestra
+Otros recursos (código de nodos desarrollados)
+Añadir librerías (dependencias en proyecto knime)
+
+
+
+
 
 
 Extensión: 
@@ -78,6 +152,21 @@ Activity completion
 Statistics
 
 
+- Reutilización de nodos desde programación 
+Explicar la ventaja de poder utilizar nodos desde programación. Los nodos son clases que se pueden instanciar. 
+La ventaja es que están pensados para trabajar con elementos (clases) de Knime. Así que esta estrategia será interesante solo cuando vayamos a trabajar con elementos de Knime,
+como conversiones de tipos desde o hacia clases Knime. 
+
+Explicar por qué no se ha podido utilizar esta estrategia.
+
+https://forum.knime.com/t/using-node-without-gui/2044/6
+
+
+Ejemplos de reutilización: 
+ 
+ - JSON to table
+
+
 Workflows desarrollados: 
 
 Nota: los workflows compartidos son casi tan importantes como los nodos desarrollados, ya que permiten el uso directo de soluciones 
@@ -87,4 +176,37 @@ Nota: los workflows compartidos son casi tan importantes como los nodos desarrol
 - Workflow clustering
 
 
-\section{Acceso a datos en Moodle}
+
+
+
+- Dependencias con proyectos externos
+
+UBUMonitor
+Versión 2.10.2 20220426
+https://github.com/yjx0003/UBUMonitor/releases
+
+
+JSON In Java (20220320)
+https://github.com/stleary/JSON-java
+
+
+org.knime.json 
+Incluido en: 
+https://update.knime.org/analytics-platform/UpdateSite_latest45.zip
+
+
+¿ Moodle-REST-API-for-Java ? En principio parece que está más mantenido el UBUMonitor
+https://github.com/yjx0003/Moodle-REST-API-for-Java
+
+
+
+
+
+
+
+\section{Workflows}
+
+Nodos externos utilizados en Workflows
+
+
+https://hub.knime.com/redfield/extensions/se.redfield.arx.feature/latest
