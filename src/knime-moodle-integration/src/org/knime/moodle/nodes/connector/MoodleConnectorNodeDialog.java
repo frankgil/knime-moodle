@@ -48,10 +48,8 @@ public class MoodleConnectorNodeDialog extends NodeDialogPane{
 	 
 	 private JTextField m_username = new JTextField(40);
 	    
-	 //private JPasswordField m_password = new JPasswordField(40);
+	 private JPasswordField m_password = new JPasswordField(40);
 
-	 private JTextField m_password = new JTextField(40);
-	 
 	 
 	 NodeLogger logger=NodeLogger.getLogger("Moodle Integration");
 

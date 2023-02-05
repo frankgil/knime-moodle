@@ -2,12 +2,14 @@ package org.knime.moodle.nodes.users;
 
 import java.io.File;
 import java.io.IOException;
-
+import java.security.MessageDigest;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.IllegalFormatException;
 import java.util.List;
+import java.util.Random;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -34,6 +36,9 @@ import org.knime.core.node.NodeModel;
 import org.knime.core.node.NodeSettingsRO;
 import org.knime.core.node.NodeSettingsWO;
 import org.knime.core.node.defaultnodesettings.SettingsModelString;
+import org.knime.core.node.defaultnodesettings.SettingsModelBoolean;
+import org.knime.core.node.defaultnodesettings.SettingsModelInteger;
+
 import org.knime.core.node.port.PortObject;
 import org.knime.core.node.port.PortObjectSpec;
 import org.knime.core.node.port.PortType;
@@ -53,6 +58,10 @@ import es.ubu.lsi.ubumonitor.webservice.api.core.course.CoreCourseGetEnrolledCou
 import es.ubu.lsi.ubumonitor.webservice.api.core.enrol.CoreEnrolGetEnrolledUsers;
 import es.ubu.lsi.ubumonitor.webservice.api.core.enrol.CoreEnrolGetUsersCourses;
 import es.ubu.lsi.ubumonitor.webservice.webservices.WebService;
+import net.datafaker.Faker;
+
+
+import org.apache.commons.codec.binary.Base64;
 
 /**
  * This is an example implementation of the node model of the
@@ -76,20 +85,6 @@ public class MoodleUsersNodeModel extends NodeModel {
 	
 	NodeLogger logger=NodeLogger.getLogger("Moodle Integration");
 	
-	
-	/**
-	 * The settings key to retrieve and store settings shared between node dialog
-	 * and node model. In this case, the key for the number format String that
-	 * should be entered by the user in the dialog.
-	 */
-	private static final String KEY_NUMBER_FOMAT = "number_format";
-
-	/**
-	 * The default number format String. This default will round to three decimal
-	 * places. For an explanation of the format String specification please refer to
-	 * https://docs.oracle.com/javase/tutorial/java/data/numberformat.html
-	 */
-	private static final String DEFAULT_NUMBER_FORMAT = "%.3f";
 
 	
 	private static DataBase database;
@@ -109,7 +104,12 @@ public class MoodleUsersNodeModel extends NodeModel {
 	 * in the constructor of the {@link MoodleUsersNodeDialog} as the settings 
 	 * models are also used to create simple dialogs.
 	 */
-	private final SettingsModelString m_numberFormatSettings = createNumberFormatSettingsModel();
+	
+	private final SettingsModelBoolean m_filterStudentsSettings = createFilterStudentsSettingsModel();
+	private final SettingsModelBoolean m_anonymizeSettings = createAnonymizeSettingsModel();
+	private final SettingsModelInteger m_randomSeedSettings = createRandomSeedSettingsModel();
+	
+	
 
 	/**
 	 * Constructor for the node model.
@@ -119,6 +119,7 @@ public class MoodleUsersNodeModel extends NodeModel {
 		      new PortType[]{MoodleConnectionPortObject.TYPE, BufferedDataTable.TYPE});
 	}
 
+	
 	/**
 	 * A convenience method to create a new settings model used for the number
 	 * format String. This method will also be used in the {@link MoodleUsersNodeDialog}. 
@@ -126,10 +127,35 @@ public class MoodleUsersNodeModel extends NodeModel {
 	 * 
 	 * @return a new SettingsModelString with the key for the number format String
 	 */
-	static SettingsModelString createNumberFormatSettingsModel() {
-		return new SettingsModelString(KEY_NUMBER_FOMAT, DEFAULT_NUMBER_FORMAT);
+	static SettingsModelBoolean createFilterStudentsSettingsModel() {
+		return new SettingsModelBoolean("filter_students", false);
+	}
+	
+	
+	/**
+	 * A convenience method to create a new settings model used for the number
+	 * format String. This method will also be used in the {@link MoodleUsersNodeDialog}. 
+	 * The settings model will sync via the above defined key.
+	 * 
+	 * @return a new SettingsModelString with the key for the number format String
+	 */
+	static SettingsModelBoolean createAnonymizeSettingsModel() {
+		return new SettingsModelBoolean("anonymize", false);
+	}
+	
+
+	/**
+	 * A convenience method to create a new settings model used for the number
+	 * format String. This method will also be used in the {@link MoodleUsersNodeDialog}. 
+	 * The settings model will sync via the above defined key.
+	 * 
+	 * @return a new SettingsModelString with the key for the number format String
+	 */
+	static SettingsModelInteger createRandomSeedSettingsModel() {
+		return new SettingsModelInteger("random_seed", 0);
 	}
 
+	
 	/**
 	 * 
 	 * {@inheritDoc}
@@ -148,6 +174,8 @@ public class MoodleUsersNodeModel extends NodeModel {
 		 * log.
 		 */
 
+		
+		
 		
 		// Puerto in 0: Moodle Connection
 		MoodleConnection moodleConnection = ((MoodleConnectionPortObject)inObjects[0]).getMoodleConnection();
@@ -206,6 +234,11 @@ public class MoodleUsersNodeModel extends NodeModel {
 	    // b) (columna en settings)
 	    	    
 	    
+	    
+	    
+    	//logger.warn("User" + user.toString());
+    	
+	    
 		int rowCounter = 0;
 		for(int j = 0; j < coursesID.size(); ++j ) {		
 		
@@ -220,7 +253,6 @@ public class MoodleUsersNodeModel extends NodeModel {
 			    logger.warn("User" + user.toString());
 			    			    
 			    // roles
-			    
 			    JSONArray rolesArray = user.getJSONArray("roles");
 			    List<String> roles = new ArrayList<>();
 			    
@@ -230,24 +262,50 @@ public class MoodleUsersNodeModel extends NodeModel {
 					roles.add(rolesObject.get("shortname").toString());
 				}
 				
-				String rolesString = String.join(",", roles);
 				
-				logger.warn("User roles" + rolesString);
+				if(!m_filterStudentsSettings.getBooleanValue() || (m_filterStudentsSettings.getBooleanValue() && roles.contains("student"))) {				
+				
+					String rolesString = String.join(",", roles);
+				
+				    logger.warn("User roles" + rolesString);
 			    
-			    DataCell[] cells = new DataCell[] { 
-	       	       new IntCell(courseid), 
-	               new IntCell(user.getInt("id")),
-	               new StringCell(user.getString("fullname")),
-	               new IntCell(user.getInt("firstaccess")),
-	               new IntCell(user.getInt("lastcourseaccess")),
-	               new IntCell(user.getInt("lastaccess")),
-	               new StringCell(rolesString),
-	               new StringCell(user.getString("country")),
-	               new StringCell(user.getString("city"))
-	            };
+				    
+				    String fullname = user.getString("fullname");
+				    Integer uid = user.getInt("id");
+				    
+				    Integer randomSeed = new Random().nextInt(); 
+				    		
+				    if(m_anonymizeSettings.getBooleanValue()) {
+				    	
+				    	if(m_randomSeedSettings.getIntValue() != 0) {
+				    		randomSeed = m_randomSeedSettings.getIntValue();
+				    	}
+				    					    	
+				    	Faker faker = new Faker(new Random(uid + randomSeed));
+				    	fullname = faker.name().fullName();
+					    
+					    Random generator = new Random();
+					    generator.setSeed(uid + randomSeed);
+					    uid = generator.nextInt(10000);
+					    
+				    }
+				    
+			        DataCell[] cells = new DataCell[] { 
+	       	          new IntCell(courseid), 
+	                  new IntCell(uid),
+	                  new StringCell(fullname),
+	                  new IntCell(user.getInt("firstaccess")),
+	                  new IntCell(user.getInt("lastcourseaccess")),
+	                  new IntCell(user.getInt("lastaccess")),
+	                  new StringCell(rolesString),
+	                  new StringCell(user.getString("country")),
+	                  new StringCell(user.getString("city"))
+	                };
 			    
-	 	        DataRow row = new DefaultRow(new RowKey("Row" + rowCounter++), cells);
-	            container.addRowToTable(row);
+	 	            DataRow row = new DefaultRow(new RowKey("Row" + rowCounter++), cells);
+	                container.addRowToTable(row);
+				}   
+	                
 		    }
 			
 		}    
@@ -329,7 +387,9 @@ public class MoodleUsersNodeModel extends NodeModel {
 		 * all common data types. Hence, you can easily write your settings manually.
 		 * See the methods of the NodeSettingsWO.
 		 */
-		m_numberFormatSettings.saveSettingsTo(settings);
+		m_filterStudentsSettings.saveSettingsTo(settings);
+		m_anonymizeSettings.saveSettingsTo(settings);
+		m_randomSeedSettings.saveSettingsTo(settings);
 	}
 
 	/**
@@ -344,7 +404,9 @@ public class MoodleUsersNodeModel extends NodeModel {
 		 * The SettingsModel will handle the loading. After this call, the current value
 		 * (from the view) can be retrieved from the settings model.
 		 */
-		m_numberFormatSettings.loadSettingsFrom(settings);
+		m_filterStudentsSettings.loadSettingsFrom(settings);
+		m_anonymizeSettings.loadSettingsFrom(settings);
+		m_randomSeedSettings.loadSettingsFrom(settings);
 	}
 
 	/**
@@ -358,7 +420,9 @@ public class MoodleUsersNodeModel extends NodeModel {
 		 * already handled in the dialog. Do not actually set any values of any member
 		 * variables.
 		 */
-		m_numberFormatSettings.validateSettings(settings);
+		m_filterStudentsSettings.validateSettings(settings);
+		m_anonymizeSettings.validateSettings(settings);
+		m_randomSeedSettings.validateSettings(settings);
 	}
 
 	@Override

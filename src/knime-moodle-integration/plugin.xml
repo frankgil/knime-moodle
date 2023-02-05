@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?eclipse version="3.0"?><plugin>
-               
+                   
+    
     
     
     <!-- This is an example for providing an own category 
@@ -14,37 +15,48 @@
             path="/"/>
    </extension>
    -->
-               
+                   
    
+    
     
     
     <extension point="org.knime.workbench.repository.nodes">
-                              
+                                      
+        
         
         
         <node category-path="/" factory-class="org.knime.moodle.nodes.connector.MoodleConnectorNodeFactory" id="org.knime.moodle.nodes.connector.MoodleConnectorNodeFactory"/>
-                           
+                                   
+        
         
         
         <node category-path="/" factory-class="org.knime.moodle.nodes.courses.MoodleCoursesNodeFactory" id="org.knime.moodle.nodes.courses.MoodleCoursesNodeFactory"/>
-                    
+                            
+        
         
         <node category-path="/" factory-class="org.knime.moodle.nodes.users.MoodleUsersNodeFactory" id="org.knime.moodle.nodes.users.MoodleUsersNodeFactory"/>
-            
+                    
+        
         <node category-path="/" factory-class="org.knime.moodle.nodes.reports.logs.MoodleReportsLogsNodeFactory" id="org.knime.moodle.nodes.reports.logs.MoodleReportsLogsNodeFactory"/>
-    </extension>
             
+        <node category-path="/" factory-class="org.knime.moodle.nodes.reports.grades.MoodleReportsGradesNodeFactory" id="org.knime.moodle.nodes.reports.grades.MoodleReportsGradesNodeFactory"/>
+    </extension>
+                
    
     
+    
     <extension point="org.knime.core.PortType">
-                        
+                                
+        
         
         <portType color="#f48020" hidden="false" name="Moodle Connection Port" objectClass="org.knime.moodle.internals.connection.MoodleConnectionPortObject" objectSerializer="org.knime.moodle.internals.connection.MoodleConnectionPortObject$Serializer" specClass="org.knime.moodle.internals.connection.MoodleConnectionPortObjectSpec" specSerializer="org.knime.moodle.internals.connection.MoodleConnectionPortObjectSpec$Serializer">
         </portType>
-                   
+                           
+    
     
     </extension>
-           
+               
+
 
 
 </plugin>

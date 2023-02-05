@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: MoodleConnector-Node extension for KNIME Workbench
-Bundle-SymbolicName: org.knime.moodle.nodes.connector; singleton:=true
+Bundle-Name: Moodle extension for KNIME
+Bundle-SymbolicName: org.knime.moodle;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: moodleconnector.jar,
  libraries/json-20220320.jar,
@@ -11,7 +11,11 @@ Bundle-ClassPath: moodleconnector.jar,
  libraries/javafx-controls-11.0.1-linux.jar,
  libraries/javafx-graphics-11.0.1-linux.jar,
  libraries/javafx-media-11.0.1-linux.jar,
- libraries/javafx-web-11.0.1-linux.jar
+ libraries/javafx-web-11.0.1-linux.jar,
+ libraries/datafaker-1.7.0.jar,
+ libraries/automaton-1.11-8.jar,
+ libraries/generex-1.0.2.jar,
+ libraries/snakeyaml-1.23-android.jar
 Bundle-Activator: org.knime.moodle.nodes.connector.MoodleConnectorNodePlugin
 Bundle-Vendor: Fran Gil
 Require-Bundle: org.eclipse.core.runtime,

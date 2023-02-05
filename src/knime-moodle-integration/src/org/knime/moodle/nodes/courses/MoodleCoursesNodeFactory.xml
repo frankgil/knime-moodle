@@ -7,29 +7,16 @@
     </shortDescription>
     
     <fullDescription>
-        <intro>Insert long description here...</intro>
+        <intro>Gets the list of courses in which the user is enrolled. Using an additional table you can filter the list of courses by id or by category.</intro>
         
-        
-        <option name="short name of first option (like in the dialog)">description of first option</option>
-        <option name="short name of second option (like in the dialog)">description of second option</option>
-        <!-- possibly more options that can also be grouped by tabs -->
-        <!--
-        <tab name="Standard Options">
-            <option name="short name of first option (like in the dialog)">description of first option</option>
-            <option name="short name of second option (like in the dialog)">description of second option</option>
-        </tab>
-        <tab name="Advanced Options">
-            <option name="short name of first advanced option (like in the dialog)">description of first advanced option</option>
-        </tab>
-        -->
+        <option name="Category column">Select a column in the input table where you will specify the category ids you want to filter by.</option>
+        <option name="CourseId column">Select a column from the input table where you will specify the course ids you want to filter by.</option>
     </fullDescription>
     
     <ports>
-        <inPort index="0" name="Moodle Connection">Description of first input port...</inPort>
-        <inPort index="1" name="Table-In">Description of first input port...</inPort>
-        <!-- possibly more input ports here-->
-        <outPort index="0" name="Moodle Connection">Description of first output port...</outPort>
-        <outPort index="1" name="Table-Out">Description of first output port...</outPort>
-        <!-- possibly more output ports here-->
+        <inPort index="0" name="Moodle Connection">Moodle Connection.</inPort>
+        <inPort index="1" name="Table-In">Input table containing column information to filter output. Filters by course id or category id. </inPort>
+        <outPort index="0" name="Moodle Connection">Moodle Connection.</outPort>
+        <outPort index="1" name="Table-Out">Output table with Courses information. </outPort>
     </ports>    
 </knimeNode>

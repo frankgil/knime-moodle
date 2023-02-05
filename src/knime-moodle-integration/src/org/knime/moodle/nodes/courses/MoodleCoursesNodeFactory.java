@@ -18,7 +18,6 @@ public class MoodleCoursesNodeFactory
      */
     @Override
     public MoodleCoursesNodeModel createNodeModel() {
-		// Create and return a new node model.
         return new MoodleCoursesNodeModel();
     }
 
@@ -27,7 +26,6 @@ public class MoodleCoursesNodeFactory
      */
     @Override
     public int getNrNodeViews() {
-		// The number of views the node should have, in this cases there is none.
         return 0;
     }
 
@@ -37,7 +35,6 @@ public class MoodleCoursesNodeFactory
     @Override
     public NodeView<MoodleCoursesNodeModel> createNodeView(final int viewIndex,
             final MoodleCoursesNodeModel nodeModel) {
-		// We return null as this example node does not provide a view. Also see "getNrNodeViews()".
 		return null;
     }
 
@@ -46,7 +43,6 @@ public class MoodleCoursesNodeFactory
      */
     @Override
     public boolean hasDialog() {
-		// Indication whether the node has a dialog or not.
         return true;
     }
 
@@ -55,7 +51,6 @@ public class MoodleCoursesNodeFactory
      */
     @Override
     public NodeDialogPane createNodeDialogPane() {
-		// This example node has a dialog, hence we create and return it here. Also see "hasDialog()".
         return new MoodleCoursesNodeDialog();
     }
 

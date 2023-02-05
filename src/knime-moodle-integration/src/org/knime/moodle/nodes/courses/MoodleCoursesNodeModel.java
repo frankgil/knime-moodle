@@ -70,24 +70,12 @@ public class MoodleCoursesNodeModel extends NodeModel {
 	 */
 	private static final NodeLogger LOGGER = NodeLogger.getLogger(MoodleCoursesNodeModel.class);
 
+
+
+	
 	
 	NodeLogger logger=NodeLogger.getLogger("Moodle Integration");
 	
-	
-	/**
-	 * The settings key to retrieve and store settings shared between node dialog
-	 * and node model. In this case, the key for the number format String that
-	 * should be entered by the user in the dialog.
-	 */
-	private static final String KEY_NUMBER_FOMAT = "number_format";
-
-	/**
-	 * The default number format String. This default will round to three decimal
-	 * places. For an explanation of the format String specification please refer to
-	 * https://docs.oracle.com/javase/tutorial/java/data/numberformat.html
-	 */
-	private static final String DEFAULT_NUMBER_FORMAT = "%.3f";
-
 	
 	private static DataBase database;
 	
@@ -106,7 +94,9 @@ public class MoodleCoursesNodeModel extends NodeModel {
 	 * in the constructor of the {@link MoodleCoursesNodeDialog} as the settings 
 	 * models are also used to create simple dialogs.
 	 */
-	private final SettingsModelString m_numberFormatSettings = createNumberFormatSettingsModel();
+	private final SettingsModelString m_categoryCol = createCategoryColModel();
+	private final SettingsModelString m_courseIdCol = createCourseIdColModel();
+		
 
 	/**
 	 * Constructor for the node model.
@@ -116,17 +106,24 @@ public class MoodleCoursesNodeModel extends NodeModel {
 		      new PortType[]{MoodleConnectionPortObject.TYPE, BufferedDataTable.TYPE});
 	}
 
-	/**
-	 * A convenience method to create a new settings model used for the number
-	 * format String. This method will also be used in the {@link MoodleCoursesNodeDialog}. 
-	 * The settings model will sync via the above defined key.
-	 * 
-	 * @return a new SettingsModelString with the key for the number format String
-	 */
-	static SettingsModelString createNumberFormatSettingsModel() {
-		return new SettingsModelString(KEY_NUMBER_FOMAT, DEFAULT_NUMBER_FORMAT);
-	}
+	
+		
+    /**
+     * @return the Category column settings model
+     */
+    static SettingsModelString createCategoryColModel() {
+        return new SettingsModelString("categoryColumn", null);
+    }
+	
 
+    /**
+     * @return the CourseId column settings model
+     */
+    static SettingsModelString createCourseIdColModel() {
+        return new SettingsModelString("courseIdColumn", null);
+    }
+
+    
 	/**
 	 * 
 	 * {@inheritDoc}
@@ -147,6 +144,20 @@ public class MoodleCoursesNodeModel extends NodeModel {
 
 		logger.warn("Entra execute");
 		
+
+		
+		logger.warn("Variables settings: ");
+		
+		logger.warn(m_categoryCol.getStringValue());
+		logger.warn(m_courseIdCol.getStringValue());
+		
+		String categoryFilter = m_categoryCol.getStringValue();
+		String courseIdFilter = m_courseIdCol.getStringValue();
+		
+		logger.warn(categoryFilter);
+		logger.warn(courseIdFilter);
+		
+		
 		
 		// Puerto in 0: Moodle Connection
 		MoodleConnection moodleConnection = ((MoodleConnectionPortObject)inObjects[0]).getMoodleConnection();
@@ -165,10 +176,51 @@ public class MoodleCoursesNodeModel extends NodeModel {
 
 		// datos de entrada
 		// Puerto in 1: Tabla
-				BufferedDataTable inputTable = (BufferedDataTable)inObjects[1];
+		BufferedDataTable inputTable = (BufferedDataTable)inObjects[1];
 		
 		
-		DataColumnSpec[] cols = new DataColumnSpec[10];
+		ArrayList<Integer> categoriesFilter = new ArrayList<Integer>();
+		if(categoryFilter != null) {
+		  int colCategoryIndex = inputTable.getDataTableSpec().findColumnIndex(categoryFilter);
+		  logger.warn(colCategoryIndex);
+		  
+		  for (DataRow row : inputTable){
+			   DataCell cell =  row.getCell(colCategoryIndex);
+			   logger.warn(cell.toString());
+			   
+			   if(cell.toString() != "?") {
+  			     categoriesFilter.add(Integer.valueOf(cell.toString()));		   
+			   }  
+
+		  
+		  }
+		  
+		  logger.warn(categoriesFilter.toString());
+		  
+		  
+		}  
+		
+		ArrayList<Integer> coursesFilter = new ArrayList<Integer>();
+		if(courseIdFilter != null) {
+		  int colCourseIdIndex = inputTable.getDataTableSpec().findColumnIndex(courseIdFilter);
+		  logger.warn(colCourseIdIndex);
+		 
+		  
+		  for (DataRow row : inputTable){
+			   DataCell cell =  row.getCell(colCourseIdIndex);
+			   
+			   if(cell.toString() != "?") {
+			     coursesFilter.add(Integer.valueOf(cell.toString()));
+			   }  
+		  }
+		  
+		  logger.warn(coursesFilter.toString());
+		}
+		
+				
+		
+		
+		DataColumnSpec[] cols = new DataColumnSpec[11];
 		
 		cols[0] = new DataColumnSpecCreator("courseid", IntCell.TYPE).createSpec();
 	    cols[1] = new DataColumnSpecCreator("shortname", StringCell.TYPE).createSpec();
@@ -180,20 +232,37 @@ public class MoodleCoursesNodeModel extends NodeModel {
 	    cols[7] = new DataColumnSpecCreator("summary", StringCell.TYPE).createSpec();
 	    cols[8] = new DataColumnSpecCreator("summaryformat", IntCell.TYPE).createSpec();
 	    cols[9] = new DataColumnSpecCreator("format", StringCell.TYPE).createSpec();
-		
+	    cols[10] = new DataColumnSpecCreator("category", IntCell.TYPE).createSpec();
 		
 		DataTableSpec outputSpec = new DataTableSpec(cols); 
 	    BufferedDataContainer container = exec.createDataContainer(outputSpec);
 	    
-		
-		
-		// Obtener cursos
+	    
+	    // Obtener cursos por id y categoría
+	    // CoreCourseGetCoursesByField
+	    
+	    
+		// Obtener cursos del usuario
 		JSONArray courses = UtilMethods.getJSONArrayResponse(webService, new CoreEnrolGetUsersCourses(moodleConnection.getUserid()));
 			
 		for (int i = 0; i < courses.length(); ++i) {
 			JSONObject course = courses.getJSONObject(i);
 			
-			DataCell[] cells = new DataCell[] { 
+			logger.warn("Course: " + course.toString());
+			
+			boolean isValid = true;
+			
+			if(categoryFilter != null && !categoriesFilter.isEmpty() && !categoriesFilter.contains(course.getInt("category"))) {
+				isValid = false;
+			}
+
+			if(courseIdFilter != null && !coursesFilter.isEmpty() && !coursesFilter.contains(course.getInt("id"))) {
+				isValid = false;
+			}
+			
+			
+			if(isValid) {
+			  DataCell[] cells = new DataCell[] { 
 	        	new IntCell(course.getInt("id")), 
 	        	new StringCell(course.getString("shortname")),
 	        	new StringCell(course.getString("fullname")),
@@ -203,10 +272,12 @@ public class MoodleCoursesNodeModel extends NodeModel {
 	        	new IntCell(course.getInt("visible")),
 	        	new StringCell(course.getString("summary")),
 	        	new IntCell(course.getInt("summaryformat")),
-	        	new StringCell(course.getString("format"))
-	         };
-	 	     DataRow row = new DefaultRow(new RowKey("Row" + i), cells);
-	         container.addRowToTable(row);
+	        	new StringCell(course.getString("format")),
+	        	new IntCell(course.getInt("category")),
+	           };
+	 	       DataRow row = new DefaultRow(new RowKey("Row" + i), cells);
+	           container.addRowToTable(row);
+			}   
 		}
 			
 		container.close();
@@ -222,7 +293,7 @@ public class MoodleCoursesNodeModel extends NodeModel {
 	protected PortObjectSpec[] configure(final PortObjectSpec[] inSpecs) throws InvalidSettingsException {
 
 		
-        DataColumnSpec[] cols = new DataColumnSpec[10];
+        DataColumnSpec[] cols = new DataColumnSpec[11];
 		
 		cols[0] = new DataColumnSpecCreator("courseid", IntCell.TYPE).createSpec();
 	    cols[1] = new DataColumnSpecCreator("shortname", StringCell.TYPE).createSpec();
@@ -234,6 +305,7 @@ public class MoodleCoursesNodeModel extends NodeModel {
 	    cols[7] = new DataColumnSpecCreator("summary", StringCell.TYPE).createSpec();
 	    cols[8] = new DataColumnSpecCreator("summaryformat", IntCell.TYPE).createSpec();
 	    cols[9] = new DataColumnSpecCreator("format", StringCell.TYPE).createSpec();
+	    cols[10] = new DataColumnSpecCreator("category", IntCell.TYPE).createSpec();
 		
 		
 		DataTableSpec outputSpec = new DataTableSpec(cols); 
@@ -285,7 +357,12 @@ public class MoodleCoursesNodeModel extends NodeModel {
 		 * all common data types. Hence, you can easily write your settings manually.
 		 * See the methods of the NodeSettingsWO.
 		 */
-		m_numberFormatSettings.saveSettingsTo(settings);
+		m_categoryCol.saveSettingsTo(settings);
+		m_courseIdCol.saveSettingsTo(settings);
+		
+		
+		
+		
 	}
 
 	/**
@@ -300,7 +377,8 @@ public class MoodleCoursesNodeModel extends NodeModel {
 		 * The SettingsModel will handle the loading. After this call, the current value
 		 * (from the view) can be retrieved from the settings model.
 		 */
-		m_numberFormatSettings.loadSettingsFrom(settings);
+		m_categoryCol.loadSettingsFrom(settings);
+		m_courseIdCol.loadSettingsFrom(settings);
 	}
 
 	/**
@@ -314,7 +392,9 @@ public class MoodleCoursesNodeModel extends NodeModel {
 		 * already handled in the dialog. Do not actually set any values of any member
 		 * variables.
 		 */
-		m_numberFormatSettings.validateSettings(settings);
+		m_categoryCol.validateSettings(settings);
+		m_courseIdCol.validateSettings(settings);
+		
 	}
 
 	@Override
