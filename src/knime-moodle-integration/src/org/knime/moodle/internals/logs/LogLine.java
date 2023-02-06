@@ -38,11 +38,12 @@ public class LogLine implements Serializable {
 	private int module;
 	private int targetCourse;
 	private int course;
+	private int group;
 	
 	private int section;
 
 	private int item; //elemento de uso general (field, chapter, submission, role, etc.)
-		
+	private int subitem;	
 	
 	private String description;
 	
@@ -333,6 +334,25 @@ public class LogLine implements Serializable {
 		this.section = section;
 	}
 
+	
+	/**
+	 * Devuelve el grupo
+	 * 
+	 * @return devuelve el grupo
+	 */
+	public int getGroup() {
+		return group;
+	}
+
+	/**
+	 * Modifica el grupo
+	 * 
+	 * @param group
+	 */
+	public void setGroup(int group) {
+		this.group = group;
+	}
+	
 		
 	/**
 	 * Devuelve el usuario afecto.
@@ -352,6 +372,27 @@ public class LogLine implements Serializable {
 	public void setItem(int item) {
 		this.item = item;
 	}
+	
+
+	/**
+	 * Devuelve el usuario afecto.
+	 * 
+	 * @return devuelve el usuario afectado
+	 */
+	public int getSubItem() {
+		return subitem;
+	}
+
+	/**
+	 * Modifica el usuario afectado. Bidireccional.
+	 * 
+	 * @param affectedUser
+	 *            el nuevo usuario afecado
+	 */
+	public void setSubItem(int subitem) {
+		this.subitem = subitem;
+	}
+
 	
 	
 	/**

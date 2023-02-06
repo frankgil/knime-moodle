@@ -10,8 +10,8 @@
         <intro>Returns the list of users registered in the course or courses indicated in the input table (output from Moodle Courses node). </intro>
         
         <option name="Only Students">Returns only users with the 'student' role.</option>
-        <option name="Anonymize">Anonymizes user ids and user names (fake data).</option>
-        <option name="Random Seed">Numerical value of the random seed. Use 0 if you do not want to apply a random seed. With a value other than 0, the same random results will always be generated for both the user id and the user name.</option>
+        <option name="Anonymize">Anonymizes user names using fake data.</option>
+        <option name="Random Seed">Numerical value of the random seed. Use 0 if you do not want to apply a random seed. With a value other than 0, the same random results will always be generated for the user name.</option>
     </fullDescription>
     
     <ports>

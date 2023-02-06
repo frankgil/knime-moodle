@@ -102,39 +102,11 @@ public class MoodleReportsLogsNodeModel extends NodeModel {
 	NodeLogger logger=NodeLogger.getLogger("Moodle Integration");
 	
 	
-	/**
-	 * The settings key to retrieve and store settings shared between node dialog
-	 * and node model. In this case, the key for the number format String that
-	 * should be entered by the user in the dialog.
-	 */
-	private static final String KEY_NUMBER_FOMAT = "number_format";
-
-	/**
-	 * The default number format String. This default will round to three decimal
-	 * places. For an explanation of the format String specification please refer to
-	 * https://docs.oracle.com/javase/tutorial/java/data/numberformat.html
-	 */
-	private static final String DEFAULT_NUMBER_FORMAT = "%.3f";
 
 	
 	private static DataBase database;
 	
 	
-	/**
-	 * The settings model to manage the shared settings. This model will hold the
-	 * value entered by the user in the dialog and will update once the user changes
-	 * the value. Furthermore, it provides methods to easily load and save the value
-	 * to and from the shared settings (see:
-	 * <br>
-	 * {@link #loadValidatedSettingsFrom(NodeSettingsRO)},
-	 * {@link #saveSettingsTo(NodeSettingsWO)}). 
-	 * <br>
-	 * Here, we use a SettingsModelString as the number format is a String. 
-	 * There are models for all common data types. Also have a look at the comments 
-	 * in the constructor of the {@link MoodleReportsLogsNodeDialog} as the settings 
-	 * models are also used to create simple dialogs.
-	 */
-	private final SettingsModelString m_numberFormatSettings = createNumberFormatSettingsModel();
 
 	/**
 	 * Constructor for the node model.
@@ -144,16 +116,6 @@ public class MoodleReportsLogsNodeModel extends NodeModel {
 		      new PortType[]{MoodleConnectionPortObject.TYPE, BufferedDataTable.TYPE});
 	}
 
-	/**
-	 * A convenience method to create a new settings model used for the number
-	 * format String. This method will also be used in the {@link MoodleReportsLogsNodeDialog}. 
-	 * The settings model will sync via the above defined key.
-	 * 
-	 * @return a new SettingsModelString with the key for the number format String
-	 */
-	static SettingsModelString createNumberFormatSettingsModel() {
-		return new SettingsModelString(KEY_NUMBER_FOMAT, DEFAULT_NUMBER_FORMAT);
-	}
 
 	/**
 	 * 
@@ -388,14 +350,6 @@ public class MoodleReportsLogsNodeModel extends NodeModel {
 	 */
 	@Override
 	protected void saveSettingsTo(final NodeSettingsWO settings) {
-		/*
-		 * Save user settings to the NodeSettings object. SettingsModels already know how to
-		 * save them self to a NodeSettings object by calling the below method. In general,
-		 * the NodeSettings object is just a key-value store and has methods to write
-		 * all common data types. Hence, you can easily write your settings manually.
-		 * See the methods of the NodeSettingsWO.
-		 */
-		m_numberFormatSettings.saveSettingsTo(settings);
 	}
 
 	/**
@@ -403,14 +357,6 @@ public class MoodleReportsLogsNodeModel extends NodeModel {
 	 */
 	@Override
 	protected void loadValidatedSettingsFrom(final NodeSettingsRO settings) throws InvalidSettingsException {
-		/*
-		 * Load (valid) settings from the NodeSettings object. It can be safely assumed that
-		 * the settings are validated by the method below.
-		 * 
-		 * The SettingsModel will handle the loading. After this call, the current value
-		 * (from the view) can be retrieved from the settings model.
-		 */
-		m_numberFormatSettings.loadSettingsFrom(settings);
 	}
 
 	/**
@@ -418,13 +364,6 @@ public class MoodleReportsLogsNodeModel extends NodeModel {
 	 */
 	@Override
 	protected void validateSettings(final NodeSettingsRO settings) throws InvalidSettingsException {
-		/*
-		 * Check if the settings could be applied to our model e.g. if the user provided
-		 * format String is empty. In this case we do not need to check as this is
-		 * already handled in the dialog. Do not actually set any values of any member
-		 * variables.
-		 */
-		m_numberFormatSettings.validateSettings(settings);
 	}
 
 	@Override

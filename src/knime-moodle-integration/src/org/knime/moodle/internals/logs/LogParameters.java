@@ -14,7 +14,9 @@ public enum LogParameters {
 	TARGET_COURSE("setTargetCourse"),
 	SECTION("setSection"),
 	ITEM("setItem"),
+	SUBITEM("setSubItem"),
 	EMPTY("setEmptyParameter"),
+	GROUP("setGroup"),
 	PARAM_NOT_AVAILABLE("Parameter not avaible");
 
 	

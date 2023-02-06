@@ -7,28 +7,13 @@
     </shortDescription>
     
     <fullDescription>
-        <intro>Insert long description here...</intro>
-        
-        <option name="short name of first option (like in the dialog)">description of first option</option>
-        <option name="short name of second option (like in the dialog)">description of second option</option>
-        <!-- possibly more options that can also be grouped by tabs -->
-        <!--
-        <tab name="Standard Options">
-            <option name="short name of first option (like in the dialog)">description of first option</option>
-            <option name="short name of second option (like in the dialog)">description of second option</option>
-        </tab>
-        <tab name="Advanced Options">
-            <option name="short name of first advanced option (like in the dialog)">description of first advanced option</option>
-        </tab>
-        -->
+        <intro>Returns the event logs registered by Moodle. The node receives as input the ids of the courses for which the event logs are to be obtained. The output table returns all logs, identifying the course id, the log date, the log identifier and other values such as the id of the user, item or module affected by the event.</intro>
     </fullDescription>
     
     <ports>
-        <inPort index="0" name="Moodle Connection">Description of first input port...</inPort>
-        <inPort index="1" name="Table-In">Description of first input port...</inPort>
-        <!-- possibly more input ports here-->
-        <outPort index="0" name="Moodle Connection">Description of first output port...</outPort>
-        <outPort index="1" name="Table-Out">Description of first output port...</outPort>
-        <!-- possibly more output ports here-->
+        <inPort index="0" name="Moodle Connection"> Moodle Connection. </inPort>
+        <inPort index="1" name="Table-In">Input table containing a list of valid Courses (output from Moodle Courses node)</inPort>
+        <outPort index="0" name="Moodle Connection"> Moodle Connection. </outPort>
+        <outPort index="1" name="Table-Out">Output table with event logs.</outPort>
     </ports>    
 </knimeNode>

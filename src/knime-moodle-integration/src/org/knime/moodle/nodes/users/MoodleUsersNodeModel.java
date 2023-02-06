@@ -283,16 +283,11 @@ public class MoodleUsersNodeModel extends NodeModel {
 				    					    	
 				    	Faker faker = new Faker(new Random(uid + randomSeed));
 				    	fullname = faker.name().fullName();
-					    
-					    Random generator = new Random();
-					    generator.setSeed(uid + randomSeed);
-					    uid = generator.nextInt(10000);
-					    
 				    }
 				    
 			        DataCell[] cells = new DataCell[] { 
 	       	          new IntCell(courseid), 
-	                  new IntCell(uid),
+	                  new IntCell(user.getInt("id")),
 	                  new StringCell(fullname),
 	                  new IntCell(user.getInt("firstaccess")),
 	                  new IntCell(user.getInt("lastcourseaccess")),
