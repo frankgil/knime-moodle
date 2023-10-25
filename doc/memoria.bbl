@@ -1,0 +1,43 @@
+\begin{thebibliography}{1}
+
+\bibitem{seguridad-social}
+{Seguridad Social: Bases y tipos de cotización 2023}.
+\newblock
+  \url{https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/CotizacionRecaudacionTrabajadores/36537?changeLanguage=es}.
+
+\bibitem{salario}
+Sueldo del programador en españa.
+\newblock \url{https://www.jobted.es/salario/programador}.
+
+\bibitem{ubumonitor}
+{UBUMonitor. Manual de usuario}.
+\newblock \url{https://ubumonitordocs.readthedocs.io/es/latest/}.
+
+\bibitem{smote}
+N.~V. et~al. Chawla.
+\newblock Smote: Synthetic minority over-sampling technique.
+\newblock \url{https://doi.org/10.1613/jair.953}, 2002.
+
+\bibitem{multiclass-pred}
+Abdul Bujang~S. D., Selamat A., Ibrahim R., Krejcar O., Viedma~E. H., and
+  Fujita H.
+\newblock Multi-class prediction model for student grade prediction using
+  machine learning.
+\newblock \url{https://ieeexplore.ieee.org/document/9468629}, Junio 2021.
+
+\bibitem{misc:retribuciontutores-funcionarios}
+Universidad de~Burgos.
+\newblock Retribuciones funcionarios año 2023.
+\newblock
+  \url{https://www.ubu.es/sites/default/files/portal_page/files/pdi_funcionario_ano_2023.pdf},
+  Marzo 2023.
+
+\bibitem{knime-whitepaper}
+Berthold M., Cebron N., Dill F., Di~Fatta G., Gabriel T.R., Georg F., Meinl T.,
+  Ohl P., Sieb C., and Wiswedel B.
+\newblock Knime: The konstanz information miner. version 2.0 and beyond.
+\newblock
+  \url{https://kops.uni-konstanz.de/server/api/core/bitstreams/e707d437-0ce8-4ebd-bd8a-184b918312b4/content},
+  Noviembre 2009.
+
+\end{thebibliography}

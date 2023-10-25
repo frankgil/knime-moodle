@@ -1,18 +1,97 @@
 \capitulo{7}{Conclusiones y Líneas de trabajo futuras}
 
-Todo proyecto debe incluir las conclusiones que se derivan de su desarrollo. Éstas pueden ser de diferente índole, dependiendo de la tipología del proyecto, pero normalmente van a estar presentes un conjunto de conclusiones relacionadas con los resultados del proyecto y un conjunto de conclusiones técnicas. 
-Además, resulta muy útil realizar un informe crítico indicando cómo se puede mejorar el proyecto, o cómo se puede continuar trabajando en la línea del proyecto realizado. 
+
+\section{Conclusiones}
+
+Los objetivos generales planteados al inicio del proyecto se han podido alcanzar a la finalización del mismo, con 
+lo que se ha conseguido desarrollar una extensión de KNIME muy completa que permite extraer datos de Moodle e
+ incorporarlos en flujos de trabajo más complejos para estudios relacionados con la Ciencia de Datos. 
+\ 
+
+A nivel técnico se ha requerido un profundo estudio del lenguaje de programación Java, no solo orientado al desarrollo
+específico de extensiones de KNIME, sino más amplio por haberse requeridointegración con otras aplicaciones externas. 
+También se ha ahondado en la arquitectura de KNIME, tanto a nivel de núcleo como a nivel de estructura de extensiones y nodos. 
+
+También se han podido cumplir los objetivos personales planteados, ampliando los conocimientos adquiridos en el Máster y 
+aplicándolos a nuevas herramientas como KNIME y a datos de estudio de mi interés personal y de investigación, relacionados 
+con la formación online. 
+
+Sin duda, considero que se ha realizado un trabajo amplio y con mucho interés personal en la materia de estudio. 
+Gracias a una tutorización continua por parte de los tutores, el proyecto ha estado muy bien organizado desde 
+su inicio y se ha podido entregar una extensión de KNIME totalmente funcional, pero al mismo tiempo abierta para servir 
+de base para futuras ampliaciones. 
 
 
-Integración con Moodle a través de web services. 
-Permitir una integración que permita añadir estructuras más complejas... como analizar un grupo de cursos. 
-Esta línea requiere no pensar solo en el rol de profesor, sino en la intervención por parte de la institución para facilitar la integración y el acceso a los datos
+\section{Líneas de trabajo futuras}
+
+Debido al alcance limitado del proyecto, se han quedado fuera algunas posibles mejoras y ampliaciones, que se exponen a continuación: 
+
+\subsection{Desarrollo de plugins de Moodle para extraer información adicional}
+
+En este proyecto solo se ha contemplado la extracción de datos a través de las herramientas que facilita Moodle. 
+Una integración más ambiciosa entre KNIME y Moodle podría conllevar el desarrollo de plugins de Moodle para extraer información más específica que no se puede extraer por defecto. 
+
+Esta línea requiere no pensar únicamente en el rol de profesor, sino en la intervención por parte de las instituciones educativas para facilitar la integración 
+y el acceso a datos adicionales. 
 
 
-Colección de Flujos de trabajo típicos con Knime. Knime permite crear flujos de trabajo y compartirlos, de forma que sea fácil su reutilización. 
+\subsection{Colección de Flujos de trabajo de KNIME para Moodle}
+
+Knime permite crear flujos de trabajo y compartirlos, de forma que sea fácil su reutilización. Se propone en esta línea crear un set de 
+workflows ya preparados para su utilización con la extensión de Moodle desarrollada. 
 
 
-Knime en cloud o servidor para flujos de trabajo "permanentes" (cron). Lo que hemos visto se basa solo en ejecución de knime desde local. 
-Extender a flujos 
+\subsection{Knime en servidor}
 
-Comunicación bidireccional con Moodle. Tomar acciones a partir de los resultados del procesamiento de los datos. Por ejemplo, enviar un correo a los alumnos clasificados como en riesgo de abandono. 
+Los flujos de trabajo estudiados en este proyecto se basan en la ejecución local de una instancia de KNIME. La propuesta es utilizar 
+KNIME en cloud o servidor para flujos de trabajo que actúan de forma permanente. Por ejemplo, un flujo que revisa constantemente la evolución de un curso para 
+determinar si algún alumno está en riesgo de abandono. 
+
+\subsection{Comunicación bidireccional entre KNIME y Moodle}
+
+En este proyecto solo se ha contemplado la extracción de datos desde Moodle hacia KNIME. Moodle permite, a través de determinados 
+servicios web ya incluidos o a través de servicios web personalizados, realizar acciones en el aula. Sería interesante que el resultado 
+de la ejecución de un workflow de KNIME pudiera realizar acciones a partir de los resultados obtenidos. Por ejemplo, enviar un correo a
+ los alumnos clasificados como en riesgo de abandono o publicar un mensaje de aviso en el foro del aula. 
+ 
+\subsection{Datos Abiertos (Open Data)}
+
+Conseguir que las instituciones educativas involucradas en el proyecto faciliten datos abiertos de forma automática con una política previa de anonimización (Open Data). 
+Aunque existen intentos de publicar información basados en la información extrictamente legal (portal de transparencia) y datos preprocesados 
+con estadísticas finales, con el auge de la Ciencia de Datos, se hace cada vez más necesario el acceso a datos en bruto para análisis más variados. 
+
+\subsection{Anonimización}
+
+Realizar una anonimización ajustada a la política de anonimización de la institución y que cubra la anonimización de identificadores de usuarios. 
+
+
+\subsection{Obtener género}
+
+Mejorar la API incluyendo varios proveedores externos. 
+
+
+\subsection{Desvincular de librerías externas}
+
+Eliminar las dependencias con las librerías externas. Por ejemplo, eliminar el código dependiente de UBUMonitor desarrollando soluciones propias integradas en la extensión. 
+
+\subsection{Actualización}
+
+Actualización a la última versión de KNIME, actualmente la 5.x. Definir un plan de mantenimiento y actualizaciones a versiones futuras. 
+
+
+\subsection{Ampliación de funcionalidad}
+
+Ampliar funcionalidad extrayendo más información disponible en Moodle. Por ejemplo, la versión actual está limitada en los tipos de logs que se extraen. 
+
+
+\subsection{Ampliar pruebas}
+
+Las pruebas que se han llevado a cabo han estado muy dirigidas hacia un tipo de cursos y una plataforma Moodle concreta. Se considera necesario 
+ampliar las pruebas a otros entornos de Moodle y otros tipos de acciones formativas. 
+
+
+\subsection{Compartir extensión}
+
+Compartir la extensión en el Community HUB para que esté disponible para otros usuarios de la comunidad. 
+
+

@@ -2,10 +2,123 @@
 
 \section{Introducción}
 
+En este apéndice se describen los aspectos relevantes a nivel de programación para cualquier 
+desarrollador interesado en continuar el proyecto o en desarrollar nuevas extensiones para la 
+plataforma KNIME. 
+\
+
 \section{Estructura de directorios}
 
-\section{Manual del programador}
+A continuación se presenta la estructura principal de archivos y carpetas de la extensión 
+knime-moodle-integration desarrollada. No se han incluido las carpetas genéricas de definición 
+del proyecto en Eclipse, que se pueden consultar directamente en el repositorio del proyecto. 
 
-\section{Compilación, instalación y ejecución del proyecto}
+\begin{verbatim} 
+\libraries -- Librerías externas (jar)
+\src.org.knime.moodle.
+  .internal  -- Librerías de uso interno
+    .connection  -- Librería de conexión utilizada por el nodo Moodle Connector
+      MoodleConnection.java
+      MoodleConnectionPortObject.java
+      MoodleConnectionPortObjectSpec.java
+      MoodleLogin.Java
+    .logs  -- Librería de Logs utilizada por el nodo Moodle Reports Logs
+      Component.Java
+      Component.java
+      ComponentEvent.java
+      Event.java
+      LogDescription.java
+      LogLine.java
+      LogParameters.java
+      Logs.java
+      MoodleLogCreator.java
+  .nodes  -- Nodos de la extensión
+    .connector  -- Implementación del nodo Moodle Connector
+      MoodleConnectorConfiguration.java
+      MoodleConnectorNodeDialog.java
+      MoodleConnectorNodeFactory.java
+      MoodleConnectorNodeFactory.xml
+      MoodleConnectorNodeModel.java
+      MoodleConnectorNodePlugin.java
+      MoodleConnectorNodeSettingsModel.java
+      MoodleConnectorNodeView.java
+      default.png
+      moodle-connector.png
+      package.html
+    .courses  -- Implementación del nodo Moodle Courses
+      MoodleCoursesNodeDialog.java
+      MoodleCoursesNodeFactory.java
+      MoodleCoursesNodeFactory.xml
+      MoodleCoursesNodeModel.java
+      MoodleCoursesNodeView.java
+      default.png
+      moodle-courses.png
+      package.html
+    .reports
+      .grades  -- Implementación del nodo Moodle Reports Grades
+        MoodleReportsGradesNodeDialog.java
+        MoodleReportsGradesNodeFactory.java
+        MoodleReportsGradesNodeFactory.xml
+        MoodleReportsGradesNodeModel.java
+        MoodleReportsGradesNodeView.java
+        moodle-reports-grades.png
+        package.html
+      .logs  -- Implementación del nodo Moodle Reports Logs
+        MoodleReportsLogsNodeDialog.java
+        MoodleReportsLogsNodeFactory.java
+        MoodleReportsLogsNodeFactory.xml
+        MoodleReportsLogsNodeModel.java
+        MoodleReportsLogsNodeView.java
+        moodle-reports-logs.png
+        package.html
+    .users  -- Implementación del nodo Moodle Users
+      MoodleUsersNodeDialog.java
+      MoodleUsersNodeFactory.java
+      MoodleUsersNodeFactory.xml
+      MoodleUsersNodeModel.java
+      MoodleUsersNodeView.java
+      moodle-users.png
+      package.html
+\end{verbatim}
 
-\section{Pruebas del sistema}
+
+
+\subsection{Entorno de desarrollo con Eclipse y Knime SDK}
+
+Los nodos de Knime se desarrollan en Java utilizando el IDE de programación Eclipse. Aunque desde la versión 4.6 también se permite
+ la implementación de nodos totalmente programados en Python, en este proyecto los nodos se han implementado en Java para la versión KNIME 4.7.x. 
+\
+
+La documentación oficial de KNIME nos detalla paso a paso cómo preparar el entorno de trabajo necesario para desarrollar
+ nuevos nodos en Java. Como primer paso debemos instalar Eclipse como IDE de desarrollo y KNIME SDK que nos proporciona las herramientas 
+ necesarias de desarrollo para compilar nuestra extensión y ejecutarla en KNIME. Se pueden consultar las instrucciones detalladas en este enlace \url{https://github.com/knime/knime-sdk-setup}. 
+\
+
+Los pasos que tendremos que seguir son:
+
+\begin{enumerate}
+	\item Instalación de Java 17 (OpenJDK 17). Esta versión puede variar para futuras versiones de KNIME. 
+	\item Instalar Eclipse. Debemos instalar la versión "Eclipse for RCP and RAP Developers 2022-06", que es la que se corresponde a KNIME 4.7.x. 
+  Esta versión varía en función de la versión de KNIME en la que vayamos a trabajar. 
+	\item Instalar Git. 
+	\item Descargar Knime SDK y configurar eclipse. Siguiendo las instrucciones correspondientes, indicaremos cuál es la plataforma objetivo activa, de forma 
+  que Eclipse pueda ejecutar KNIME y desplegar la extensión desarrollada. 
+  \item Ejecutar KNIME desde KNIME Analytics Platform.launch -> Run as -> Knime Analytics Platform. 
+\end{enumerate}  
+
+
+\subsection{Instalación y compilación de la extensión KNIME Moodle Integration}
+
+Por último, necesitamos incorporar la extensión knime-moodle-integration importando el proyecto desde el repositorio. 
+\
+
+
+
+\section{Desarrollo de nuevos nodos}
+
+Las instrucciones previas nos sirven para montar un entorno de desarrollo para trabajar con la extensión desarrollada en este proyecto. Si se desea implementar una nueva extensión, 
+se recomienda seguir las intrucciones que KNIME nos facilita mediante la implementación de un nodo de Ejemplo: 
+
+\url{https://docs.knime.com/latest/analytics_platform_new_node_quickstart_guide/index.html#_introduction}
+
+

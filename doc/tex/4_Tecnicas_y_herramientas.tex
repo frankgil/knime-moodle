@@ -1,31 +1,121 @@
 \capitulo{4}{Técnicas y herramientas}
 
 
-\section{Eclipse}
+\section{Entorno de desarrollo}
 
-\section{Knime}
-
-\section{Java}
-
-\section{GitHub}
-
-\section{Insomnia Rest Client}
+En este apartado se describen las principales técnicas y herramientas utilizadas para el desarrollo del proyecto. 
 
 
-\section{Docker}
+\subsection{Eclipse}
 
-\section{Moodle API}
+\href{https://www.eclipse.org/ide/}{Eclipse} es un entorno de desarrollo integrado (IDE) ampliamente utilizado para programar aplicaciones en Java y 
+otros lenguajes de programación. Eclipse permite gestionar proyectos Java, editar código con resaltado de sintaxis,
+ depurar en tiempo real, etc. 
+\
 
-\section{UBUMonitor}
-
-
-\section{Otras herramientas utilizadas}
-
-- Visual Studio Code
-
-- LaTex
+Los nodos de KNIME se desarrollan en Java utilizando el IDE de programación Eclipse. KNIME nos facilita instrucciones de 
+instalaciónd el entorno de desarrollo con Eclipse para desarrollar nuestros nodos personalizados. 
 
 
+\subsection{KNIME SDK}
 
-Anonymization (salt)
-https://auth0.com/blog/adding-salt-to-hashing-a-better-way-to-store-passwords/
+
+\href{https://github.com/knime/knime-sdk-setup}{KNIME SDK} (Software Development Kit) es el conjunto de herramientas facilitadas por KNIME que nos permiten desarrollar 
+extensiones y nodos personalizados que pueden intergrarse en los flujos de trabajo de KNIME.
+\
+
+KNIME SDK se integra con Eclipse para desarrollar componentes de KNIME. 
+
+
+\subsection{Bitnami LMS Virtual Machine}
+
+\href{https://bitnami.com/}{Bitnami} es una empresa especializada en la creación de stacks de aplicaciones, 
+que son entornos de aplicaciones preconfigurados para facilitar la instalación y puesta en marcha de una aplicación junto 
+con todas sus dependencias. 
+\
+
+\href{https://bitnami.com/stack/moodle}{Bitnami LMS} es una distribución que incluye el LMS Moodle y todas las aplicaciones 
+necesarias para su ejecución (PHP, MySQL, servidor web, etc.). La distribución está disponible como instalación en la nube 
+o como instalación en local con Docker, Kubernetes o Máquina Virtual. 
+\
+
+En este proyecto se ha utilizado la versión en Máquina Virtual (formato OVA) correspondiente a Moodle 3.11. 
+\
+
+\subsection{VirtualBox}
+
+\href{https://www.virtualbox.org/}{VirtualBox} es un software de virtualización de código abierto que permite ejecutar máquinas 
+virtuales en cualquier sistema operativo. En este proyecto se ha utilizado VirtualBox 6.1 para ejectuar la máquina virtual 
+facilitada por Bitnami LMS y disponer así de una instancia completamente funcional de Moodle en el equipo local. 
+
+
+\subsection{Insomnia Rest}
+
+\href{https://insomnia.rest/}{Insomnia Rest} es una aplicación de escritorio que nos permite realizar llamadas REST a APIs de
+ aplicaciones basadas en este sistema de comunicación. Una particularidad de Insomnia Rest es que permite realizar 
+ pruebas sobre aplicaciones en local, lo que nos ha permitido probar la comunicación con 
+ la API de Moodle de nuestra máquina virtual local, antes de incorporar el código a los nodos programados de KNIME.
+
+\subsection{GitHub}
+
+\href{https://github.com/}{GitHub} es una plataforma de desarrollo de software en la nube que utiliza Git como sistema de control 
+de versiones. GitHub permite a los desarroladores colaborar en proyectos de programación, alojando y gestionando sus repositorios de 
+código fuente. En este proyecto se ha usado GitHub para almacenar el código fuente tanto de la aplicación desarrollada como de la memoria. 
+
+\newpage
+\section{Desarrollo}
+
+En este apartado se describen los lenguajes de programación y librerías utilizados para el desarrollo del proyecto. 
+
+\subsection{Java}
+
+Aunque desde la versión 4.6 de KNIME también se permite la implementación de nodos en Python, en este proyecto los nodos se 
+han implementado en Java. 
+\
+
+\href{https://www.java.com/}{Java} es un lenguaje de programación muy extendido que se caracteriza por su programación orientada a objetos y su portabilidad. Las 
+aplicaciones JAVA se compilan y pueden ser utilizadas en cualquier plataforma o sistema operativo que disponga de la Máquina 
+Virtual Java (JVM).
+
+\subsection{Moodle API}
+
+Moodle cuenta con una REST API que permite la comunicación con el sistema a través de servicios web. El listado completo de servicios
+web de Moodle puede consultarse en este enlace (\href{https://docs.moodle.org/dev/Web_service_API_functions}{Moodle API}). 
+
+
+\subsection{KNIME API}
+
+El código del núcleo de KNIME y de otras extensiones está disponible en el \href{https://github.com/knime/}{repositorio de KNIME en GitHub} para poder ser reutilizado en nuevos desarrollos de extensiones
+de KNIME. 
+
+\subsection{Librerías externas}
+
+Algunas librerías externas que se han incorporado al proyecto son: 
+
+\subsubsection{UBUMonitor}
+
+\href{https://github.com/yjx0003/UBUMonitor}{UBUMonitor} es una herramienta implementada en Java que permite que los usuarios con 
+rol de profesor puedan monitorización a sus alumnos en plataformas LSM Moodle. 
+
+\subsubsection{Data Faker}
+
+\href{https://www.datafaker.net/}{Data Faker} es una librería para Java que permite crear datos falsos para pruebas en aplicaciones JVM. 
+
+
+
+\newpage
+\section{Memoria}
+
+En el desarrollo de la Memoria del proyecto se han utilizado las siguientes herramientas: 
+
+\subsection{Visual Studio Code}
+
+\href{https://code.visualstudio.com/}{Visual Studio Code}, también conocido como VS Code, es un editor de código fuente gratuito y de código abierto
+ desarrollado por Microsoft. VS Code se puede extender fácilmente instalando extensiones adicionales, lo que permite que pueda ser utilizado para una
+  amplia variedad de lenguajes de programación. En este proyecto se ha utilizado VS Code para trabajar con LaTeX.
+
+\subsection{LaTeX}
+
+\href{https://www.latex-project.org/}{LaTeX} es un sistema que permite crear documentos estructurados a partir de comandos y etiquetas. 
+LaTeX produce documentos con un formato profesional, lo que lo hace ideal para desarrollar tesis, artículos académicos, informes técnicos, etc.
+

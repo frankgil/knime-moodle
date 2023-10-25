@@ -1,11 +1,40 @@
-\apendice{Especificación de Requisitos}
+\apendice{Especificación de requisitos}
 
 \section{Introducción}
 
-\section{Objetivos generales}
+En este apéndice se detallan sus requisitos, tanto funcionales como no funcionales.
 
-\section{Catalogo de requisitos}
+\section{Catálogo de requisitos}
+\subsection{Requisitos funcionales}
 
-\section{Especificación de requisitos}
+\begin{itemize}
+	\item \textbf{RF-1 Conexión}: la extensión debe poder conectarse con cualquier plataforma Moodle.
+    \begin{itemize}
+		\item \textbf{RF-1.1 Conexión: Rol Profesor}: el usuario debe tener el rol Profesor en la plataforma.
+		\item \textbf{RF-1.2 Conexión: APP Móvil}:  la plataforma Moodle debe tener el acceso a la aplicación móvil activado.
+	\end{itemize}
 
+	\item \textbf{RF-2 Consulta de cursos}: la debe ser capaz de extraer información de los cursos de la plataforma Moodle.
+    \begin{itemize}
+		\item \textbf{RF-2.1 Filtro por id de curso}: la extensión debe poder extraer un curso específico, indicando su id dentro de la plataforma Moodle.
+		\item \textbf{RF-2.2 Filtro por id de categoría}: la extensión debe poder extraer todos los cursos de una categoría, indicando su id dentro de la plataforma Moodle.
+	\end{itemize}
 
+	\item \textbf{RF-3 Consulta de usuarios}: la extensión debe de extraer información de los usuarios de la plataforma Moodle.
+	\item 	\begin{itemize}
+		\item \textbf{RF-3.1 Filtro de usuarios por curso}: la extensión debe poder extraer los usuarios de un curso específico o de un listado de cursos. 
+		\item \textbf{RF-3.2 Filtro de usuarios por rol}: la extensión debe poder filtrar solo por usuarios con el rol Estudiante. 
+		\item \textbf{RF-3.3 Estimación del género del estudiante}: la extensión debe poder estimar el género del estudiante a partir de su nombre. 
+		\item \textbf{RF-3.4 Anonimización de datos personales}: la extensión debe poder anonimizar los datos personales del usuario (nombre y apellidos). 
+	\end{itemize}
+	\item \textbf{RF-4 Consulta de logs}: la extensión debe ser capaz de extraer los logs de los cursos indicados. 
+	\item \textbf{RF-5 Consulta de calificaciones}: la extensión debe ser capaz de extraer las calificaciones de los usuarios registrados en los cursos indicados. 
+	\item \textbf{RF-6 Consulta de cuestionarios}: la extensión debe ser capaz de extraer información de los cuestionarios de los usuarios registrados en los cursos indicados. 
+\end{itemize}
+
+\subsection{Requisitos no funcionales}
+\begin{itemize}
+	\item \textbf{RNF-1 Usabilidad}: los nodos desarrollados deben ser intuitivos y fáciles de usar, siguiendo el diseño de otros nodos y extensiones de KNIME.
+	\item \textbf{RNF-2 Mantenibilidad}: debe ser sencillo añadir funcionalidad adicional, siguiendo las recomendaciones de desarrollo de extensiones de KNIME.
+	\item \textbf{RNF-3 Compatibilidad}: la extensión desarrollada debe ser compatible con la versión de KNIME 4.7.
+\end{itemize}

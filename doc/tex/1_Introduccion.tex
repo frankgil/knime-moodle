@@ -1,3 +1,61 @@
 \capitulo{1}{Introducción}
 
-Descripción del contenido del trabajo y del estrucutra de la memoria y del resto de materiales entregados.
+Moodle es una plataforma de aprendizaje (LMS, Learning Management System) ampliamente utilizada por instituciones educativas de todo el mundo, incluyendo universidades. 
+Durante el tiempo de vida de una acción formativa o curso, Moodle registra todo tipo de información relacionada con la interacción de los participantes con la plataforma.  Por ejemplo, 
+ se registra cada vez que un usuario consulta un recurso, visita una página, visualiza un vídeo o participa en un foro de discusión. También quedan registradas las 
+ calificaciones obtenidas en las diferentes actividades evaluables y los tiempos empleados en la realización de cuestionarios. Esta información puede ser muy variada, 
+ ya que depende de la configuración de los componentes integrados dentro de cada curso. Ahora bien, aunque mucha de esta información registrada puede ser consultada por el profesor a través de informes que están disponibles dentro del curso, no es fácilmente exportable 
+ para su procesamiento desde herramientas externas. 
+\
+
+Utilizando técnicas de aprendizaje automático se puede extraer conocimiento sobre el curso y sus participantes. Este conocimiento, en manos del profesor responsable, puede servir para mejorar el curso 
+y/o tomar decisiones que afecten al desempeño de los estudiantes. Supongamos, por ejemplo, que el profesor dispone de un modelo que le permite predecir qué estudiantes están en riesgo de abandonar 
+o no finalizar el curso. A partir de esta información, el profesor puede tomar las medidas que considere necesarias para intentar ``recuperar'' a estos 
+estudiantes (enviar un correo electrónico, agendar una tutoría individual, proponer materiales de apoyo, etc.). Además, se podría volver a aplicar el mismo modelo pasado un tiempo para comprobar si los
+ estudiantes han salido de la zona de riesgo o, por el contrario, se requieren acciones adicionales. 
+\
+
+En las últimas versiones de Moodle se han ido incorporando algunos modelos predictivos, tanto en el núcleo como a través de plugins externos. Estos modelos pueden ser útiles para los casos de uso más comunes,
+pero siempre estarán limitados con respecto a las posibilidades de analizar los datos de una forma más libre y abierta desde herramientas externas, como es el caso de la herramienta KNIME que abordamos en este trabajo.
+\
+
+KNIME es una plataforma de código abierto orientada al análisis de datos que permite, a través de una interfaz intuitiva y visual, 
+crear análisis complejos y flujos de trabajo mediante componentes especializados en diferentes áreas como la minería de datos, 
+el aprendizaje automático o la visualización de datos. En este trabajo se han desarrollado nuevos componentes de KNIME que permiten la 
+integración en sus flujos de trabajo de los datos que Moodle va registrando durante la ejecución de una acción formativa. 
+Con un enfoque orientado al rol de profesor, se pretende que cualquier usuario con este rol dentro de una 
+plataforma Moodle, pueda realizar estudios externos sobre los datos de las acciones formativas a las que tiene acceso. 
+Adicionalmente se ha implementado un flujo de trabajo en KNIME sobre datos reales extraidos de Moodle, analizando diferentes 
+técnicas de aprendizaje automático supervisado. 
+\
+
+
+\section{Estructura de la memoria}
+
+La memoria se compone de los siguientes apartados: 
+\
+
+\begin{enumerate}
+	\item \textbf{Introducción}. Introducción al proyecto y al trabajo desarrollado. 
+	\item \textbf{Objetivos del proyecto}. Se describen los objetivos generales, técnicos y personales establecidos al inicio del proyecto.
+	\item \textbf{Conceptos teóricos}. Se introducen los principales conceptos teóricos abordados en el proyecto. 
+	\item \textbf{Técnicas y herramientas}. Se describen las herramientas utilizadas para el desarrollo del proyecto.
+	\item \textbf{Aspectos relevantes del desarrollo}. Recoge los aspectos más interesantes y relevantes del desarrollo del proyecto.
+	\item \textbf{Trabajos relacionados}. Se describen otros trabajos relacionados con el proyecto y el grado de influencia que han tenido en el desarrollo.
+	\item \textbf{Conclusiones y líneas de trabajo futuras}. Conclusiones finales del proyecto y posibles líneas de trabajo que se podrían seguir para ampliar o dar continuidad al proyecto. 
+\end{enumerate}
+
+
+\section{Estructura de los apéndices}
+
+También se incluyen los siguientes apéndices anexos al proyecto: 
+\
+
+\begin{enumerate}[A.]
+	\item \textbf{Plan de proyecto}. Descripción de la metodología utilizada, planificación temporal y viabilidad económica. 
+	\item \textbf{Especificación de diseño}. Incluye la especificación de requisitos y el diseño implementado.
+	\item \textbf{Documentación técnica de programación}. Descripción de los pasos a seguir para instalar, compilar y ejecutar el proyecto.
+	\item \textbf{Documentación de usuario}. Manual de usuario de los componentes KNIME desarrollados. 
+\end{enumerate}
+
+Tanto la memoria como el código desarrollado se puede consultar y descargar desde el \href{https://github.com/frankgil/knime-moodle}{repositorio GitHub del proyecto}.

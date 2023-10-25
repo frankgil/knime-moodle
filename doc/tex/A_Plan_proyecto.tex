@@ -1,13 +1,290 @@
 \apendice{Plan de Proyecto Software}
 
-\section{Introducción}
+\section{Metodología}
+
+Durante el desarrollo de este proyecto se ha utilizado una versión simplificada de la metodología Scrum. Concretamente se han
+seguido ciclos o sprints de dos semanas, apoyados por reuniones de coordinación con los tutores del proyecto. Tras cada sprint se 
+han mostrado y discutido los avances realizados y se han planificado las tareas a realizar en el siguiente sprint. 
+\
+
+Aunque durante el desarrollo del proyecto se han producido retrasos que han llevado a dilatar la 
+entrega final del proyecto, el orden de ejecución de los sprints y el alcance del proyecto se han 
+mantenido según la planificación inicial, que se detalla a continuación. 
+
 
 \section{Planificación temporal}
 
+En este apartado se describen las tareas llevadas a cabo en cada sprint. 
+
+\subsection{Sprint 0}
+
+Sprint de arranque del proyecto dedicado al análisis del problema y el alcance de la solución. 
+
+\begin{itemize}
+	\item Preparación del entorno de desarrollo para programar extensiones de Knime.
+	\item Desarrollo de nodo de prueba para conocer la arquitetura de Knime.
+\end{itemize}
+
+
+\subsection{Sprint 1}
+
+En este sprint continuamos con la fase de Análisis: 
+
+\begin{itemize}
+	\item Preparación de plataforma Moodle local con datos de prueba. 
+	\item Pruebas de acceso a la información de Moodle a través de web services y web scraping. 
+    \item Estudio de la aplicación UBUMonitor, tanto a nivel de usuario como a nivel de código, para evaluar su posible reutilización.
+    \item Se define el alcance y objetivos del proyecto.
+    \item Memoria: se prepara el documento base de Memoria y se completan los apartados de Introducción, Objetivos y Análisis. 
+\end{itemize}
+
+
+\subsection{Sprint 2}
+
+Sprint dedicado al diseño de algunos de los módulos propuestos durante la fase de análisis. 
+
+\begin{itemize}
+	\item Diseño de nodo Moodle Connection.
+	\item Diseño de nodo Moodle Courses.
+	\item Diseño de nodo Moodle Users.
+	\item Memoria: documentación parcial de los apartados de Técnicas y herramientas y Diseño.
+\end{itemize}
+
+
+\subsection{Sprint 3}
+
+Implementación parcial de los nodos diseñados en el sprint anterior. En este sprint los nodos implementados son operativos 
+pero no se ha añadido aún configuración. 
+
+\begin{itemize}
+	\item Implementación parcial del nodo Moodle Connection.
+	\item Implementación parcial del nodo Moodle Courses.
+	\item Implementación parcial del nodo Moodle Users.
+	\item Workflows básicos para probar los nodos implementados con datos de prueba de Moodle. 
+	\item Memoria: documentación parcial del apartado de Implementación.
+\end{itemize}
+
+
+\subsection{Sprint 4}
+
+Ampliación de los nodos implementados en el sprint anterior añadiendo configuración. 
+
+\begin{itemize}
+	\item Implementación de configuración del nodo Moodle Connection.
+	\item Implementación de configuración del nodo Moodle Courses.
+	\item Implementación de configuración del nodo Moodle Users.
+	\item Memoria: actualización del apartado de Implementación. 
+\end{itemize}
+
+
+\subsection{Sprint 5}
+
+Sprint dedicado al diseño de otros módulos propuestos durante la fase de análisis. 
+
+\begin{itemize}
+	\item Diseño del nodo Moodle Reports Logs y primeras pruebas de implementación. 
+	\item Memoria: actualización del apartado de Diseño.
+\end{itemize}
+
+
+
+\subsection{Sprint 6}
+
+Sprint dedicado a la implementación del nodo Moodle Reports Logs. 
+
+\begin{itemize}
+	\item Implementación del nodo Moodle Reports Logs. 
+	\item Mapeo de logs de Moodle para extraer variables de los textos de log. 
+	\item Memoria: actualización del apartado de Implementación. 
+\end{itemize}
+
+
+
+\subsection{Sprint 7}
+
+Sprint dedicado al diseño de otros módulos propuestos durante la fase de análisis. 
+
+\begin{itemize}
+	\item Diseño del nodo Moodle Reports Grades y primeras pruebas de implementación. 
+	\item Memoria: actualización del apartado de Diseño.
+\end{itemize}
+
+
+\subsection{Sprint 8}
+
+Sprint dedicado a la implementación del nodo Moodle Reports Grades. 
+
+\begin{itemize}
+	\item Implementación del nodo Moodle Reports Grades. 
+	\item Memoria: actualización del apartado de Implementación. 
+\end{itemize}
+
+
+\subsection{Sprint 9}
+
+Sprint dedicado a la ampliación del nodo Moodle Users. 
+
+\begin{itemize}
+	\item Incorporación de Anonimización de usuarios.
+	\item Estimación de género de usuario. 
+	\item Memoria: actualización del apartado de Implementación. 
+\end{itemize}
+
+
+
+\subsection{Sprint 10}
+
+Sprint dedicado a la preparación final del código y compilación de la solución final. 
+
+\begin{itemize}
+	\item Limpieza del código eliminando mensajes de depuración y añadiendo comentarios.
+	\item Compilación final para generar el plugin que puede ser utilizado en cualquier workflow de Knime. 
+	\item Memoria: actualización del apartado de Implementación. 
+\end{itemize}
+
+
+
+\subsection{Sprint 11}
+
+Primer sprint dedicado al uso de los nodos implementados con datos reales. 
+
+\begin{itemize}
+	\item Importación de datos reales en Moodle local. 
+	\item Implementación de workflows básicos para probar el correcto acceso a datos reales. 
+	\item Memoria: actualización del apartado de Workflows. 
+\end{itemize}
+
+
+
+
+\subsection{Sprint 12}
+
+Sprint dedicado a la implementación del Workflow con datos reales. 
+
+\begin{itemize}
+	\item Implementación del worflow con datos reales. 
+	\item Memoria: actualización del apartado de Workflows. 
+\end{itemize}
+
+
+
+\subsection{Sprint 13}
+
+Sprint dedicado a la implementación del Workflow con datos reales (continuación). 
+
+\begin{itemize}
+	\item Implementación del worflow con datos reales. 
+	\item Memoria: actualización del apartado de Workflows. 
+	\item Memoria: revisión general. 
+\end{itemize}
+
+
+\subsection{Sprint 14}
+
+Sprint dedicado a completar la memoria del proyecto. 
+
+\begin{itemize}
+	\item Memoria: actualización de apartados pendientes
+	\item Memoria: corrección general según sugerencias reportadas en el sprint anterior. 
+\end{itemize}
+
+\newpage
 \section{Estudio de viabilidad}
 
 \subsection{Viabilidad económica}
+\subsubsection{Costes de personal}
+Aunque el proyecto se ha estimado en 7 meses a tiempo parcial, para calcular el coste del proyecto, se 
+considerará que se ha realizado por un desarrollador a tiempo completo en un período de 3,5 meses. 
+Se considera el salario medio neto de un programador de 1.610€ mensuales \cite{salario}.
+(ver tabla~\ref{tab:personal}).
+
+La cotización a la seguridad social se ha calculado como horas comunes, según
+el régimen general de 2023 (28,30\%)~\cite{seguridad-social}.
+
+\begin{table}[!h]
+	\centering
+	\begin{tabular}{lr}
+		\toprule
+		\textbf{Concepto} & \textbf{Coste} \\
+		\midrule
+		Salario neto & 1610,00€\\
+		Retención IRPF (17\%) & 500,37€ \\
+		Seguridad social (28,30 \%) & 832,96€ \\
+		\midrule
+		Salario bruto (mensual) & 2.943,33€ \\
+		\midrule
+		\textbf{Total 3.5 meses} & 10.301,65 \\
+		\bottomrule
+	\end{tabular}
+	\caption{Costes de personal}
+	\label{tab:personal}
+\end{table}
+
+Además se sumará el sueldo de los dos tutores asignados al proyecto \cite{misc:retribuciontutores-funcionarios} durante 7 meses, ambos con la posición de Profesor Titular de Universidad. Se asignan 0,5 por tutor.
+
+Sueldo mensual: 3.145,59€. Imparte 24 créditos anuales.
+$$ \dfrac{\textup{3.145,59€} \times 12 \;meses}{24 
+	\;créditos} \times 0,5 \;créditos \times 2 \;tutores = \textup{1.572,80€} $$
+
+
+El coste de los tutores corresponde a 1.572,80€.
+
+\subsubsection{Costes de \textit{hardware}}
+En esta sección se enumeran los costes del \textit{hardware} usado durante el desarrollo.
+
+Para el desarrollo se ha usado un equipo de sobremesa valorado en 1200€, con 
+amortización en 4 años (ver tabla~\ref{tab:hardware}).
+
+$$\dfrac{\textup{1200€}}{4 \;años * 12 \;meses} = 
+\textup{25} $$
+
+\begin{table}[!h]
+	\centering
+	\begin{tabular}{lrr}
+		\toprule
+		\textbf{Concepto} & \textbf{Coste} & \textbf{Amortización} \\
+		\midrule
+		Ordenador sobremesa & 1200€ & 25 \\
+		\midrule
+		\textbf{Total 3,5 meses} & 87,5€ \\
+		\bottomrule
+	\end{tabular}
+	\caption{Costes de hardware}
+	\label{tab:hardware}
+\end{table}
+
+\subsubsection{Costes totales}
+
+En la tabla~\ref{tab:total} se agrupan todos los costes calculados del proyecto, dando el total de €.
+
+\begin{table}[!h]
+	\centering
+	\begin{tabular}{lr}
+		\toprule
+		\textbf{Concepto} & \textbf{Coste} \\
+		\midrule
+		Personal & 10.301,65€ \\
+		Tutores  & 1.572,80€ \\
+		\textit{Hardware} & 87,51€ \\
+		\midrule
+		\textbf{Total} & 11.961,96€ \\
+		\bottomrule
+	\end{tabular}
+	\caption{Costes totales del proyecto}
+	\label{tab:total}
+\end{table}
 
 \subsection{Viabilidad legal}
 
+KNIME es una herramienta de software libre que puede ser descargada y utilizada gratuitamente bajo los 
+términos de la Licencia Pública General de GNU versión 3 (GPLv3). Hay que tener en cuenta que, aunque la 
+plataforma es gratuita, algunas extensiones de terceros pueden tener licencias específicas y 
+restrictiones de uso. En este proyecto se han utilizado extensiones adicionales de KNIME para 
+definir los workflows de trabajo, pero no se han requerido estas extensiones dentro del código 
+de la extensión y nodos desarrollados, por lo que solo se deben tener en cuenta los términos de la
+ licencia GPLv3 del núcleo de KNIME. 
+
+Adicionalmente se ha incluido código de la aplicación externa UBUMonitor, distribuido bajo licencia MIT. Esta licencia permite, entre 
+otras cosas, la modificación, distribución y uso comercial del código fuente, por lo que el código 
+de UBUMonitor se puede incorporar a nuestro proyecto sin restricciones, pero a su vez sin garantías de ningún tipo. 
 

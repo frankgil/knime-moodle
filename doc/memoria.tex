@@ -1,6 +1,6 @@
 \documentclass[a4paper,12pt,twoside]{memoir}
 
-\setsecnumdepth{subsection}
+\setsecnumdepth{subsubsection}
 
 % Castellano
 \usepackage[spanish,es-tabla]{babel}
@@ -16,6 +16,11 @@
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage[open=true]{bookmark}
+
+
+\usepackage{tocbasic}
+\DeclareTOCStyleEntry[numwidth=3em]{tocline}{figure}% for figure entries
+\DeclareTOCStyleEntry[numwidth=3em]{tocline}{table}% for table entries
 
 \RequirePackage{booktabs}
 \RequirePackage[table]{xcolor}
@@ -35,7 +40,7 @@
 
 % Ecuaciones
 \usepackage{amsmath}
-
+ 
 % Rutas de fichero / paquete
 \newcommand{\ruta}[1]{{\sffamily #1}}
 
@@ -376,18 +381,21 @@
 \newcommand{\titulo}{Plugin Knime para conexión con Moodle}
 \newcommand{\nombretutor}{José Francisco Díez Pastor}
 \newcommand{\nombrecotutor}{César Ignacio García Osorio}
+\newcommand{\fecha}{1 de febrero de 2024}
+
+\setcounter{secnumdepth}{1}
+\setcounter{tocdepth}{1}
 
 % Datos de portada
 \title{\titulo}
 \author{\nombre}
 \tutor{\nombretutor}
 \cotutor{\nombrecotutor}
-\date{\today}
+\date{\fecha}
 
 \begin{document}
 
 \maketitle
-
 
 \newpage\null\thispagestyle{empty}\newpage
 
@@ -423,7 +431,7 @@
 \noindent Y que dicho trabajo ha sido realizado por el alumno bajo la dirección del que suscribe, en virtud de lo cual se autoriza su presentación y defensa.
 
 \begin{center} %\large
-En Burgos, {\large \today}
+En Burgos, {\large \fecha}
 \end{center}
 
 \vfill\vfill\vfill
@@ -446,14 +454,8 @@ D. \nombrecotutor
 
 \vfill
 
-% para casos con solo un tutor comentar lo anterior
-% y descomentar lo siguiente
-%Vº. Bº. del Tutor:\\[2cm]
-%D. nombre tutor
-
 
 \newpage\null\thispagestyle{empty}\newpage
-
 
 
 
@@ -462,12 +464,22 @@ D. \nombrecotutor
 % Abstract en castellano
 \renewcommand*\abstractname{Resumen}
 \begin{abstract}
-TODO: abstract castellano
+
+KNIME es una plataforma de código abierto orientada al análisis de datos que permite, a través de una interfaz intuitiva y visual, 
+crear análisis complejos y flujos de trabajo mediante componentes especializados en diferentes áreas como la minería de datos, 
+el aprendizaje automático o la visualización de datos. Moodle es una plataforma de aprendizaje (Learning Management System) ampliamente 
+utilizada por instituciones educativas de todo el mundo. En este trabajo se han desarrollado nuevos componentes de KNIME que permiten la 
+integración en flujos de trabajo de KNIME de los datos que Moodle va registrando durante la ejecución de una acción formativa. 
+Con un enfoque orientado al rol de profesor, se pretende que cualquier usuario con este rol dentro de una 
+plataforma Moodle, pueda realizar estudios externos sobre los datos de las acciones formativas a las que tiene acceso. 
+Adicionalmente se ha implementado un flujo de trabajo en KNIME sobre datos reales extraidos de Moodle, analizando diferentes 
+técnicas de aprendizaje automático supervisado. 
+
 \end{abstract}
 
 \renewcommand*\abstractname{Descriptores}
 \begin{abstract}
-TODO: descriptores castellano
+Moodle, Knime, ETL, aprendizaje automático, aprendizaje supervisado, Java
 \end{abstract}
 
 \clearpage
@@ -475,15 +487,24 @@ TODO: descriptores castellano
 % Abstract en inglés
 \renewcommand*\abstractname{Abstract}
 \begin{abstract}
-TODO: abstract inglés
+  KNIME is an open source platform oriented to data analysis that allows, through an intuitive and visual interface, the creation of 
+  complex analysis and workflows through specialized components in different areas such as data mining, machine learning or data visualization. 
+  Moodle is a learning platform (Learning Management System) widely used by educational institutions around the world. 
+  In this work we have developed new Knime components that allow the integration of the data recorded by Moodle during the execution of
+   a training action into KNIME workflows. With an approach oriented to the role of teacher, it is intended that any user with this 
+   role within a Moodle platform, can perform external studies on the data of the training actions to which they have access. 
+   In addition, a workflow have been implemented in KNIME on real data extracted from Moodle, analyzing different supervised machine
+    learning techniques.
 \end{abstract}
 
 \renewcommand*\abstractname{Keywords}
 \begin{abstract}
-TODO: descriptores inglés
+  Moodle, Knime, ETL, machine learning, supervised learning, Java
+
 \end{abstract}
 
 \clearpage
+
 
 % Indices
 \tableofcontents
@@ -510,6 +531,8 @@ TODO: descriptores inglés
 \include{./tex/6_Trabajos_relacionados}
 \include{./tex/7_Conclusiones_Lineas_de_trabajo_futuras}
 
+
+\counterwithin{figure}{section}
 
 %\renewcommand\chaptername{Anexo}
 %\renewcommand\thechapter{\Roman{chapter}}

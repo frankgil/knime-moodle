@@ -1,0 +1,76 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: memoria.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: ./tex/1_Introduccion.aux
+Reallocating 'name_of_file' (item size: 1) to 35 items.
+A level-1 auxiliary file: ./tex/2_Objetivos_del_proyecto.aux
+Reallocating 'name_of_file' (item size: 1) to 31 items.
+A level-1 auxiliary file: ./tex/3_Conceptos_teoricos.aux
+Reallocating 'name_of_file' (item size: 1) to 36 items.
+A level-1 auxiliary file: ./tex/4_Tecnicas_y_herramientas.aux
+Reallocating 'name_of_file' (item size: 1) to 60 items.
+A level-1 auxiliary file: ./tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.aux
+Reallocating 'name_of_file' (item size: 1) to 34 items.
+A level-1 auxiliary file: ./tex/6_Trabajos_relacionados.aux
+Reallocating 'name_of_file' (item size: 1) to 51 items.
+A level-1 auxiliary file: ./tex/7_Conclusiones_Lineas_de_trabajo_futuras.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: ./tex/A_Plan_proyecto.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: ./tex/B_Requisitos.aux
+Reallocating 'name_of_file' (item size: 1) to 19 items.
+A level-1 auxiliary file: ./tex/C_Diseno.aux
+Reallocating 'name_of_file' (item size: 1) to 31 items.
+A level-1 auxiliary file: ./tex/D_Manual_programador.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: ./tex/E_Manual_usuario.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: plain.bst
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Database file #1: bibliografia.bib
+Warning--to sort, need author or key in ubumonitor
+Warning--to sort, need author or key in salario
+Warning--to sort, need author or key in seguridad-social
+You've used 7 entries,
+            2118 wiz_defined-function locations,
+            544 strings with 5827 characters,
+and the built_in function-call counts, 1779 in all, are:
+= -- 155
+> -- 103
+< -- 0
++ -- 43
+- -- 36
+* -- 105
+:= -- 284
+add.period$ -- 18
+call.type$ -- 7
+change.case$ -- 39
+chr.to.int$ -- 0
+cite$ -- 10
+duplicate$ -- 49
+empty$ -- 158
+format.name$ -- 36
+if$ -- 379
+int.to.chr$ -- 0
+int.to.str$ -- 7
+missing$ -- 0
+newline$ -- 35
+num.names$ -- 8
+pop$ -- 70
+preamble$ -- 1
+purify$ -- 32
+quote$ -- 0
+skip$ -- 52
+stack$ -- 0
+substring$ -- 35
+swap$ -- 7
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 28
+warning$ -- 3
+while$ -- 8
+width$ -- 8
+write$ -- 63
+(There were 3 warnings)
