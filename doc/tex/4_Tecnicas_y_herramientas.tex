@@ -14,14 +14,14 @@ otros lenguajes de programación. Eclipse permite gestionar proyectos Java, edit
 \
 
 Los nodos de KNIME se desarrollan en Java utilizando el IDE de programación Eclipse. KNIME nos facilita instrucciones de 
-instalaciónd el entorno de desarrollo con Eclipse para desarrollar nuestros nodos personalizados. 
+instalación del entorno de desarrollo con Eclipse para desarrollar nuestros nodos personalizados. 
 
 
 \subsection{KNIME SDK}
 
 
-\href{https://github.com/knime/knime-sdk-setup}{KNIME SDK} (Software Development Kit) es el conjunto de herramientas facilitadas por KNIME que nos permiten desarrollar 
-extensiones y nodos personalizados que pueden intergrarse en los flujos de trabajo de KNIME.
+\href{https://github.com/knime/knime-sdk-setup}{KNIME SDK} (\english{Software Development Kit}) es el conjunto de herramientas facilitadas por KNIME que nos permiten desarrollar 
+extensiones y nodos personalizados que pueden integrarse en los flujos de trabajo de KNIME.
 \
 
 KNIME SDK se integra con Eclipse para desarrollar componentes de KNIME. 
@@ -29,7 +29,7 @@ KNIME SDK se integra con Eclipse para desarrollar componentes de KNIME.
 
 \subsection{Bitnami LMS Virtual Machine}
 
-\href{https://bitnami.com/}{Bitnami} es una empresa especializada en la creación de stacks de aplicaciones, 
+\href{https://bitnami.com/}{Bitnami} es una empresa especializada en la creación de \english{stacks} de aplicaciones, 
 que son entornos de aplicaciones preconfigurados para facilitar la instalación y puesta en marcha de una aplicación junto 
 con todas sus dependencias. 
 \
@@ -44,8 +44,8 @@ En este proyecto se ha utilizado la versión en Máquina Virtual (formato OVA) c
 
 \subsection{VirtualBox}
 
-\href{https://www.virtualbox.org/}{VirtualBox} es un software de virtualización de código abierto que permite ejecutar máquinas 
-virtuales en cualquier sistema operativo. En este proyecto se ha utilizado VirtualBox 6.1 para ejectuar la máquina virtual 
+\href{https://www.virtualbox.org/}{VirtualBox} es un software de código abierto para la virtualización de sistemas, que permite ejecutar máquinas 
+virtuales en cualquier sistema operativo. En este proyecto se ha utilizado VirtualBox 6.1 para ejecutar la máquina virtual 
 facilitada por Bitnami LMS y disponer así de una instancia completamente funcional de Moodle en el equipo local. 
 
 
@@ -59,7 +59,7 @@ facilitada por Bitnami LMS y disponer así de una instancia completamente funcio
 \subsection{GitHub}
 
 \href{https://github.com/}{GitHub} es una plataforma de desarrollo de software en la nube que utiliza Git como sistema de control 
-de versiones. GitHub permite a los desarroladores colaborar en proyectos de programación, alojando y gestionando sus repositorios de 
+de versiones. GitHub permite a los desarrolladores colaborar en proyectos de programación, alojando y gestionando sus repositorios de 
 código fuente. En este proyecto se ha usado GitHub para almacenar el código fuente tanto de la aplicación desarrollada como de la memoria. 
 
 \newpage
@@ -74,7 +74,7 @@ han implementado en Java.
 \
 
 \href{https://www.java.com/}{Java} es un lenguaje de programación muy extendido que se caracteriza por su programación orientada a objetos y su portabilidad. Las 
-aplicaciones JAVA se compilan y pueden ser utilizadas en cualquier plataforma o sistema operativo que disponga de la Máquina 
+aplicaciones Java se compilan y pueden ser utilizadas en cualquier plataforma o sistema operativo que disponga de la Máquina 
 Virtual Java (JVM).
 
 \subsection{Moodle API}
@@ -88,19 +88,20 @@ web de Moodle puede consultarse en este enlace (\href{https://docs.moodle.org/de
 El código del núcleo de KNIME y de otras extensiones está disponible en el \href{https://github.com/knime/}{repositorio de KNIME en GitHub} para poder ser reutilizado en nuevos desarrollos de extensiones
 de KNIME. 
 
-\subsection{Librerías externas}
+\subsection{Bibliotecas externas}
 
-Algunas librerías externas que se han incorporado al proyecto son: 
+Algunas bibliotecas externas que se han incorporado al proyecto son: 
 
 \subsubsection{UBUMonitor}
 
 \href{https://github.com/yjx0003/UBUMonitor}{UBUMonitor} es una herramienta implementada en Java que permite que los usuarios con 
-rol de profesor puedan monitorización a sus alumnos en plataformas LSM Moodle. 
+rol de profesor puedan monitorización a sus alumnos en plataformas LSM Moodle. En este proyecto se han incorporado las clases de \english{login} y
+ extracción de \english{logs} que implementa UBUMonitor.
 
 \subsubsection{Data Faker}
 
-\href{https://www.datafaker.net/}{Data Faker} es una librería para Java que permite crear datos falsos para pruebas en aplicaciones JVM. 
-
+\href{https://www.datafaker.net/}{Data Faker} es una librería para Java que permite crear datos falsos para pruebas en aplicaciones JVM. Se ha
+ utilizado esta librería para anonimizar el nombre y apellidos de los alumnos. 
 
 
 \newpage
@@ -112,10 +113,10 @@ En el desarrollo de la Memoria del proyecto se han utilizado las siguientes herr
 
 \href{https://code.visualstudio.com/}{Visual Studio Code}, también conocido como VS Code, es un editor de código fuente gratuito y de código abierto
  desarrollado por Microsoft. VS Code se puede extender fácilmente instalando extensiones adicionales, lo que permite que pueda ser utilizado para una
-  amplia variedad de lenguajes de programación. En este proyecto se ha utilizado VS Code para trabajar con LaTeX.
+  amplia variedad de lenguajes de programación. En este proyecto se ha utilizado VS Code para trabajar con \LaTeX.
 
-\subsection{LaTeX}
+\subsection{\LaTeX}
 
-\href{https://www.latex-project.org/}{LaTeX} es un sistema que permite crear documentos estructurados a partir de comandos y etiquetas. 
-LaTeX produce documentos con un formato profesional, lo que lo hace ideal para desarrollar tesis, artículos académicos, informes técnicos, etc.
+\href{https://www.latex-project.org/}{\LaTeX} es un sistema que permite crear documentos estructurados a partir de comandos y etiquetas. 
+\LaTeX produce documentos con un formato profesional, lo que lo hace ideal para desarrollar tesis, artículos académicos, informes técnicos, etc.
 

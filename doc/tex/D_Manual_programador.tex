@@ -1,4 +1,5 @@
 \apendice{Documentación técnica de programación}
+\label{sec:appendixD}
 
 \section{Introducción}
 
@@ -83,9 +84,9 @@ del proyecto en Eclipse, que se pueden consultar directamente en el repositorio 
 
 
 
-\subsection{Entorno de desarrollo con Eclipse y Knime SDK}
+\subsection{Entorno de desarrollo con Eclipse y KNIME SDK}
 
-Los nodos de Knime se desarrollan en Java utilizando el IDE de programación Eclipse. Aunque desde la versión 4.6 también se permite
+Los nodos de KNIME se desarrollan en Java utilizando el IDE de programación Eclipse. Aunque desde la versión 4.6 también se permite
  la implementación de nodos totalmente programados en Python, en este proyecto los nodos se han implementado en Java para la versión KNIME 4.7.x. 
 \
 
@@ -98,18 +99,18 @@ Los pasos que tendremos que seguir son:
 
 \begin{enumerate}
 	\item Instalación de Java 17 (OpenJDK 17). Esta versión puede variar para futuras versiones de KNIME. 
-	\item Instalar Eclipse. Debemos instalar la versión "Eclipse for RCP and RAP Developers 2022-06", que es la que se corresponde a KNIME 4.7.x. 
+	\item Instalar Eclipse. Debemos instalar la versión <<Eclipse for RCP and RAP Developers 2022-06>>, que es la que se corresponde a KNIME 4.7.x. 
   Esta versión varía en función de la versión de KNIME en la que vayamos a trabajar. 
 	\item Instalar Git. 
-	\item Descargar Knime SDK y configurar eclipse. Siguiendo las instrucciones correspondientes, indicaremos cuál es la plataforma objetivo activa, de forma 
+	\item Descargar KNIME SDK y configurar eclipse. Siguiendo las instrucciones correspondientes, indicaremos cuál es la plataforma objetivo activa, de forma 
   que Eclipse pueda ejecutar KNIME y desplegar la extensión desarrollada. 
-  \item Ejecutar KNIME desde KNIME Analytics Platform.launch -> Run as -> Knime Analytics Platform. 
+  \item Ejecutar KNIME desde KNIME Analytics Platform.launch $\triangleright$ Run as $\triangleright$ KNIME Analytics Platform. 
 \end{enumerate}  
 
 
 \subsection{Instalación y compilación de la extensión KNIME Moodle Integration}
 
-Por último, necesitamos incorporar la extensión knime-moodle-integration importando el proyecto desde el repositorio. 
+Por último, necesitamos incorporar la extensión \node{knime-moodle-integration} importando el proyecto desde el repositorio. 
 \
 
 
@@ -117,8 +118,5 @@ Por último, necesitamos incorporar la extensión knime-moodle-integration impor
 \section{Desarrollo de nuevos nodos}
 
 Las instrucciones previas nos sirven para montar un entorno de desarrollo para trabajar con la extensión desarrollada en este proyecto. Si se desea implementar una nueva extensión, 
-se recomienda seguir las intrucciones que KNIME nos facilita mediante la implementación de un nodo de Ejemplo: 
-
-\url{https://docs.knime.com/latest/analytics_platform_new_node_quickstart_guide/index.html#_introduction}
-
+se recomienda seguir las instrucciones que KNIME nos facilita mediante la \href{https://docs.knime.com/latest/analytics_platform_new_node_quickstart_guide/index.html\#_introduction}{implementación de un nodo de ejemplo}. 
 

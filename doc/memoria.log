@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.20)  25 OCT 2023 08:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.20)  13 NOV 2023 13:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -343,6 +343,14 @@ Package: babel 2022/02/26 3.73 The Babel package
 *
 (C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Program Files\MiKTeX\tex/latex/babel-english\english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language76). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language76). Reported on input line 108.
 ) (C:\Program Files\MiKTeX\tex/latex/babel-spanish\spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks24
@@ -571,7 +579,10 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 ) (C:\Program Files\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 \BKM@id=\count339
-)) (C:\Program Files\MiKTeX\tex/latex/koma-script\tocbasic.sty
+)) (C:\Program Files\MiKTeX\tex/latex/bigfoot\perpage.sty
+Package: perpage 2014/10/25 2.0 Reset/sort counters per page
+\c@abspage=\count340
+) (C:\Program Files\MiKTeX\tex/latex/koma-script\tocbasic.sty
 Package: tocbasic 2021/11/13 v3.35 KOMA-Script package (handling toc-files)
  (C:\Program Files\MiKTeX\tex/latex/koma-script\scrbase.sty
 Package: scrbase 2021/11/13 v3.35 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
@@ -603,7 +614,7 @@ Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks30
 \minrowclearance=\skip196
 )
-\rownum=\count340
+\rownum=\count341
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
 Package xcolor Info: Model `RGB' extended on input line 1368.
@@ -615,18 +626,18 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 ) (C:\Program Files\MiKTeX\tex/latex/xtab\xtab.sty
 Package: xtab 2011/07/31 v2.3f Extended supertabular package
-\c@tracingst=\count341
+\c@tracingst=\count342
 \PWSTcapht=\dimen259
 \ST@wd=\dimen260
 \ST@rightskip=\skip197
 \ST@leftskip=\skip198
 \ST@parfillskip=\skip199
-\c@PWSTtable=\count342
-\PWSTlastpage=\count343
-\PWSTpenultimate=\count344
-\PWSTcurpage=\count345
-\PWSTtempc=\count346
-\PWSTlines=\count347
+\c@PWSTtable=\count343
+\PWSTlastpage=\count344
+\PWSTpenultimate=\count345
+\PWSTcurpage=\count346
+\PWSTtempc=\count347
+\PWSTlines=\count348
 \PWST@lastht=\dimen261
 \PWST@generalht=\dimen262
 \PWST@ht=\dimen263
@@ -644,10 +655,12 @@ Package: xtab 2011/07/31 v2.3f Extended supertabular package
 ) (C:\Program Files\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip256
-\multirow@cntb=\count348
+\multirow@cntb=\count349
 \multirow@dima=\skip257
 \bigstrutjot=\dimen274
-) (C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 39.
+ (C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
 \@mathmargin=\skip258
 
@@ -664,13 +677,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2021/08/26 v2.02 operator names
 )
-\inf@bad=\count349
+\inf@bad=\count350
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count350
-\leftroot@=\count351
+\uproot@=\count351
+\leftroot@=\count352
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count352
-\DOTSCASE@=\count353
+\classnum@=\count353
+\DOTSCASE@=\count354
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -679,15 +692,15 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen277
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count354
-\c@MaxMatrixCols=\count355
+\macc@depth=\count355
+\c@MaxMatrixCols=\count356
 \dotsspace@=\muskip17
-\c@parentequation=\count356
-\dspbrk@lvl=\count357
+\c@parentequation=\count357
+\dspbrk@lvl=\count358
 \tag@help=\toks32
-\row@=\count358
-\column@=\count359
-\maxfields@=\count360
+\row@=\count359
+\column@=\count360
+\maxfields@=\count361
 \andhelp@=\toks33
 \eqnshift@=\dimen278
 \alignsep@=\dimen279
@@ -715,12 +728,13 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \Gin@req@height=\dimen284
 \Gin@req@width=\dimen285
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 396.
+\c@pp@a@footnote=\count362
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 417.
  (C:\Program Files\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count361
+\l__color_backend_stack_int=\count363
 \l__pdf_internal_box=\box62
 ) (memoria.aux
 LaTeX Info: Redefining \. on input line 27.
@@ -730,46 +744,46 @@ LaTeX Info: Redefining \% on input line 28.
  (tex/1_Introduccion.aux) (tex/2_Objetivos_del_proyecto.aux) (tex/3_Conceptos_teoricos.aux) (tex/4_Tecnicas_y_herramientas.aux) (tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.aux) (tex/6_Trabajos_relacionados.aux) (tex/7_Conclusiones_Lineas_de_trabajo_futuras.aux) (tex/A_Plan_proyecto.aux) (tex/B_Requisitos.aux) (tex/C_Diseno.aux) (tex/D_Manual_programador.aux) (tex/E_Manual_usuario.aux))
 \openout1 = `memoria.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 396.
-LaTeX Font Info:    ... okay on input line 396.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 396.
-LaTeX Font Info:    ... okay on input line 396.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 396.
-LaTeX Font Info:    ... okay on input line 396.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 396.
-LaTeX Font Info:    ... okay on input line 396.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 396.
-LaTeX Font Info:    ... okay on input line 396.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 396.
-LaTeX Font Info:    ... okay on input line 396.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 396.
-LaTeX Font Info:    ... okay on input line 396.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 396.
-LaTeX Font Info:    ... okay on input line 396.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 396.
-LaTeX Font Info:    ... okay on input line 396.
-LaTeX Info: Redefining \. on input line 396.
-LaTeX Info: Redefining \% on input line 396.
-LaTeX Info: Redefining \microtypecontext on input line 396.
-Package microtype Info: Applying patch `item' on input line 396.
-Package microtype Info: Applying patch `toc' on input line 396.
-Package microtype Info: Applying patch `eqnum' on input line 396.
-Package microtype Info: Applying patch `footnote' on input line 396.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 417.
+LaTeX Font Info:    ... okay on input line 417.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 417.
+LaTeX Font Info:    ... okay on input line 417.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 417.
+LaTeX Font Info:    ... okay on input line 417.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 417.
+LaTeX Font Info:    ... okay on input line 417.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 417.
+LaTeX Font Info:    ... okay on input line 417.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 417.
+LaTeX Font Info:    ... okay on input line 417.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 417.
+LaTeX Font Info:    ... okay on input line 417.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 417.
+LaTeX Font Info:    ... okay on input line 417.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 417.
+LaTeX Font Info:    ... okay on input line 417.
+LaTeX Info: Redefining \. on input line 417.
+LaTeX Info: Redefining \% on input line 417.
+LaTeX Info: Redefining \microtypecontext on input line 417.
+Package microtype Info: Applying patch `item' on input line 417.
+Package microtype Info: Applying patch `toc' on input line 417.
+Package microtype Info: Applying patch `eqnum' on input line 417.
+Package microtype Info: Applying patch `footnote' on input line 417.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 396.
+LaTeX Info: Redefining \showhyphens on input line 417.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
  (C:\Program Files\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-\c@lstlisting=\count362
-Package hyperref Info: Link coloring OFF on input line 396.
+\c@lstlisting=\count364
+Package hyperref Info: Link coloring ON on input line 417.
  (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (C:\Program Files\MiKTeX\tex/latex/refcount\refcount.sty
@@ -777,26 +791,26 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count363
+\c@section@level=\count365
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 396.
-LaTeX Info: Redefining \ref on input line 396.
-LaTeX Info: Redefining \pageref on input line 396.
-LaTeX Info: Redefining \nameref on input line 396.
+LaTeX Info: Redefining \nameref on input line 417.
+LaTeX Info: Redefining \ref on input line 417.
+LaTeX Info: Redefining \pageref on input line 417.
+LaTeX Info: Redefining \nameref on input line 417.
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count364
+\scratchcounter=\count366
 \scratchdimen=\dimen286
 \scratchbox=\box63
-\nofMPsegments=\count365
-\nofMParguments=\count366
+\nofMPsegments=\count367
+\nofMParguments=\count368
 \everyMPshowfont=\toks36
-\MPscratchCnt=\count367
+\MPscratchCnt=\count369
 \MPscratchDim=\dimen287
-\MPnumerator=\count368
-\makeMPintoPDFobject=\count369
+\MPnumerator=\count370
+\makeMPintoPDFobject=\count371
 \everyMPtoPDFconversion=\toks37
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -807,40 +821,40 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 <img/escudoUBU.pdf, id=3, 98.2805pt x 163.92221pt>
 File: img/escudoUBU.pdf Graphic file (type pdf)
 <use img/escudoUBU.pdf>
-Package pdftex.def Info: img/escudoUBU.pdf  used on input line 398.
+Package pdftex.def Info: img/escudoUBU.pdf  used on input line 419.
 (pdftex.def)             Requested size: 51.17813pt x 85.35826pt.
 <img/escudoUVA.png, id=4, 401.5pt x 401.5pt>
 File: img/escudoUVA.png Graphic file (type png)
 <use img/escudoUVA.png>
-Package pdftex.def Info: img/escudoUVA.png  used on input line 398.
+Package pdftex.def Info: img/escudoUVA.png  used on input line 419.
 (pdftex.def)             Requested size: 85.35896pt x 85.35826pt.
 <img/escudoULE.pdf, id=6, 212.795pt x 389.455pt>
 File: img/escudoULE.pdf Graphic file (type pdf)
 <use img/escudoULE.pdf>
-Package pdftex.def Info: img/escudoULE.pdf  used on input line 398.
+Package pdftex.def Info: img/escudoULE.pdf  used on input line 419.
 (pdftex.def)             Requested size: 46.63644pt x 85.35826pt.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 398.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 419.
  (C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 398.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 419.
  (C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 398.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 419.
  (C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 398.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 419.
  (C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 398.
+(Font)              <12> on input line 419.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 398.
+(Font)              <8> on input line 419.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 398.
+(Font)              <6> on input line 419.
  [1
 
 {C:/Users/frank/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./img/escudoUBU.pdf> <./img/escudoUVA.png> <./img/escudoULE.pdf
@@ -851,17 +865,17 @@ pdfTeX warning: pdflatex (file ./img/escudoULE.pdf): PDF inclusion: multiple pdf
 ] [3]
 File: img/escudoUBU.pdf Graphic file (type pdf)
 <use img/escudoUBU.pdf>
-Package pdftex.def Info: img/escudoUBU.pdf  used on input line 412.
+Package pdftex.def Info: img/escudoUBU.pdf  used on input line 433.
 (pdftex.def)             Requested size: 51.17813pt x 85.35826pt.
 File: img/escudoUVA.png Graphic file (type png)
 <use img/escudoUVA.png>
-Package pdftex.def Info: img/escudoUVA.png  used on input line 413.
+Package pdftex.def Info: img/escudoUVA.png  used on input line 434.
 (pdftex.def)             Requested size: 85.35896pt x 85.35826pt.
 File: img/escudoULE.pdf Graphic file (type pdf)
 <use img/escudoULE.pdf>
-Package pdftex.def Info: img/escudoULE.pdf  used on input line 414.
+Package pdftex.def Info: img/escudoULE.pdf  used on input line 435.
 (pdftex.def)             Requested size: 46.63644pt x 85.35826pt.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 442.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 463.
  (C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [4] [5] [6
@@ -873,7 +887,7 @@ Package microtype Info: Character `029' is missing
  [1] [2
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 511.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 535.
  (C:\Program Files\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -900,14 +914,14 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 [3
 
 ])
-LaTeX Info: Redefining \. on input line 512.
-LaTeX Info: Redefining \% on input line 512.
+LaTeX Info: Redefining \. on input line 537.
+LaTeX Info: Redefining \% on input line 537.
 
 
 Class memoir Warning: The material used in the headers is too large
 (15.35403pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 512.
+(in both cases you will find help in the memoir manual). on input line 537.
 
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
@@ -964,8 +978,8 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 48.
 Package tocbasic Info: Using my definition of `\numberline' on input line 49.
 Package tocbasic Info: Using my definition of `\numberline' on input line 50.
 )
-LaTeX Info: Redefining \. on input line 516.
-LaTeX Info: Redefining \% on input line 516.
+LaTeX Info: Redefining \. on input line 544.
+LaTeX Info: Redefining \% on input line 544.
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
@@ -991,14 +1005,14 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 13.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.524 \part*{Memoria}
+l.556 \part*{Memoria}
                       [1
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.524 \part*{Memoria}
+l.556 \part*{Memoria}
                       [2]
 \openout2 = `./tex/1_Introduccion.aux'.
 
@@ -1021,14 +1035,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has b
 <to be read again> 
                    \relax 
 l.46 \end{enumerate}
-                     [4])
-LaTeX Info: Redefining \. on input line 526.
-LaTeX Info: Redefining \% on input line 526.
+                     [4]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 61.
+)
+LaTeX Info: Redefining \. on input line 558.
+LaTeX Info: Redefining \% on input line 558.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.526 \include{./tex/1_Introduccion}
+l.558 \include{./tex/1_Introduccion}
                                      [5]
 \openout2 = `./tex/2_Objetivos_del_proyecto.aux'.
 
@@ -1043,13 +1060,13 @@ l.1 \capitulo{2}{Objetivos del proyecto}
 
 
 ] [7])
-LaTeX Info: Redefining \. on input line 527.
-LaTeX Info: Redefining \% on input line 527.
+LaTeX Info: Redefining \. on input line 559.
+LaTeX Info: Redefining \% on input line 559.
  [8]
 \openout2 = `./tex/3_Conceptos_teoricos.aux'.
 
  (tex/3_Conceptos_teoricos.tex
-<img/3_ejemplo_workflow_knime.png, id=328, 1014.03844pt x 693.34032pt>
+<img/3_ejemplo_workflow_knime.png, id=337, 1014.03844pt x 693.34032pt>
 File: img/3_ejemplo_workflow_knime.png Graphic file (type png)
 <use img/3_ejemplo_workflow_knime.png>
 Package pdftex.def Info: img/3_ejemplo_workflow_knime.png  used on input line 12.
@@ -1073,8 +1090,8 @@ LaTeX Info: Redefining \% on input line 69.
 LaTeX Info: Redefining \. on input line 104.
 LaTeX Info: Redefining \% on input line 104.
  [12])
-LaTeX Info: Redefining \. on input line 528.
-LaTeX Info: Redefining \% on input line 528.
+LaTeX Info: Redefining \. on input line 560.
+LaTeX Info: Redefining \% on input line 560.
  [13]
 \openout2 = `./tex/4_Tecnicas_y_herramientas.aux'.
 
@@ -1087,15 +1104,21 @@ LaTeX Info: Redefining \% on input line 528.
 LaTeX Info: Redefining \. on input line 65.
 LaTeX Info: Redefining \% on input line 65.
  [16]
-LaTeX Info: Redefining \. on input line 106.
-LaTeX Info: Redefining \% on input line 106.
- [17])
-LaTeX Info: Redefining \. on input line 529.
-LaTeX Info: Redefining \% on input line 529.
+LaTeX Info: Redefining \. on input line 65.
+LaTeX Info: Redefining \% on input line 65.
+ [17]
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
  [18]
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
+ [19])
+LaTeX Info: Redefining \. on input line 561.
+LaTeX Info: Redefining \% on input line 561.
+ [20]
 \openout2 = `./tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.aux'.
 
- (tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex [19
+ (tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex [21
 
 
 
@@ -1103,440 +1126,27 @@ LaTeX Info: Redefining \% on input line 529.
 ]
 LaTeX Info: Redefining \. on input line 66.
 LaTeX Info: Redefining \% on input line 66.
- [20]
+ [22]
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+[][] [][][][][]$\T1/lmss/m/n/10 (+20) https : / / docs . knime . com / latest / analytics _ platform _ new _ node _ quickstart _ guide /
+ []
+
 LaTeX Info: Redefining \. on input line 102.
 LaTeX Info: Redefining \% on input line 102.
- [21]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 135.
-LaTeX Info: Redefining \% on input line 135.
- [22]
+[23]
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
+ [24]
 LaTeX Info: Redefining \. on input line 144.
 LaTeX Info: Redefining \% on input line 144.
- [23]
+ [25]
 LaTeX Info: Redefining \. on input line 172.
 LaTeX Info: Redefining \% on input line 172.
- [24]
+ [26]
 LaTeX Info: Redefining \. on input line 213.
 LaTeX Info: Redefining \% on input line 213.
- [25]
-LaTeX Info: Redefining \. on input line 249.
-LaTeX Info: Redefining \% on input line 249.
- [26]
-LaTeX Info: Redefining \. on input line 252.
-LaTeX Info: Redefining \% on input line 252.
  [27]
-LaTeX Info: Redefining \. on input line 286.
-LaTeX Info: Redefining \% on input line 286.
- [28]
-<img/workflow0.png, id=484, 481.04718pt x 575.90157pt>
-File: img/workflow0.png Graphic file (type png)
-<use img/workflow0.png>
-Package pdftex.def Info: img/workflow0.png  used on input line 314.
-(pdftex.def)             Requested size: 383.0pt x 458.53378pt.
-LaTeX Info: Redefining \. on input line 318.
-LaTeX Info: Redefining \% on input line 318.
- [29]
-<img/workflow1.png, id=492, 879.285pt x 865.73438pt>
-File: img/workflow1.png Graphic file (type png)
-<use img/workflow1.png>
-Package pdftex.def Info: img/workflow1.png  used on input line 324.
-(pdftex.def)             Requested size: 383.0pt x 377.0934pt.
-LaTeX Info: Redefining \. on input line 328.
-LaTeX Info: Redefining \% on input line 328.
- [30 <./img/workflow0.png>]
-<img/workflow1a.png, id=498, 733.99219pt x 303.38344pt>
-File: img/workflow1a.png Graphic file (type png)
-<use img/workflow1a.png>
-Package pdftex.def Info: img/workflow1a.png  used on input line 335.
-(pdftex.def)             Requested size: 383.0pt x 158.31117pt.
-LaTeX Info: Redefining \. on input line 339.
-LaTeX Info: Redefining \% on input line 339.
- [31 <./img/workflow1.png>]
-<img/workflow2.png, id=504, 947.79094pt x 364.36125pt>
-File: img/workflow2.png Graphic file (type png)
-<use img/workflow2.png>
-Package pdftex.def Info: img/workflow2.png  used on input line 358.
-(pdftex.def)             Requested size: 383.0pt x 147.23747pt.
-LaTeX Info: Redefining \. on input line 362.
-LaTeX Info: Redefining \% on input line 362.
- [32 <./img/workflow1a.png>]
-<img/workflow3.png, id=510, 671.50874pt x 555.57562pt>
-File: img/workflow3.png Graphic file (type png)
-<use img/workflow3.png>
-Package pdftex.def Info: img/workflow3.png  used on input line 368.
-(pdftex.def)             Requested size: 383.0pt x 316.87636pt.
-LaTeX Info: Redefining \. on input line 372.
-LaTeX Info: Redefining \% on input line 372.
- [33 <./img/workflow2.png>]
-<img/workflow4.png, id=516, 1297.84875pt x 577.40718pt>
-File: img/workflow4.png Graphic file (type png)
-<use img/workflow4.png>
-Package pdftex.def Info: img/workflow4.png  used on input line 382.
-(pdftex.def)             Requested size: 383.0pt x 170.3865pt.
-LaTeX Info: Redefining \. on input line 386.
-LaTeX Info: Redefining \% on input line 386.
- [34 <./img/workflow3.png>]
-<img/workflowA1.png, id=523, 940.26282pt x 173.89969pt>
-File: img/workflowA1.png Graphic file (type png)
-<use img/workflowA1.png>
-Package pdftex.def Info: img/workflowA1.png  used on input line 398.
-(pdftex.def)             Requested size: 383.0pt x 70.83496pt.
-<img/workflowA3.png, id=525, 1458.19781pt x 683.55376pt>
-File: img/workflowA3.png Graphic file (type png)
-<use img/workflowA3.png>
-Package pdftex.def Info: img/workflowA3.png  used on input line 412.
-(pdftex.def)             Requested size: 383.0pt x 179.53464pt.
-LaTeX Info: Redefining \. on input line 416.
-LaTeX Info: Redefining \% on input line 416.
- [35 <./img/workflow4.png> <./img/workflowA1.png>]
-<img/workflowA2.png, id=533, 822.07124pt x 961.34157pt>
-File: img/workflowA2.png Graphic file (type png)
-<use img/workflowA2.png>
-Package pdftex.def Info: img/workflowA2.png  used on input line 432.
-(pdftex.def)             Requested size: 383.0pt x 447.88467pt.
-LaTeX Info: Redefining \. on input line 436.
-LaTeX Info: Redefining \% on input line 436.
- [36 <./img/workflowA3.png>]
-<img/workflowA4.png, id=539, 996.72375pt x 564.60938pt>
-File: img/workflowA4.png Graphic file (type png)
-<use img/workflowA4.png>
-Package pdftex.def Info: img/workflowA4.png  used on input line 443.
-(pdftex.def)             Requested size: 383.0pt x 216.94882pt.
-LaTeX Info: Redefining \. on input line 447.
-LaTeX Info: Redefining \% on input line 447.
- [37 <./img/workflowA2.png>]
-<img/workflowB1.png, id=547, 948.54375pt x 133.24782pt>
-File: img/workflowB1.png Graphic file (type png)
-<use img/workflowB1.png>
-Package pdftex.def Info: img/workflowB1.png  used on input line 459.
-(pdftex.def)             Requested size: 383.0pt x 53.8024pt.
-<img/workflowB2.png, id=549, 1037.37563pt x 827.34094pt>
-File: img/workflowB2.png Graphic file (type png)
-<use img/workflowB2.png>
-Package pdftex.def Info: img/workflowB2.png  used on input line 469.
-(pdftex.def)             Requested size: 383.0pt x 305.4549pt.
-LaTeX Info: Redefining \. on input line 473.
-LaTeX Info: Redefining \% on input line 473.
- [38 <./img/workflowA4.png> <./img/workflowB1.png>]
-<img/workflowB3.png, id=557, 886.06032pt x 539.01375pt>
-File: img/workflowB3.png Graphic file (type png)
-<use img/workflowB3.png>
-Package pdftex.def Info: img/workflowB3.png  used on input line 479.
-(pdftex.def)             Requested size: 383.0pt x 232.98863pt.
-LaTeX Info: Redefining \. on input line 483.
-LaTeX Info: Redefining \% on input line 483.
- [39 <./img/workflowB2.png>]
-<img/workflowC1.png, id=563, 939.51pt x 287.57437pt>
-File: img/workflowC1.png Graphic file (type png)
-<use img/workflowC1.png>
-Package pdftex.def Info: img/workflowC1.png  used on input line 491.
-(pdftex.def)             Requested size: 383.0pt x 117.2305pt.
-<img/workflowC2.png, id=565, 715.17188pt x 132.495pt>
-File: img/workflowC2.png Graphic file (type png)
-<use img/workflowC2.png>
-Package pdftex.def Info: img/workflowC2.png  used on input line 502.
-(pdftex.def)             Requested size: 383.0pt x 70.95589pt.
-LaTeX Info: Redefining \. on input line 506.
-LaTeX Info: Redefining \% on input line 506.
- [40 <./img/workflowB3.png> <./img/workflowC1.png>]
-<img/workflowC3.png, id=572, 876.27374pt x 367.3725pt>
-File: img/workflowC3.png Graphic file (type png)
-<use img/workflowC3.png>
-Package pdftex.def Info: img/workflowC3.png  used on input line 513.
-(pdftex.def)             Requested size: 383.0pt x 160.5737pt.
-)
-LaTeX Info: Redefining \. on input line 530.
-LaTeX Info: Redefining \% on input line 530.
- [41 <./img/workflowC2.png> <./img/workflowC3.png>]
-\openout2 = `./tex/6_Trabajos_relacionados.aux'.
-
- (tex/6_Trabajos_relacionados.tex [42
-
-
-
-
-]) [43]
-\openout2 = `./tex/7_Conclusiones_Lineas_de_trabajo_futuras.aux'.
-
- (tex/7_Conclusiones_Lineas_de_trabajo_futuras.tex [44
-
-
-
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [45]
-LaTeX Info: Redefining \. on input line 57.
-LaTeX Info: Redefining \% on input line 57.
- [46]
-LaTeX Info: Redefining \. on input line 91.
-LaTeX Info: Redefining \% on input line 91.
- [47])
-LaTeX Info: Redefining \. on input line 532.
-LaTeX Info: Redefining \% on input line 532.
- [48] [49
-
-
-
-] [50]
-\openout2 = `./tex/A_Plan_proyecto.aux'.
-
- (tex/A_Plan_proyecto.tex
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 1.
- [51
-
-
-]
-LaTeX Info: Redefining \. on input line 73.
-LaTeX Info: Redefining \% on input line 73.
- [52]
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
- [53]
-LaTeX Info: Redefining \. on input line 165.
-LaTeX Info: Redefining \% on input line 165.
- [54]
-LaTeX Info: Redefining \. on input line 191.
-LaTeX Info: Redefining \% on input line 191.
- [55]
-
-LaTeX Warning: Command \' invalid in math mode on input line 227.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 227.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 238.
-
-LaTeX Info: Redefining \. on input line 239.
-LaTeX Info: Redefining \% on input line 239.
-[56])
-LaTeX Info: Redefining \. on input line 546.
-LaTeX Info: Redefining \% on input line 546.
- [57]
-\openout2 = `./tex/B_Requisitos.aux'.
-
- (tex/B_Requisitos.tex [58
-
-
-
-
-] [59])
-LaTeX Info: Redefining \. on input line 547.
-LaTeX Info: Redefining \% on input line 547.
- [60]
-\openout2 = `./tex/C_Diseno.aux'.
-
- (tex/C_Diseno.tex
-<img/nodes_moodle_todos.png, id=709, 1117.17375pt x 414.54875pt>
-File: img/nodes_moodle_todos.png Graphic file (type png)
-<use img/nodes_moodle_todos.png>
-Package pdftex.def Info: img/nodes_moodle_todos.png  used on input line 26.
-(pdftex.def)             Requested size: 383.0pt x 142.12125pt.
- [61
-
-
-
-
-]
-LaTeX Info: Redefining \. on input line 35.
-LaTeX Info: Redefining \% on input line 35.
- [62 <./img/nodes_moodle_todos.png>]
-<img/nodes_moodle_connector.png, id=718, 677.53125pt x 309.155pt>
-File: img/nodes_moodle_connector.png Graphic file (type png)
-<use img/nodes_moodle_connector.png>
-Package pdftex.def Info: img/nodes_moodle_connector.png  used on input line 63.
-(pdftex.def)             Requested size: 383.0pt x 174.76724pt.
-<img/nodes_moodle_connector_settings.png, id=719, 484.81125pt x 234.37563pt>
-File: img/nodes_moodle_connector_settings.png Graphic file (type png)
-<use img/nodes_moodle_connector_settings.png>
-Package pdftex.def Info: img/nodes_moodle_connector_settings.png  used on input line 80.
-(pdftex.def)             Requested size: 383.0pt x 185.16542pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-LaTeX Info: Redefining \. on input line 84.
-LaTeX Info: Redefining \% on input line 84.
-[63 <./img/nodes_moodle_connector.png>]
-LaTeX Info: Redefining \. on input line 88.
-LaTeX Info: Redefining \% on input line 88.
- [64 <./img/nodes_moodle_connector_settings.png>]
-<img/nodes_moodle_courses.png, id=729, 662.475pt x 352.81813pt>
-File: img/nodes_moodle_courses.png Graphic file (type png)
-<use img/nodes_moodle_courses.png>
-Package pdftex.def Info: img/nodes_moodle_courses.png  used on input line 116.
-(pdftex.def)             Requested size: 383.0pt x 203.97786pt.
-LaTeX Info: Redefining \. on input line 128.
-LaTeX Info: Redefining \% on input line 128.
- [65 <./img/nodes_moodle_courses.png>]
-<img/nodes_moodle_courses_settings.png, id=736, 435.12563pt x 244.915pt>
-File: img/nodes_moodle_courses_settings.png Graphic file (type png)
-<use img/nodes_moodle_courses_settings.png>
-Package pdftex.def Info: img/nodes_moodle_courses_settings.png  used on input line 133.
-(pdftex.def)             Requested size: 383.0pt x 215.58937pt.
-
-Overfull \hbox (0.73402pt too wide) in paragraph at lines 159--159
-[]|\T1/lmr/m/n/12 (-20) boolean| 
- []
-
-
-Overfull \hbox (0.73402pt too wide) in paragraph at lines 163--163
-[]|\T1/lmr/m/n/12 (-20) boolean| 
- []
-
-
-Overfull \hbox (36.00584pt too wide) in paragraph at lines 143--172
- [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-LaTeX Info: Redefining \. on input line 176.
-LaTeX Info: Redefining \% on input line 176.
-[66 <./img/nodes_moodle_courses_settings.png>]
-<img/nodes_moodle_courses_output.png, id=742, 840.64063pt x 411.03563pt>
-File: img/nodes_moodle_courses_output.png Graphic file (type png)
-<use img/nodes_moodle_courses_output.png>
-Package pdftex.def Info: img/nodes_moodle_courses_output.png  used on input line 181.
-(pdftex.def)             Requested size: 383.0pt x 187.27237pt.
-LaTeX Info: Redefining \. on input line 189.
-LaTeX Info: Redefining \% on input line 189.
- [67 <./img/nodes_moodle_courses_output.png>]
-<img/nodes_moodle_users.png, id=747, 562.1pt x 435.12563pt>
-File: img/nodes_moodle_users.png Graphic file (type png)
-<use img/nodes_moodle_users.png>
-Package pdftex.def Info: img/nodes_moodle_users.png  used on input line 217.
-(pdftex.def)             Requested size: 383.0pt x 296.47905pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-LaTeX Info: Redefining \. on input line 221.
-LaTeX Info: Redefining \% on input line 221.
-[68]
-<img/nodes_moodle_users_settings.png, id=753, 559.59062pt x 243.40938pt>
-File: img/nodes_moodle_users_settings.png Graphic file (type png)
-<use img/nodes_moodle_users_settings.png>
-Package pdftex.def Info: img/nodes_moodle_users_settings.png  used on input line 237.
-(pdftex.def)             Requested size: 383.0pt x 166.6007pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-LaTeX Info: Redefining \. on input line 241.
-LaTeX Info: Redefining \% on input line 241.
-[69 <./img/nodes_moodle_users.png>]
-Overfull \hbox (36.0pt too wide) in paragraph at lines 248--273
- [] 
- []
-
-<img/nodes_moodle_users_output.png, id=759, 678.03313pt x 316.68312pt>
-File: img/nodes_moodle_users_output.png Graphic file (type png)
-<use img/nodes_moodle_users_output.png>
-Package pdftex.def Info: img/nodes_moodle_users_output.png  used on input line 281.
-(pdftex.def)             Requested size: 383.0pt x 178.8828pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-LaTeX Info: Redefining \. on input line 285.
-LaTeX Info: Redefining \% on input line 285.
-[70 <./img/nodes_moodle_users_settings.png>]
-LaTeX Info: Redefining \. on input line 288.
-LaTeX Info: Redefining \% on input line 288.
- [71 <./img/nodes_moodle_users_output.png>]
-<img/nodes_moodle_reports_logs.png, id=769, 627.34375pt x 288.07625pt>
-File: img/nodes_moodle_reports_logs.png Graphic file (type png)
-<use img/nodes_moodle_reports_logs.png>
-Package pdftex.def Info: img/nodes_moodle_reports_logs.png  used on input line 316.
-(pdftex.def)             Requested size: 383.0pt x 175.8801pt.
-
-Overfull \hbox (0.73402pt too wide) in paragraph at lines 361--361
-[]|\T1/lmr/m/n/12 (-20) boolean| 
- []
-
-
-Overfull \hbox (36.00584pt too wide) in paragraph at lines 329--366
- [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-LaTeX Info: Redefining \. on input line 370.
-LaTeX Info: Redefining \% on input line 370.
-[72 <./img/nodes_moodle_reports_logs.png>]
-<img/nodes_moodle_reports_logs_output.png, id=776, 1029.34563pt x 238.8925pt>
-File: img/nodes_moodle_reports_logs_output.png Graphic file (type png)
-<use img/nodes_moodle_reports_logs_output.png>
-Package pdftex.def Info: img/nodes_moodle_reports_logs_output.png  used on input line 374.
-(pdftex.def)             Requested size: 383.0pt x 88.88823pt.
-LaTeX Info: Redefining \. on input line 384.
-LaTeX Info: Redefining \% on input line 384.
- [73 <./img/nodes_moodle_reports_logs_output.png>]
-<img/nodes_moodle_reports_grades.png, id=781, 569.12625pt x 260.47313pt>
-File: img/nodes_moodle_reports_grades.png Graphic file (type png)
-<use img/nodes_moodle_reports_grades.png>
-Package pdftex.def Info: img/nodes_moodle_reports_grades.png  used on input line 409.
-(pdftex.def)             Requested size: 383.0pt x 175.29509pt.
-
-Overfull \hbox (36.0pt too wide) in paragraph at lines 422--449
- [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-LaTeX Info: Redefining \. on input line 453.
-LaTeX Info: Redefining \% on input line 453.
-[74 <./img/nodes_moodle_reports_grades.png>]
-<img/nodes_moodle_reports_grades_output.png, id=788, 725.71124pt x 256.45813pt>
-File: img/nodes_moodle_reports_grades_output.png Graphic file (type png)
-<use img/nodes_moodle_reports_grades_output.png>
-Package pdftex.def Info: img/nodes_moodle_reports_grades_output.png  used on input line 457.
-(pdftex.def)             Requested size: 383.0pt x 135.35081pt.
-LaTeX Info: Redefining \. on input line 465.
-LaTeX Info: Redefining \% on input line 465.
- [75 <./img/nodes_moodle_reports_grades_output.png>]
-<img/nodes_moodle_reports_quizzes.png, id=793, 1054.94125pt x 488.82625pt>
-File: img/nodes_moodle_reports_quizzes.png Graphic file (type png)
-<use img/nodes_moodle_reports_quizzes.png>
-Package pdftex.def Info: img/nodes_moodle_reports_quizzes.png  used on input line 491.
-(pdftex.def)             Requested size: 383.0pt x 177.46909pt.
-
-Overfull \hbox (36.0pt too wide) in paragraph at lines 505--528
- [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-LaTeX Info: Redefining \. on input line 532.
-LaTeX Info: Redefining \% on input line 532.
-[76 <./img/nodes_moodle_reports_quizzes.png>]
-<img/nodes_moodle_reports_quizzes_output.png, id=800, 1099.10625pt x 246.1697pt>
-File: img/nodes_moodle_reports_quizzes_output.png Graphic file (type png)
-<use img/nodes_moodle_reports_quizzes_output.png>
-Package pdftex.def Info: img/nodes_moodle_reports_quizzes_output.png  used on input line 537.
-(pdftex.def)             Requested size: 383.0pt x 85.7813pt.
-)
-LaTeX Info: Redefining \. on input line 548.
-LaTeX Info: Redefining \% on input line 548.
- [77 <./img/nodes_moodle_reports_quizzes_output.png>]
-\openout2 = `./tex/D_Manual_programador.aux'.
-
- (tex/D_Manual_programador.tex [78
-
-
-
-
-]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 16.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 218.
  (C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1545,171 +1155,580 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (104.5165pt too wide) in paragraph at lines 20--20
+Underfull \hbox (badness 10000) in paragraph at lines 235--235
+[][] [][][][][]$\T1/lmss/m/n/10 (+20) https : / / docs . knime . com / latest / analytics _ platform _ new _ node _ quickstart _ guide /
+ []
+
+LaTeX Info: Redefining \. on input line 245.
+LaTeX Info: Redefining \% on input line 245.
+[28]
+LaTeX Info: Redefining \. on input line 252.
+LaTeX Info: Redefining \% on input line 252.
+ [29]
+LaTeX Info: Redefining \. on input line 286.
+LaTeX Info: Redefining \% on input line 286.
+ [30]
+<img/workflow0.png, id=593, 481.04718pt x 575.90157pt>
+File: img/workflow0.png Graphic file (type png)
+<use img/workflow0.png>
+Package pdftex.def Info: img/workflow0.png  used on input line 314.
+(pdftex.def)             Requested size: 383.0pt x 458.53378pt.
+LaTeX Info: Redefining \. on input line 318.
+LaTeX Info: Redefining \% on input line 318.
+ [31]
+<img/workflow1.png, id=600, 879.285pt x 865.73438pt>
+File: img/workflow1.png Graphic file (type png)
+<use img/workflow1.png>
+Package pdftex.def Info: img/workflow1.png  used on input line 324.
+(pdftex.def)             Requested size: 383.0pt x 377.0934pt.
+LaTeX Info: Redefining \. on input line 328.
+LaTeX Info: Redefining \% on input line 328.
+ [32 <./img/workflow0.png>]
+<img/workflow1a.png, id=606, 733.99219pt x 303.38344pt>
+File: img/workflow1a.png Graphic file (type png)
+<use img/workflow1a.png>
+Package pdftex.def Info: img/workflow1a.png  used on input line 335.
+(pdftex.def)             Requested size: 383.0pt x 158.31117pt.
+LaTeX Info: Redefining \. on input line 339.
+LaTeX Info: Redefining \% on input line 339.
+ [33 <./img/workflow1.png>]
+<img/workflow2.png, id=612, 947.79094pt x 364.36125pt>
+File: img/workflow2.png Graphic file (type png)
+<use img/workflow2.png>
+Package pdftex.def Info: img/workflow2.png  used on input line 358.
+(pdftex.def)             Requested size: 383.0pt x 147.23747pt.
+LaTeX Info: Redefining \. on input line 362.
+LaTeX Info: Redefining \% on input line 362.
+ [34 <./img/workflow1a.png>]
+<img/workflow3.png, id=618, 671.50874pt x 555.57562pt>
+File: img/workflow3.png Graphic file (type png)
+<use img/workflow3.png>
+Package pdftex.def Info: img/workflow3.png  used on input line 368.
+(pdftex.def)             Requested size: 383.0pt x 316.87636pt.
+LaTeX Info: Redefining \. on input line 372.
+LaTeX Info: Redefining \% on input line 372.
+ [35 <./img/workflow2.png>]
+<img/workflow4.png, id=625, 1297.84875pt x 577.40718pt>
+File: img/workflow4.png Graphic file (type png)
+<use img/workflow4.png>
+Package pdftex.def Info: img/workflow4.png  used on input line 382.
+(pdftex.def)             Requested size: 383.0pt x 170.3865pt.
+LaTeX Info: Redefining \. on input line 386.
+LaTeX Info: Redefining \% on input line 386.
+ [36 <./img/workflow3.png>]
+<img/workflowA1.png, id=632, 940.26282pt x 173.89969pt>
+File: img/workflowA1.png Graphic file (type png)
+<use img/workflowA1.png>
+Package pdftex.def Info: img/workflowA1.png  used on input line 398.
+(pdftex.def)             Requested size: 383.0pt x 70.83496pt.
+<img/workflowA3.png, id=634, 1458.19781pt x 683.55376pt>
+File: img/workflowA3.png Graphic file (type png)
+<use img/workflowA3.png>
+Package pdftex.def Info: img/workflowA3.png  used on input line 412.
+(pdftex.def)             Requested size: 383.0pt x 179.53464pt.
+LaTeX Info: Redefining \. on input line 416.
+LaTeX Info: Redefining \% on input line 416.
+ [37 <./img/workflow4.png> <./img/workflowA1.png>]
+<img/workflowA2.png, id=641, 822.07124pt x 961.34157pt>
+File: img/workflowA2.png Graphic file (type png)
+<use img/workflowA2.png>
+Package pdftex.def Info: img/workflowA2.png  used on input line 432.
+(pdftex.def)             Requested size: 383.0pt x 447.88467pt.
+LaTeX Info: Redefining \. on input line 436.
+LaTeX Info: Redefining \% on input line 436.
+ [38 <./img/workflowA3.png>]
+<img/workflowA4.png, id=647, 996.72375pt x 564.60938pt>
+File: img/workflowA4.png Graphic file (type png)
+<use img/workflowA4.png>
+Package pdftex.def Info: img/workflowA4.png  used on input line 443.
+(pdftex.def)             Requested size: 383.0pt x 216.94882pt.
+LaTeX Info: Redefining \. on input line 447.
+LaTeX Info: Redefining \% on input line 447.
+ [39 <./img/workflowA2.png>]
+<img/workflowB1.png, id=655, 948.54375pt x 133.24782pt>
+File: img/workflowB1.png Graphic file (type png)
+<use img/workflowB1.png>
+Package pdftex.def Info: img/workflowB1.png  used on input line 459.
+(pdftex.def)             Requested size: 383.0pt x 53.8024pt.
+<img/workflowB2.png, id=657, 1037.37563pt x 827.34094pt>
+File: img/workflowB2.png Graphic file (type png)
+<use img/workflowB2.png>
+Package pdftex.def Info: img/workflowB2.png  used on input line 469.
+(pdftex.def)             Requested size: 383.0pt x 305.4549pt.
+LaTeX Info: Redefining \. on input line 473.
+LaTeX Info: Redefining \% on input line 473.
+ [40 <./img/workflowA4.png> <./img/workflowB1.png>]
+<img/workflowB3.png, id=665, 886.06032pt x 539.01375pt>
+File: img/workflowB3.png Graphic file (type png)
+<use img/workflowB3.png>
+Package pdftex.def Info: img/workflowB3.png  used on input line 479.
+(pdftex.def)             Requested size: 383.0pt x 232.98863pt.
+LaTeX Info: Redefining \. on input line 483.
+LaTeX Info: Redefining \% on input line 483.
+ [41 <./img/workflowB2.png>]
+<img/workflowC1.png, id=672, 939.51pt x 287.57437pt>
+File: img/workflowC1.png Graphic file (type png)
+<use img/workflowC1.png>
+Package pdftex.def Info: img/workflowC1.png  used on input line 491.
+(pdftex.def)             Requested size: 383.0pt x 117.2305pt.
+<img/workflowC2.png, id=674, 715.17188pt x 132.495pt>
+File: img/workflowC2.png Graphic file (type png)
+<use img/workflowC2.png>
+Package pdftex.def Info: img/workflowC2.png  used on input line 502.
+(pdftex.def)             Requested size: 383.0pt x 70.95589pt.
+LaTeX Info: Redefining \. on input line 506.
+LaTeX Info: Redefining \% on input line 506.
+ [42 <./img/workflowB3.png> <./img/workflowC1.png>]
+<img/workflowC3.png, id=681, 876.27374pt x 367.3725pt>
+File: img/workflowC3.png Graphic file (type png)
+<use img/workflowC3.png>
+Package pdftex.def Info: img/workflowC3.png  used on input line 513.
+(pdftex.def)             Requested size: 383.0pt x 160.5737pt.
+)
+LaTeX Info: Redefining \. on input line 562.
+LaTeX Info: Redefining \% on input line 562.
+ [43 <./img/workflowC2.png> <./img/workflowC3.png>]
+\openout2 = `./tex/6_Trabajos_relacionados.aux'.
+
+ (tex/6_Trabajos_relacionados.tex [44
+
+
+
+
+]) [45]
+\openout2 = `./tex/7_Conclusiones_Lineas_de_trabajo_futuras.aux'.
+
+ (tex/7_Conclusiones_Lineas_de_trabajo_futuras.tex [46
+
+
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47]
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
+ [48]
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
+ [49])
+LaTeX Info: Redefining \. on input line 564.
+LaTeX Info: Redefining \% on input line 564.
+ [50] [51
+
+
+
+] [52]
+\openout2 = `./tex/A_Plan_proyecto.aux'.
+
+ (tex/A_Plan_proyecto.tex
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 1.
+ [53
+
+
+]
+LaTeX Info: Redefining \. on input line 74.
+LaTeX Info: Redefining \% on input line 74.
+ [54]
+LaTeX Info: Redefining \. on input line 119.
+LaTeX Info: Redefining \% on input line 119.
+ [55]
+LaTeX Info: Redefining \. on input line 166.
+LaTeX Info: Redefining \% on input line 166.
+ [56]
+LaTeX Info: Redefining \. on input line 192.
+LaTeX Info: Redefining \% on input line 192.
+ [57]
+
+LaTeX Warning: Command \' invalid in math mode on input line 228.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 228.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 239.
+
+LaTeX Info: Redefining \. on input line 240.
+LaTeX Info: Redefining \% on input line 240.
+[58])
+LaTeX Info: Redefining \. on input line 578.
+LaTeX Info: Redefining \% on input line 578.
+ [59]
+\openout2 = `./tex/B_Requisitos.aux'.
+
+ (tex/B_Requisitos.tex [60
+
+
+
+
+] [61])
+LaTeX Info: Redefining \. on input line 579.
+LaTeX Info: Redefining \% on input line 579.
+ [62]
+\openout2 = `./tex/C_Diseno.aux'.
+
+ (tex/C_Diseno.tex
+<img/nodes_moodle_todos.png, id=817, 1117.17375pt x 414.54875pt>
+File: img/nodes_moodle_todos.png Graphic file (type png)
+<use img/nodes_moodle_todos.png>
+Package pdftex.def Info: img/nodes_moodle_todos.png  used on input line 27.
+(pdftex.def)             Requested size: 383.0pt x 142.12125pt.
+ [63
+
+
+
+
+]
+LaTeX Info: Redefining \. on input line 36.
+LaTeX Info: Redefining \% on input line 36.
+ [64 <./img/nodes_moodle_todos.png>]
+<img/nodes_moodle_connector.png, id=826, 677.53125pt x 309.155pt>
+File: img/nodes_moodle_connector.png Graphic file (type png)
+<use img/nodes_moodle_connector.png>
+Package pdftex.def Info: img/nodes_moodle_connector.png  used on input line 64.
+(pdftex.def)             Requested size: 383.0pt x 174.76724pt.
+LaTeX Info: Redefining \. on input line 77.
+LaTeX Info: Redefining \% on input line 77.
+ [65 <./img/nodes_moodle_connector.png>]
+<img/nodes_moodle_connector_settings.png, id=833, 484.81125pt x 234.37563pt>
+File: img/nodes_moodle_connector_settings.png Graphic file (type png)
+<use img/nodes_moodle_connector_settings.png>
+Package pdftex.def Info: img/nodes_moodle_connector_settings.png  used on input line 81.
+(pdftex.def)             Requested size: 383.0pt x 185.16542pt.
+LaTeX Info: Redefining \. on input line 89.
+LaTeX Info: Redefining \% on input line 89.
+ [66 <./img/nodes_moodle_connector_settings.png>]
+<img/nodes_moodle_courses.png, id=838, 662.475pt x 352.81813pt>
+File: img/nodes_moodle_courses.png Graphic file (type png)
+<use img/nodes_moodle_courses.png>
+Package pdftex.def Info: img/nodes_moodle_courses.png  used on input line 117.
+(pdftex.def)             Requested size: 383.0pt x 203.97786pt.
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
+ [67 <./img/nodes_moodle_courses.png>]
+<img/nodes_moodle_courses_settings.png, id=844, 435.12563pt x 244.915pt>
+File: img/nodes_moodle_courses_settings.png Graphic file (type png)
+<use img/nodes_moodle_courses_settings.png>
+Package pdftex.def Info: img/nodes_moodle_courses_settings.png  used on input line 134.
+(pdftex.def)             Requested size: 383.0pt x 215.58937pt.
+
+Overfull \hbox (0.73402pt too wide) in paragraph at lines 160--160
+[]|\T1/lmr/m/n/12 (-20) boolean| 
+ []
+
+
+Overfull \hbox (0.73402pt too wide) in paragraph at lines 164--164
+[]|\T1/lmr/m/n/12 (-20) boolean| 
+ []
+
+
+Overfull \hbox (36.00584pt too wide) in paragraph at lines 144--173
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 177.
+LaTeX Info: Redefining \% on input line 177.
+[68 <./img/nodes_moodle_courses_settings.png>]
+<img/nodes_moodle_courses_output.png, id=850, 840.64063pt x 411.03563pt>
+File: img/nodes_moodle_courses_output.png Graphic file (type png)
+<use img/nodes_moodle_courses_output.png>
+Package pdftex.def Info: img/nodes_moodle_courses_output.png  used on input line 182.
+(pdftex.def)             Requested size: 383.0pt x 187.27237pt.
+LaTeX Info: Redefining \. on input line 190.
+LaTeX Info: Redefining \% on input line 190.
+ [69 <./img/nodes_moodle_courses_output.png>]
+<img/nodes_moodle_users.png, id=855, 562.1pt x 435.12563pt>
+File: img/nodes_moodle_users.png Graphic file (type png)
+<use img/nodes_moodle_users.png>
+Package pdftex.def Info: img/nodes_moodle_users.png  used on input line 218.
+(pdftex.def)             Requested size: 383.0pt x 296.47905pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 222.
+LaTeX Info: Redefining \% on input line 222.
+[70]
+<img/nodes_moodle_users_settings.png, id=861, 559.59062pt x 243.40938pt>
+File: img/nodes_moodle_users_settings.png Graphic file (type png)
+<use img/nodes_moodle_users_settings.png>
+Package pdftex.def Info: img/nodes_moodle_users_settings.png  used on input line 238.
+(pdftex.def)             Requested size: 383.0pt x 166.6007pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 242.
+LaTeX Info: Redefining \% on input line 242.
+[71 <./img/nodes_moodle_users.png>]
+Overfull \hbox (36.0pt too wide) in paragraph at lines 249--274
+ [] 
+ []
+
+<img/nodes_moodle_users_output.png, id=868, 678.03313pt x 316.68312pt>
+File: img/nodes_moodle_users_output.png Graphic file (type png)
+<use img/nodes_moodle_users_output.png>
+Package pdftex.def Info: img/nodes_moodle_users_output.png  used on input line 282.
+(pdftex.def)             Requested size: 383.0pt x 178.8828pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 286.
+LaTeX Info: Redefining \% on input line 286.
+[72 <./img/nodes_moodle_users_settings.png>]
+LaTeX Info: Redefining \. on input line 289.
+LaTeX Info: Redefining \% on input line 289.
+ [73 <./img/nodes_moodle_users_output.png>]
+<img/nodes_moodle_reports_logs.png, id=877, 627.34375pt x 288.07625pt>
+File: img/nodes_moodle_reports_logs.png Graphic file (type png)
+<use img/nodes_moodle_reports_logs.png>
+Package pdftex.def Info: img/nodes_moodle_reports_logs.png  used on input line 317.
+(pdftex.def)             Requested size: 383.0pt x 175.8801pt.
+
+Overfull \hbox (0.73402pt too wide) in paragraph at lines 362--362
+[]|\T1/lmr/m/n/12 (-20) boolean| 
+ []
+
+
+Overfull \hbox (36.00584pt too wide) in paragraph at lines 330--367
+ [] 
+ []
+
+LaTeX Info: Redefining \. on input line 370.
+LaTeX Info: Redefining \% on input line 370.
+[74 <./img/nodes_moodle_reports_logs.png>]
+<img/nodes_moodle_reports_logs_output.png, id=884, 1029.34563pt x 238.8925pt>
+File: img/nodes_moodle_reports_logs_output.png Graphic file (type png)
+<use img/nodes_moodle_reports_logs_output.png>
+Package pdftex.def Info: img/nodes_moodle_reports_logs_output.png  used on input line 375.
+(pdftex.def)             Requested size: 383.0pt x 88.88823pt.
+LaTeX Info: Redefining \. on input line 385.
+LaTeX Info: Redefining \% on input line 385.
+ [75 <./img/nodes_moodle_reports_logs_output.png>]
+<img/nodes_moodle_reports_grades.png, id=889, 569.12625pt x 260.47313pt>
+File: img/nodes_moodle_reports_grades.png Graphic file (type png)
+<use img/nodes_moodle_reports_grades.png>
+Package pdftex.def Info: img/nodes_moodle_reports_grades.png  used on input line 410.
+(pdftex.def)             Requested size: 383.0pt x 175.29509pt.
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 423--450
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 454.
+LaTeX Info: Redefining \% on input line 454.
+[76 <./img/nodes_moodle_reports_grades.png>]
+<img/nodes_moodle_reports_grades_output.png, id=896, 725.71124pt x 256.45813pt>
+File: img/nodes_moodle_reports_grades_output.png Graphic file (type png)
+<use img/nodes_moodle_reports_grades_output.png>
+Package pdftex.def Info: img/nodes_moodle_reports_grades_output.png  used on input line 458.
+(pdftex.def)             Requested size: 383.0pt x 135.35081pt.
+LaTeX Info: Redefining \. on input line 466.
+LaTeX Info: Redefining \% on input line 466.
+ [77 <./img/nodes_moodle_reports_grades_output.png>]
+<img/nodes_moodle_reports_quizzes.png, id=902, 1054.94125pt x 488.82625pt>
+File: img/nodes_moodle_reports_quizzes.png Graphic file (type png)
+<use img/nodes_moodle_reports_quizzes.png>
+Package pdftex.def Info: img/nodes_moodle_reports_quizzes.png  used on input line 492.
+(pdftex.def)             Requested size: 383.0pt x 177.46909pt.
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 506--529
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 533.
+LaTeX Info: Redefining \% on input line 533.
+[78 <./img/nodes_moodle_reports_quizzes.png>]
+<img/nodes_moodle_reports_quizzes_output.png, id=909, 1099.10625pt x 246.1697pt>
+File: img/nodes_moodle_reports_quizzes_output.png Graphic file (type png)
+<use img/nodes_moodle_reports_quizzes_output.png>
+Package pdftex.def Info: img/nodes_moodle_reports_quizzes_output.png  used on input line 538.
+(pdftex.def)             Requested size: 383.0pt x 85.7813pt.
+)
+LaTeX Info: Redefining \. on input line 580.
+LaTeX Info: Redefining \% on input line 580.
+ [79 <./img/nodes_moodle_reports_quizzes_output.png>]
+\openout2 = `./tex/D_Manual_programador.aux'.
+
+ (tex/D_Manual_programador.tex [80
+
+
+
+
+]
+Overfull \hbox (104.5165pt too wide) in paragraph at lines 21--21
 []    \T1/lmtt/m/n/12 .connection  -- Librería de conexión utilizada por el nodo Moodle Connector[] 
  []
 
 
-Overfull \hbox (61.60022pt too wide) in paragraph at lines 25--25
+Overfull \hbox (61.60022pt too wide) in paragraph at lines 26--26
 []    \T1/lmtt/m/n/12 .logs  -- Librería de Logs utilizada por el nodo Moodle Reports Logs[] 
  []
 
-[79]
-Overfull \hbox (6.02519pt too wide) in paragraph at lines 58--58
+[81]
+Overfull \hbox (6.02519pt too wide) in paragraph at lines 59--59
 []      \T1/lmtt/m/n/12 .grades  -- Implementación del nodo Moodle Reports Grades[] 
  []
 
-LaTeX Info: Redefining \. on input line 68.
-LaTeX Info: Redefining \% on input line 68.
-[80]
-LaTeX Info: Redefining \. on input line 106.
-LaTeX Info: Redefining \% on input line 106.
- [81]
-Overfull \hbox (0.89813pt too wide) in paragraph at lines 112--114
-[]\T1/lmr/m/n/12 (-20) Por úl-ti-mo, ne-ce-si-ta-mos in-cor-po-rar la ex-ten-sión knime-moodle-integration
- []
-
-
-Overfull \hbox (60.08252pt too wide) in paragraph at lines 122--123
-[][]$\T1/lmtt/m/n/12 https : / / docs . knime . com / latest / analytics _ platform _ new _ node _ quickstart _
+LaTeX Info: Redefining \. on input line 69.
+LaTeX Info: Redefining \% on input line 69.
+[82]
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
+ [83]
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+[][] [][][][][]$\T1/lmss/m/n/10 (+20) https : / / docs . knime . com / latest / analytics _ platform _ new _ node _ quickstart _ guide /
  []
 
 )
-LaTeX Info: Redefining \. on input line 549.
-LaTeX Info: Redefining \% on input line 549.
- [82]
+LaTeX Info: Redefining \. on input line 581.
+LaTeX Info: Redefining \% on input line 581.
+ [84]
 \openout2 = `./tex/E_Manual_usuario.aux'.
 
- (tex/E_Manual_usuario.tex
-Overfull \hbox (24.15001pt too wide) in paragraph at lines 19--20
-[][]$\T1/lmtt/m/n/12 https : / / github . com / frankgil / knime -[] moodle / releases / tag / extension$[] 
- []
-
-<img/manual_usuario_install_site_update1.png, id=842, 1161.33875pt x 671.50874pt>
-File: img/manual_usuario_install_site_update1.png Graphic file (type png)
-<use img/manual_usuario_install_site_update1.png>
-Package pdftex.def Info: img/manual_usuario_install_site_update1.png  used on input line 33.
-(pdftex.def)             Requested size: 383.0pt x 221.45512pt.
-[83
+ (tex/E_Manual_usuario.tex [85
 
 
 
 
 ]
-<img/manual_usuario_install_site_update2.png, id=850, 987.69pt x 315.1775pt>
+<img/manual_usuario_install_site_update1.png, id=960, 1161.33875pt x 671.50874pt>
+File: img/manual_usuario_install_site_update1.png Graphic file (type png)
+<use img/manual_usuario_install_site_update1.png>
+Package pdftex.def Info: img/manual_usuario_install_site_update1.png  used on input line 34.
+(pdftex.def)             Requested size: 383.0pt x 221.45512pt.
+<img/manual_usuario_install_site_update2.png, id=962, 987.69pt x 315.1775pt>
 File: img/manual_usuario_install_site_update2.png Graphic file (type png)
 <use img/manual_usuario_install_site_update2.png>
-Package pdftex.def Info: img/manual_usuario_install_site_update2.png  used on input line 43.
+Package pdftex.def Info: img/manual_usuario_install_site_update2.png  used on input line 44.
 (pdftex.def)             Requested size: 383.0pt x 122.21658pt.
-<img/manual_usuario_install_site_update3.png, id=852, 1107.13625pt x 681.54625pt>
+<img/manual_usuario_install_site_update3.png, id=964, 1107.13625pt x 681.54625pt>
 File: img/manual_usuario_install_site_update3.png Graphic file (type png)
 <use img/manual_usuario_install_site_update3.png>
-Package pdftex.def Info: img/manual_usuario_install_site_update3.png  used on input line 53.
+Package pdftex.def Info: img/manual_usuario_install_site_update3.png  used on input line 54.
 (pdftex.def)             Requested size: 383.0pt x 235.76808pt.
-LaTeX Info: Redefining \. on input line 57.
-LaTeX Info: Redefining \% on input line 57.
- [84 <./img/manual_usuario_install_site_update1.png (PNG copy)> <./img/manual_usuario_install_site_update2.png (PNG copy)>]
-<img/manual_usuario_install_site_update4.png, id=858, 1100.11pt x 231.86626pt>
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
+ [86 <./img/manual_usuario_install_site_update1.png (PNG copy)> <./img/manual_usuario_install_site_update2.png (PNG copy)>]
+<img/manual_usuario_install_site_update4.png, id=970, 1100.11pt x 231.86626pt>
 File: img/manual_usuario_install_site_update4.png Graphic file (type png)
 <use img/manual_usuario_install_site_update4.png>
-Package pdftex.def Info: img/manual_usuario_install_site_update4.png  used on input line 63.
+Package pdftex.def Info: img/manual_usuario_install_site_update4.png  used on input line 64.
 (pdftex.def)             Requested size: 383.0pt x 80.72276pt.
-<img/manual_usuario_install_site_update5.png, id=860, 631.35875pt x 430.60875pt>
+<img/manual_usuario_install_site_update5.png, id=972, 631.35875pt x 430.60875pt>
 File: img/manual_usuario_install_site_update5.png Graphic file (type png)
 <use img/manual_usuario_install_site_update5.png>
-Package pdftex.def Info: img/manual_usuario_install_site_update5.png  used on input line 73.
+Package pdftex.def Info: img/manual_usuario_install_site_update5.png  used on input line 74.
 (pdftex.def)             Requested size: 383.0pt x 261.21884pt.
-LaTeX Info: Redefining \. on input line 77.
-LaTeX Info: Redefining \% on input line 77.
- [85 <./img/manual_usuario_install_site_update3.png (PNG copy)> <./img/manual_usuario_install_site_update4.png (PNG copy)>]
-LaTeX Info: Redefining \. on input line 81.
-LaTeX Info: Redefining \% on input line 81.
- [86 <./img/manual_usuario_install_site_update5.png (PNG copy)>]
-<img/manual_usuario_node_repository.png, id=870, 669.50125pt x 653.44125pt>
+LaTeX Info: Redefining \. on input line 78.
+LaTeX Info: Redefining \% on input line 78.
+ [87 <./img/manual_usuario_install_site_update3.png (PNG copy)> <./img/manual_usuario_install_site_update4.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 82.
+LaTeX Info: Redefining \% on input line 82.
+ [88 <./img/manual_usuario_install_site_update5.png (PNG copy)>]
+<img/manual_usuario_node_repository.png, id=982, 669.50125pt x 653.44125pt>
 File: img/manual_usuario_node_repository.png Graphic file (type png)
 <use img/manual_usuario_node_repository.png>
-Package pdftex.def Info: img/manual_usuario_node_repository.png  used on input line 92.
+Package pdftex.def Info: img/manual_usuario_node_repository.png  used on input line 93.
 (pdftex.def)             Requested size: 383.0pt x 373.8214pt.
-<img/manual_usuario_moodle_connector.png, id=872, 923.45pt x 523.9575pt>
+<img/manual_usuario_moodle_connector.png, id=984, 923.45pt x 523.9575pt>
 File: img/manual_usuario_moodle_connector.png Graphic file (type png)
 <use img/manual_usuario_moodle_connector.png>
-Package pdftex.def Info: img/manual_usuario_moodle_connector.png  used on input line 103.
+Package pdftex.def Info: img/manual_usuario_moodle_connector.png  used on input line 104.
 (pdftex.def)             Requested size: 383.0pt x 217.3104pt.
-LaTeX Info: Redefining \. on input line 107.
-LaTeX Info: Redefining \% on input line 107.
- [87 <./img/manual_usuario_node_repository.png (PNG copy)>]
-<img/manual_usuario_moodle_connector_login.png, id=878, 987.69pt x 285.065pt>
+LaTeX Info: Redefining \. on input line 108.
+LaTeX Info: Redefining \% on input line 108.
+ [89 <./img/manual_usuario_node_repository.png (PNG copy)>]
+<img/manual_usuario_moodle_connector_login.png, id=991, 987.69pt x 285.065pt>
 File: img/manual_usuario_moodle_connector_login.png Graphic file (type png)
 <use img/manual_usuario_moodle_connector_login.png>
-Package pdftex.def Info: img/manual_usuario_moodle_connector_login.png  used on input line 117.
+Package pdftex.def Info: img/manual_usuario_moodle_connector_login.png  used on input line 118.
 (pdftex.def)             Requested size: 383.0pt x 110.53984pt.
-<img/manual_usuario_moodle_courses_table.png, id=880, 1004.75375pt x 457.71pt>
+<img/manual_usuario_moodle_courses_table.png, id=993, 1004.75375pt x 457.71pt>
 File: img/manual_usuario_moodle_courses_table.png Graphic file (type png)
 <use img/manual_usuario_moodle_courses_table.png>
-Package pdftex.def Info: img/manual_usuario_moodle_courses_table.png  used on input line 130.
+Package pdftex.def Info: img/manual_usuario_moodle_courses_table.png  used on input line 131.
 (pdftex.def)             Requested size: 383.0pt x 174.46938pt.
-LaTeX Info: Redefining \. on input line 134.
-LaTeX Info: Redefining \% on input line 134.
- [88 <./img/manual_usuario_moodle_connector.png (PNG copy)> <./img/manual_usuario_moodle_connector_login.png (PNG copy)>]
-<img/manual_usuario_moodle_courses_config.png, id=886, 1029.8475pt x 492.84125pt>
+LaTeX Info: Redefining \. on input line 135.
+LaTeX Info: Redefining \% on input line 135.
+ [90 <./img/manual_usuario_moodle_connector.png (PNG copy)> <./img/manual_usuario_moodle_connector_login.png (PNG copy)>]
+<img/manual_usuario_moodle_courses_config.png, id=999, 1029.8475pt x 492.84125pt>
 File: img/manual_usuario_moodle_courses_config.png Graphic file (type png)
 <use img/manual_usuario_moodle_courses_config.png>
-Package pdftex.def Info: img/manual_usuario_moodle_courses_config.png  used on input line 142.
+Package pdftex.def Info: img/manual_usuario_moodle_courses_config.png  used on input line 143.
 (pdftex.def)             Requested size: 383.0pt x 183.2809pt.
-<img/manual_usuario_moodle_courses_list.png, id=888, 1143.27126pt x 393.47pt>
+<img/manual_usuario_moodle_courses_list.png, id=1001, 1143.27126pt x 393.47pt>
 File: img/manual_usuario_moodle_courses_list.png Graphic file (type png)
 <use img/manual_usuario_moodle_courses_list.png>
-Package pdftex.def Info: img/manual_usuario_moodle_courses_list.png  used on input line 153.
+Package pdftex.def Info: img/manual_usuario_moodle_courses_list.png  used on input line 154.
 (pdftex.def)             Requested size: 383.0pt x 131.81476pt.
-LaTeX Info: Redefining \. on input line 157.
-LaTeX Info: Redefining \% on input line 157.
- [89 <./img/manual_usuario_moodle_courses_table.png (PNG copy)> <./img/manual_usuario_moodle_courses_config.png (PNG copy)>])
-LaTeX Info: Redefining \. on input line 550.
-LaTeX Info: Redefining \% on input line 550.
- [90 <./img/manual_usuario_moodle_courses_list.png (PNG copy)>] (memoria.bbl
+LaTeX Info: Redefining \. on input line 158.
+LaTeX Info: Redefining \% on input line 158.
+ [91 <./img/manual_usuario_moodle_courses_table.png (PNG copy)> <./img/manual_usuario_moodle_courses_config.png (PNG copy)>])
+LaTeX Info: Redefining \. on input line 582.
+LaTeX Info: Redefining \% on input line 582.
+ [92 <./img/manual_usuario_moodle_courses_list.png (PNG copy)>] (memoria.bbl
 bibitemlist
 
-Underfull \hbox (badness 2799) in paragraph at lines 4--7
-[]\T1/lmr/m/n/12 (+20) Seguridad So-cial: Ba-ses y ti-pos de co-ti-za-ción 2023.  []$\T1/lmtt/m/n/12 https :
+Underfull \hbox (badness 2922) in paragraph at lines 8--11
+[]\T1/lmr/m/n/12 (+20) Seguridad So-cial: Ba-ses y ti-pos de co-ti-za-ción 2023.  [][]$\T1/lmss/m/n/12 (+20) https :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--7
-\T1/lmtt/m/n/12 / / www . seg -[] social . es / wps / portal / wss / internet / Trabajadores /
+Underfull \hbox (badness 10000) in paragraph at lines 8--11
+\T1/lmss/m/n/12 (+20) / / www . seg -[] social . es / wps / portal / wss / internet / Trabajadores /
  []
 
 
-Underfull \hbox (badness 5802) in paragraph at lines 13--15
-[]\T1/lmr/m/n/12 (+20) UBUMonitor. Ma-nual de usua-rio.  []$\T1/lmtt/m/n/12 https : / / ubumonitordocs .
+Underfull \hbox (badness 10000) in paragraph at lines 17--20
+\T1/lmss/m/n/12 (+20) com / help / stats / supervised -[] learning -[] machine -[] learning -[] work^^]ow -[] and -[]
  []
 
 
-Underfull \hbox (badness 2828) in paragraph at lines 29--34
+Underfull \hbox (badness 1902) in paragraph at lines 38--43
 []\T1/lmr/m/n/12 (+20) Universidad de Bur-gos.  Re-tri-bu-cio-nes fun-cio-na-rios año 2023.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--34
-[]$\T1/lmtt/m/n/12 https : / / www . ubu . es / sites / default / files / portal _ page / files /
+Underfull \hbox (badness 10000) in paragraph at lines 38--43
+[][]$\T1/lmss/m/n/12 (+20) https : / / www . ubu . es / sites / default / ^^\les / portal _ page / ^^\les / pdi _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--42
-\T1/lmtt/m/n/12 konstanz . de / server / api / core / bitstreams / e707d437 -[] 0ce8 -[] 4ebd -[]
+Underfull \hbox (badness 1454) in paragraph at lines 45--51
+[]\T1/lmr/m/n/12 (+20) Berthold M., Ce-bron N., Dill F., Di Fat-ta G., Ga-briel T.R.,
  []
 
-)
+
+Underfull \hbox (badness 6284) in paragraph at lines 45--51
+\T1/lmr/m/n/12 (+20) me: The kons-tanz in-for-ma-tion mi-ner. ver-sion 2.0 and be-
+ []
+
+[93
+
+
+
+])
 
 Class memoir Warning: The material used in the headers is too large
 (15.35403pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 555.
+(in both cases you will find help in the memoir manual). on input line 587.
 
-[91
-
-
-
-]
+LaTeX Info: Redefining \. on input line 587.
+LaTeX Info: Redefining \% on input line 587.
+[94]
 \tf@toc=\write4
 \openout4 = `memoria.toc'.
 
@@ -1730,17 +1749,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 20794 strings out of 478537
- 344237 string characters out of 2851301
- 746629 words of memory out of 3000000
- 37996 multiletter control sequences out of 15000+600000
- 582424 words of font info for 223 fonts, out of 8000000 for 9000
+ 21102 strings out of 478537
+ 348814 string characters out of 2851301
+ 751758 words of memory out of 3000000
+ 38143 multiletter control sequences out of 15000+600000
+ 620097 words of font info for 290 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 95i,12n,92p,1051b,705s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsso17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on memoria.pdf (105 pages, 2755381 bytes).
+ 95i,12n,92p,1051b,731s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsso17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
+Output written on memoria.pdf (108 pages, 2896727 bytes).
 PDF statistics:
- 1211 PDF objects out of 1440 (max. 8388607)
- 317 named destinations out of 1000 (max. 500000)
- 68735 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1354 PDF objects out of 1440 (max. 8388607)
+ 351 named destinations out of 1000 (max. 500000)
+ 87167 words of extra memory for PDF output out of 89155 (max. 10000000)
 

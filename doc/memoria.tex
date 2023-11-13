@@ -3,7 +3,7 @@
 \setsecnumdepth{subsubsection}
 
 % Castellano
-\usepackage[spanish,es-tabla]{babel}
+\usepackage[english,spanish,es-tabla]{babel}
 \selectlanguage{spanish}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -16,7 +16,7 @@
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage[open=true]{bookmark}
-
+\usepackage{perpage} 
 
 \usepackage{tocbasic}
 \DeclareTOCStyleEntry[numwidth=3em]{tocline}{figure}% for figure entries
@@ -31,7 +31,14 @@
 	basicstyle=\small\ttfamily
 }
 
+% Language
+\newcommand\english[1]{\foreignlanguage{english}{\emph{#1}}}
+
 % Links
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, allcolors = {red}}
+\urlstyle{sf}  % cambia la fuente de los url
+
 %\usepackage[colorlinks]{hyperref}
 %\hypersetup{
 %	allcolors = {red},
@@ -42,7 +49,13 @@
 \usepackage{amsmath}
  
 % Rutas de fichero / paquete
-\newcommand{\ruta}[1]{{\sffamily #1}}
+\newcommand{\ruta}[1]{\texttt{#1}}
+
+% nodos
+\newcommand{\node}[1]{\textcolor{teal}{\textsf{#1}}}
+
+% campos
+\newcommand{\field}[1]{\textcolor{olive}{\texttt{#1}}}
 
 % Párrafos
 \nonzeroparskip
@@ -261,9 +274,17 @@
   \end{center}
 }
 
+
+
 \newcommand{\hrefFootnote}[2]{%
 	\href{#1}{#2}\footnote{\url{#1}}
 }
+
+\let\oldhref\href
+\renewcommand{\href}[2]{\oldhref{#1}{#2}\footnote{\url{#1}}}
+
+\MakePerPage{footnote}
+
 
 \newcommand{\code}[1]{\texttt{#1}}
 
@@ -378,7 +399,7 @@
 \makeatother
 
 \newcommand{\nombre}{Francisco Gil Rodríguez} %%% cambio de comando
-\newcommand{\titulo}{Plugin Knime para conexión con Moodle}
+\newcommand{\titulo}{Plugin KNIME para conexión con Moodle}
 \newcommand{\nombretutor}{José Francisco Díez Pastor}
 \newcommand{\nombrecotutor}{César Ignacio García Osorio}
 \newcommand{\fecha}{1 de febrero de 2024}
@@ -479,7 +500,7 @@ técnicas de aprendizaje automático supervisado.
 
 \renewcommand*\abstractname{Descriptores}
 \begin{abstract}
-Moodle, Knime, ETL, aprendizaje automático, aprendizaje supervisado, Java
+Moodle, KNIME, ETL, aprendizaje automático, aprendizaje supervisado, Java
 \end{abstract}
 
 \clearpage
@@ -488,10 +509,10 @@ Moodle, Knime, ETL, aprendizaje automático, aprendizaje supervisado, Java
 \renewcommand*\abstractname{Abstract}
 \begin{abstract}
   KNIME is an open source platform oriented to data analysis that allows, through an intuitive and visual interface, the creation of 
-  complex analysis and workflows through specialized components in different areas such as data mining, machine learning or data visualization. 
+  complex analysis and \english{workflows} through specialized components in different areas such as data mining, machine learning or data visualization. 
   Moodle is a learning platform (Learning Management System) widely used by educational institutions around the world. 
-  In this work we have developed new Knime components that allow the integration of the data recorded by Moodle during the execution of
-   a training action into KNIME workflows. With an approach oriented to the role of teacher, it is intended that any user with this 
+  In this work we have developed new KNIME components that allow the integration of the data recorded by Moodle during the execution of
+   a training action into KNIME \english{workflows}. With an approach oriented to the role of teacher, it is intended that any user with this 
    role within a Moodle platform, can perform external studies on the data of the training actions to which they have access. 
    In addition, a workflow have been implemented in KNIME on real data extracted from Moodle, analyzing different supervised machine
     learning techniques.
@@ -499,7 +520,7 @@ Moodle, Knime, ETL, aprendizaje automático, aprendizaje supervisado, Java
 
 \renewcommand*\abstractname{Keywords}
 \begin{abstract}
-  Moodle, Knime, ETL, machine learning, supervised learning, Java
+  Moodle, KNIME, ETL, machine learning, supervised learning, Java
 
 \end{abstract}
 
@@ -507,15 +528,26 @@ Moodle, Knime, ETL, aprendizaje automático, aprendizaje supervisado, Java
 
 
 % Indices
+
+\begingroup
+\hypersetup{linkcolor=black}
 \tableofcontents
+\endgroup
 
 \clearpage
 
+\begingroup
+\hypersetup{linkcolor=black}
 \listoffigures
+\endgroup
 
 \clearpage
 
+\begingroup
+\hypersetup{linkcolor=black}
 \listoftables
+\endgroup
+
 \clearpage
 
 \mainmatter

@@ -1,4 +1,8 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{etl}
+Extract transform load (etl).
+\newblock \url{https://www.databricks.com/glossary/extract-transform-load}.
 
 \bibitem{seguridad-social}
 {Seguridad Social: Bases y tipos de cotización 2023}.
@@ -8,6 +12,11 @@
 \bibitem{salario}
 Sueldo del programador en españa.
 \newblock \url{https://www.jobted.es/salario/programador}.
+
+\bibitem{aprendizaje}
+Supervised learning workflow and algorithms.
+\newblock
+  \url{https://uk.mathworks.com/help/stats/supervised-learning-machine-learning-workflow-and-algorithms.html}.
 
 \bibitem{ubumonitor}
 {UBUMonitor. Manual de usuario}.
@@ -39,5 +48,12 @@ Berthold M., Cebron N., Dill F., Di~Fatta G., Gabriel T.R., Georg F., Meinl T.,
 \newblock
   \url{https://kops.uni-konstanz.de/server/api/core/bitstreams/e707d437-0ce8-4ebd-bd8a-184b918312b4/content},
   Noviembre 2009.
+
+\bibitem{marticorena2022ubumonitor}
+Ra{\'u}l Marticorena-S{\'a}nchez, Carlos L{\'o}pez-Nozal, Yi~Peng Ji, Carlos
+  Pardo-Aguilar, and {\'A}lvar Arnaiz-Gonz{\'a}lez.
+\newblock Ubumonitor: an open-source desktop application for visual e-learning
+  analysis with moodle.
+\newblock {\em Electronics}, 11(6):954, 2022.
 
 \end{thebibliography}

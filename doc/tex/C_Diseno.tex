@@ -1,4 +1,5 @@
 \apendice{Especificación de diseño}
+\label{sec:appendixC}
 
 \section{Introducción}
 
@@ -10,12 +11,12 @@ En este apéndice se describen los diseños de nodos que permiten cumplir con lo
 Se ha diseñado la extensión KNIME Moodle Integration con los siguientes nodos individuales: 
 
 \begin{itemize}
-  \item \textbf{Moodle Connector}. Cubre los requisitos especificados en RF-1 (RF-1.1 y RF-1.2). 
-  \item \textbf{Moodle Courses}. Cubre los requisitos especificados en RF-2 (RF-2.1 y RF-2.2).
-  \item \textbf{Moodle Users}. Cubre los requisitos especificados en RF-3 (RF-3.1, RF-3.2, RF-3.3 y RF-3.4).
-  \item \textbf{Moodle Reports Logs}. Cubre los requisitos especificados en RF-4. 
-  \item \textbf{Moodle Reports Grades}. Cubre los requisitos especificados en RF-5. 
-  \item \textbf{Moodle Reports Quizzes}. Cubre los requisitos especificados en RF-6. 
+  \item \node{Moodle Connector}. Cubre los requisitos especificados en RF-1 (RF-1.1 y RF-1.2). 
+  \item \node{Moodle Courses}. Cubre los requisitos especificados en RF-2 (RF-2.1 y RF-2.2).
+  \item \node{Moodle Users}. Cubre los requisitos especificados en RF-3 (RF-3.1, RF-3.2, RF-3.3 y RF-3.4).
+  \item \node{Moodle Reports Logs}. Cubre los requisitos especificados en RF-4. 
+  \item \node{Moodle Reports Grades}. Cubre los requisitos especificados en RF-5. 
+  \item \node{Moodle Reports Quizzes}. Cubre los requisitos especificados en RF-6. 
 \end{itemize}
 
 En el diseño se han tenido en cuenta también los requisitos no funcionales RNF-1, RNF-2 y RNF-3. 
@@ -24,19 +25,19 @@ En el diseño se han tenido en cuenta también los requisitos no funcionales RNF
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=1\textwidth]{img/nodes_moodle_todos.png}
-	\caption{Nodos implementados en la extensión Knime Moodle Integration}
+	\caption{Nodos implementados en la extensión \node{KNIME Moodle Integration}.}
 	\label{fig:moodlenodesall}
 \end{figure}
 \FloatBarrier
 
 
-Se describe a continuación el diseño de cada nodo implementado: 
+Se describe a continuación el diseño de cada nodo implementado. 
 
 \newpage
 \subsection{Diseño del nodo Moodle Connector}
 
-El nodo Moodle Connector establece la conexión con una plataforma Moodle. Requiere una cuenta con perfil de profesor (RF-1.1). 
-Requiere que la plataforma Moodle tenga activado el acceso a la aplicación Móvil (RF-1.1). 
+El nodo \node{Moodle Connector} establece la conexión con una plataforma Moodle. Requiere una cuenta con perfil de profesor (RF-1.1). 
+Requiere que la plataforma Moodle tenga activado el acceso a la aplicación móvil (RF-1.1). 
 \
 
 El nodo devuelve a través de un puerto de salida la información de sesión, de forma que, conectada a otros nodos de la extensión, 
@@ -61,7 +62,7 @@ El nodo tiene la siguiente \textbf{estructura}:
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=1\textwidth]{img/nodes_moodle_connector.png}
-	\caption{Nodo Moodle Connector. Descripción}
+	\caption{Nodo \node{Moodle Connector}. Descripción.}
 	\label{fig:moodleconnector}
 \end{figure}
 \FloatBarrier
@@ -78,7 +79,7 @@ El nodo permite la siguiente \textbf{configuración}:
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=1\textwidth]{img/nodes_moodle_connector_settings.png}
-	\caption{Nodo Moodle Connector. Configuración}
+	\caption{Nodo \node{Moodle Connector}. Configuración.}
 	\label{fig:moodleconnector_settings}
 \end{figure}
 \FloatBarrier
@@ -88,7 +89,7 @@ El nodo permite la siguiente \textbf{configuración}:
 \newpage    
 \subsection{Diseño del nodo Moodle Courses}
 
-El nodo Moodle Courses extrae información de cursos. Permite obtener uno o varios cursos según su id (RF-2.1) o todos 
+El nodo \node{Moodle Courses} extrae información de cursos. Permite obtener uno o varios cursos según su id (RF-2.1) o todos 
 los cursos dentro de las categorías especificadas (RF-2.2). 
 \
 
@@ -97,9 +98,9 @@ El nodo tiene la siguiente \textbf{estructura}:
 \begin{itemize}
 	\item \textbf{Puertos de entrada}: 
     \begin{itemize}
-		\item \textbf{0. Moodle Connection}. Conexión obtenida desde el nodo Moodle Connector. 
+		\item \textbf{0. Moodle Connection}. Conexión obtenida desde el nodo \node{Moodle Connector}. 
 		\item \textbf{1. Input table}. Tabla de entrada con información de filtrado. 
-		Columna con id de cursos y columna con id de categorías. Aunque el filtrado no es obligatorio, sí se 
+		Columna con identificador de cursos y columna con identificador de categorías. Aunque el filtrado no es obligatorio, sí se 
 		requiere añadir un nodo que defina la tabla de entrada. 
    	\end{itemize}
 
@@ -114,7 +115,7 @@ El nodo tiene la siguiente \textbf{estructura}:
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=1\textwidth]{img/nodes_moodle_courses.png}
-	\caption{Nodo Moodle Courses. Descripción}
+	\caption{Nodo \node{Moodle Courses}. Descripción.}
 	\label{fig:moodlecourses}
 \end{figure}
 \FloatBarrier
@@ -124,14 +125,14 @@ El nodo tiene la siguiente \textbf{estructura}:
 El nodo permite la siguiente \textbf{configuración}: 
 
 \begin{itemize}
-   \item \textbf{Category column}. Permite seleccionar la columna en la que se encuentran las categorías por las que se desea filtrar. Opcional. 
-   \item \textbf{CourseId column}. Permite seleccionar la columna en la que se encuentran los IDs de cursos por los que se desea filtrar. Opcional. 
+   \item \textbf{Category column}. Permite seleccionar la columna en la que se encuentran las categorías por las que se desea filtrar. Es opcional. 
+   \item \textbf{CourseId column}. Permite seleccionar la columna en la que se encuentran los identificadores de cursos por los que se desea filtrar. Es opcional. 
 \end{itemize}
 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=1\textwidth]{img/nodes_moodle_courses_settings.png}
-	\caption{Nodo Moodle Courses. Configuración}
+	\caption{Nodo \node{Moodle Courses}. Configuración.}
 	\label{fig:moodlecourses_settings}
 \end{figure}
 \FloatBarrier
@@ -160,7 +161,7 @@ En la tabla~\ref{tab:moodle_courses_desc} se muestra la estructura de los datos 
          \hline
          \textbf{summary} & string & Resumen o descripción del curso\\
          \hline
-         \textbf{summaryformat} & boolean & Indica si el resument tiene formato de texto asociado (1) \\
+         \textbf{summaryformat} & boolean & Indica si el resumen tiene formato de texto asociado (1) \\
          \hline
          \textbf{format} & string & Tipo de formato del resumen \\
          \hline
@@ -170,7 +171,7 @@ En la tabla~\ref{tab:moodle_courses_desc} se muestra la estructura de los datos 
 			\bottomrule
 		\end{tabular}
 	\end{center}
-	\caption{Tabla de salida del nodo Moodle Courses}
+	\caption{Tabla de salida del nodo \node{Moodle Courses}.}
 	\label{tab:moodle_courses_desc}
 \end{table}
 \FloatBarrier
@@ -179,7 +180,7 @@ En la tabla~\ref{tab:moodle_courses_desc} se muestra la estructura de los datos 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=1\textwidth]{img/nodes_moodle_courses_output.png}
-	\caption{Nodo Moodle Courses. Ejemplo de salida.}
+	\caption{\node{Nodo Moodle Courses}. Ejemplo de salida.}
 	\label{fig:moodlecourses_output}
 \end{figure}
 \FloatBarrier
@@ -189,8 +190,8 @@ En la tabla~\ref{tab:moodle_courses_desc} se muestra la estructura de los datos 
 \newpage
 \subsection{Diseño del nodo Moodle Users}
 
-El nodo Moodle Users extrae información de usuarios según los cursos especificados (RF-3.1). 
-También es posible devolver solo los usuarios con rol Estudiante (RF-3.2), estimar el género de cada
+El nodo \node{Moodle Users} extrae información de usuarios según los cursos especificados (RF-3.1). 
+También es posible devolver solo los usuarios con rol estudiante (RF-3.2), estimar el género de cada
 usuario a partir de su nombre (RF-3.3) y anonimizar los datos personales (RF-3.4). 
 \
 
@@ -199,8 +200,8 @@ El nodo tiene la siguiente \textbf{estructura}:
 \begin{itemize}
 	\item \textbf{Puertos de entrada}: 
     \begin{itemize}
-		\item \textbf{0. Moodle Connection}. Conexión obtenida desde el nodo Moodle Connector. 
-		\item \textbf{1. Input table}. Tabla de entrada con un listado de ids de cursos. 
+		\item \textbf{0. Moodle Connection}. Conexión obtenida desde el nodo \node{Moodle Connector}. 
+		\item \textbf{1. Input table}. Tabla de entrada con un listado de identificadores de cursos. 
    	\end{itemize}
 
 	\item \textbf{Puertos de salida}: 
@@ -215,7 +216,7 @@ El nodo tiene la siguiente \textbf{estructura}:
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=1\textwidth]{img/nodes_moodle_users.png}
-	\caption{Nodo Moodle Users. Descripción}
+	\caption{Nodo \node{Moodle Users}. Descripción.}
 	\label{fig:moodleusers}
 \end{figure}
 \FloatBarrier
@@ -225,8 +226,8 @@ El nodo tiene la siguiente \textbf{estructura}:
 El nodo permite la siguiente \textbf{configuración}: 
 
 \begin{itemize}
-   \item \textbf{Only students}. Si se activa, devuelve únicamente los usuarios con rol Estudiante. 
-   \item \textbf{Estimate gender}. Si se activa, devuelve una estimación del género del usuario (male o female). 
+   \item \textbf{Only students}. Si se activa, devuelve únicamente los usuarios con rol estudiante. 
+   \item \textbf{Estimate gender}. Si se activa, devuelve una estimación del género del usuario (\english{male} o \english{female}). 
    \item \textbf{Anonymize}. Si se activa, devuelve el nombre y apellidos del usuario anonimizados.  
    \item \textbf{Random Seed}. Establece una semilla aleatoria para obtener un valor de nombre/apellidos anonimizado. 
    Si se deja el valor 0, los nombres/apellidos de cada usuario cambiarán con cada ejecución del nodo. 
@@ -235,7 +236,7 @@ El nodo permite la siguiente \textbf{configuración}:
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=1\textwidth]{img/nodes_moodle_users_settings.png}
-	\caption{Nodo Moodle Users. Configuración}
+	\caption{Nodo \node{Moodle Users}. Configuración.}
 	\label{fig:moodleusers_settings}
 \end{figure}
 \FloatBarrier
@@ -267,11 +268,11 @@ En la tabla~\ref{tab:moodle_users_desc} se muestra la estructura de los datos de
          \hline
          \textbf{city} & string & Ciudad del usuario \\
          \hline
-         \textbf{gender} & string & Género estimado (male, female). Esta columna es opcional, en función de la configuración del nodo. \\
+         \textbf{gender} & string & Género estimado (\english{male}, \english{female}). Esta columna es opcional, en función de la configuración del nodo. \\
 			\bottomrule
 		\end{tabular}
 	\end{center}
-	\caption{Tabla de salida del nodo Moodle Users}
+	\caption{Tabla de salida del nodo \node{Moodle Users}.}
 	\label{tab:moodle_users_desc}
 \end{table}
 \FloatBarrier
@@ -279,7 +280,7 @@ En la tabla~\ref{tab:moodle_users_desc} se muestra la estructura de los datos de
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=1\textwidth]{img/nodes_moodle_users_output.png}
-	\caption{Nodo Moodle Users. Salida de ejemplo. }
+	\caption{Nodo \node{Moodle Users}. Salida de ejemplo. }
 	\label{fig:moodleusers_output}
 \end{figure}
 \FloatBarrier
@@ -288,9 +289,9 @@ En la tabla~\ref{tab:moodle_users_desc} se muestra la estructura de los datos de
 \newpage
 \subsection{Diseño del nodo Moodle Reports Logs}
 
-El nodo Moodle Reports Logs extrae información de logs de la plataforma Moodle (RF-4). 
+El nodo \node{Moodle Reports Logs} extrae información de \english{logs} de la plataforma Moodle (RF-4). 
 Este nodo está diseñado para poder extraer logs de forma homogénea aunque provengan de diferentes
-fuentes dentro de Moodle (Logs, Live logs, Activity Reports, Overview Statistics, Course Participation, Activity completion, Statistics, etc.)
+fuentes dentro de Moodle (\english{Logs, Live logs, Activity Reports, Overview Statistics, Course Participation, Activity completion, Statistics, etc.})
 
 \
 
@@ -299,14 +300,14 @@ El nodo tiene la siguiente \textbf{estructura}:
 \begin{itemize}
 	\item \textbf{Puertos de entrada}: 
     \begin{itemize}
-		\item \textbf{0. Moodle Connection}. Conexión obtenida desde el nodo Moodle Connector. 
-		\item \textbf{1. Input table}. Tabla de entrada con un listado de ids de cursos. 
+		\item \textbf{0. Moodle Connection}. Conexión obtenida desde el nodo \node{Moodle Connector}. 
+		\item \textbf{1. Input table}. Tabla de entrada con un listado de identificadores de cursos. 
    	\end{itemize}
 
 	\item \textbf{Puertos de salida}: 
     \begin{itemize}
 		\item \textbf{0. Moodle Connection}. Devuelve la conexión para facilitar su transferencia al siguiente nodo del flujo de trabajo. 
-		\item \textbf{1. Output table}. Tabla de salida con la información de los logs o eventos. 
+		\item \textbf{1. Output table}. Tabla de salida con la información de los \english{logs} o eventos. 
    	\end{itemize}
 
 \end{itemize}
@@ -314,7 +315,7 @@ El nodo tiene la siguiente \textbf{estructura}:
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=1\textwidth]{img/nodes_moodle_reports_logs.png}
-	\caption{Nodo Moodle Reports Logs. Descripción}
+	\caption{Nodo \node{Moodle Reports Logs}. Descripción.}
 	\label{fig:moodlereportslogs}
 \end{figure}
 \FloatBarrier
@@ -322,7 +323,7 @@ El nodo tiene la siguiente \textbf{estructura}:
 El nodo no tiene configuración específica. 
 \
 
-En la tabla~\ref{tab:moodle_reports_logs_desc} se muestra la estructura de los datos devueltos por cada evento del log: 
+En la tabla~\ref{tab:moodle_reports_logs_desc} se muestra la estructura de los datos devueltos por cada evento del \english{log}: 
 
 \begin{table}[!h]
 	\begin{center}
@@ -354,7 +355,7 @@ En la tabla~\ref{tab:moodle_reports_logs_desc} se muestra la estructura de los d
          \hline
          \textbf{section} & string &  ID de la sección extraído del mensaje de log \\
          \hline
-         \textbf{item} & string &  ID del item extraído del mensaje de log \\
+         \textbf{item} & string &  ID del ítem extraído del mensaje de log \\
          \hline
          \textbf{description} & string & Mensaje completo guardado en el log \\
          \hline
@@ -364,7 +365,7 @@ En la tabla~\ref{tab:moodle_reports_logs_desc} se muestra la estructura de los d
          \bottomrule
 		\end{tabular}
 	\end{center}
-	\caption{Tabla de salida del nodo Moodle Reports Logs}
+	\caption{Tabla de salida del nodo \node{Moodle Reports Logs}.}
 	\label{tab:moodle_reports_logs_desc}
 \end{table}
 \FloatBarrier
@@ -372,7 +373,7 @@ En la tabla~\ref{tab:moodle_reports_logs_desc} se muestra la estructura de los d
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=1\textwidth]{img/nodes_moodle_reports_logs_output.png}
-	\caption{Nodo Moodle Reports Logs. Salida}
+	\caption{Nodo \node{Moodle Reports Logs}. Salida.}
 	\label{fig:moodlereportslogs_output}
 \end{figure}
 \FloatBarrier
@@ -384,7 +385,7 @@ En la tabla~\ref{tab:moodle_reports_logs_desc} se muestra la estructura de los d
 \newpage
 \subsection{Diseño del nodo Moodle Reports Grades}
 
-El nodo Moodle Reports Grades extrae información de calificaciones agrupadas por curso, estudiante y actividad (RF-5). Adicionalmente, devuelve una columna con la calificación final obtenida. 
+El nodo \node{Moodle Reports Grades} extrae información de calificaciones agrupadas por curso, estudiante y actividad (RF-5). Adicionalmente, devuelve una columna con la calificación final obtenida. 
 \
 
 El nodo tiene la siguiente \textbf{estructura}:
@@ -392,8 +393,8 @@ El nodo tiene la siguiente \textbf{estructura}:
 \begin{itemize}
 	\item \textbf{Puertos de entrada}: 
     \begin{itemize}
-		\item \textbf{0. Moodle Connection}. Conexión obtenida desde el nodo Moodle Connector. 
-		\item \textbf{1. Input table}. Tabla de entrada con un listado de ids de cursos. 
+		\item \textbf{0. Moodle Connection}. Conexión obtenida desde el nodo \node{Moodle Connector}. 
+		\item \textbf{1. Input table}. Tabla de entrada con un listado de identificadores de cursos. 
    	\end{itemize}
 
 	\item \textbf{Puertos de salida}: 
@@ -407,7 +408,7 @@ El nodo tiene la siguiente \textbf{estructura}:
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=1\textwidth]{img/nodes_moodle_reports_grades.png}
-	\caption{Nodo Moodle Reports Grades. Descripción}
+	\caption{Nodo \node{Moodle Reports Grades}. Descripción.}
 	\label{fig:moodlereportsgrades}
 \end{figure}
 \FloatBarrier
@@ -447,7 +448,7 @@ En la tabla~\ref{tab:moodle_reports_grades_desc} se muestra la estructura de los
          \bottomrule
 		\end{tabular}
 	\end{center}
-	\caption{Tabla de salida del nodo Moodle Reports Grades}
+	\caption{Tabla de salida del nodo \node{Moodle Reports Grades}.}
 	\label{tab:moodle_reports_grades_desc}
 \end{table}
 \FloatBarrier
@@ -455,7 +456,7 @@ En la tabla~\ref{tab:moodle_reports_grades_desc} se muestra la estructura de los
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=1\textwidth]{img/nodes_moodle_reports_grades_output.png}
-	\caption{Nodo Moodle Reports Grades. Salida}
+	\caption{Nodo \node{Moodle Reports Grades}. Salida.}
 	\label{fig:moodlereportsgrades_output}
 \end{figure}
 \FloatBarrier
@@ -465,7 +466,7 @@ En la tabla~\ref{tab:moodle_reports_grades_desc} se muestra la estructura de los
 \newpage
 \subsection{Diseño del nodo Moodle Reports Quizzes}
 
-El nodo Moodle Reports Quizzes extrae información sobre los intentos realizados por los estudiantes en los cuestionarios (RF-6). 
+El nodo \node{Moodle Reports Quizzes} extrae información sobre los intentos realizados por los estudiantes en los cuestionarios (RF-6). 
 \
 
 El nodo tiene la siguiente \textbf{estructura}:
@@ -473,8 +474,8 @@ El nodo tiene la siguiente \textbf{estructura}:
 \begin{itemize}
 	\item \textbf{Puertos de entrada}: 
     \begin{itemize}
-		\item \textbf{0. Moodle Connection}. Conexión obtenida desde el nodo Moodle Connector. 
-		\item \textbf{1. Input table}. Tabla de entrada con un listado de ids de cursos. 
+		\item \textbf{0. Moodle Connection}. Conexión obtenida desde el nodo \node{Moodle Connector}. 
+		\item \textbf{1. Input table}. Tabla de entrada con un listado de identificadores de cursos. 
    	\end{itemize}
 
 	\item \textbf{Puertos de salida}: 
@@ -489,7 +490,7 @@ El nodo tiene la siguiente \textbf{estructura}:
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=1\textwidth]{img/nodes_moodle_reports_quizzes.png}
-	\caption{Nodo Moodle Reports Quizzes. Descripción}
+	\caption{Nodo \node{Moodle Reports Quizzes}. Descripción.}
 	\label{fig:moodlereportsquizzes}
 \end{figure}
 \FloatBarrier
@@ -526,7 +527,7 @@ En la tabla~\ref{tab:moodle_reports_quizzes_desc} se muestra la estructura de lo
          \bottomrule
 		\end{tabular}
 	\end{center}
-	\caption{Tabla de salida del nodo Moodle Reports Quizzes}
+	\caption{Tabla de salida del nodo \node{Moodle Reports Quizzes}.}
 	\label{tab:moodle_reports_quizzes_desc}
 \end{table}
 \FloatBarrier
@@ -535,7 +536,7 @@ En la tabla~\ref{tab:moodle_reports_quizzes_desc} se muestra la estructura de lo
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=1\textwidth]{img/nodes_moodle_reports_quizzes_output.png}
-	\caption{Nodo Moodle Reports Quizzes. Salida}
+	\caption{Nodo \node{Moodle Reports Quizzes}. Salida.}
 	\label{fig:moodlereportsquizzes_output}
 \end{figure}
 \FloatBarrier

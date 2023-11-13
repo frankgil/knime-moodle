@@ -12,7 +12,7 @@
 \contentsline {section}{\numberline {2.2}Objetivos técnicos}{7}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Objetivos personales}{8}{section.2.3}%
 \contentsline {chapter}{3. Conceptos teóricos}{9}{chapter*.8}%
-\contentsline {section}{\numberline {3.1}Knime}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.1}KNIME}{9}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Moodle}{11}{section.3.2}%
 \contentsline {section}{\numberline {3.3}ETL}{12}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Aprendizaje supervisado}{13}{section.3.4}%
@@ -20,113 +20,113 @@
 \contentsline {section}{\numberline {4.1}Entorno de desarrollo}{15}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Eclipse}{15}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}KNIME SDK}{15}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Bitnami LMS Virtual Machine}{15}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.3}Bitnami LMS Virtual Machine}{16}{subsection.4.1.3}%
 \contentsline {subsection}{\numberline {4.1.4}VirtualBox}{16}{subsection.4.1.4}%
 \contentsline {subsection}{\numberline {4.1.5}Insomnia Rest}{16}{subsection.4.1.5}%
 \contentsline {subsection}{\numberline {4.1.6}GitHub}{16}{subsection.4.1.6}%
-\contentsline {section}{\numberline {4.2}Desarrollo}{17}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Java}{17}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Moodle API}{17}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}KNIME API}{17}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Librerías externas}{17}{subsection.4.2.4}%
-\contentsline {subsubsection}{\numberline {4.2.4.1}UBUMonitor}{17}{subsubsection.4.2.4.1}%
-\contentsline {subsubsection}{\numberline {4.2.4.2}Data Faker}{17}{subsubsection.4.2.4.2}%
-\contentsline {section}{\numberline {4.3}Memoria}{18}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Visual Studio Code}{18}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}LaTeX}{18}{subsection.4.3.2}%
-\contentsline {chapter}{5. Aspectos relevantes del desarrollo del proyecto}{19}{chapter*.10}%
-\contentsline {section}{\numberline {5.1}Análisis}{19}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Extracción de datos de Moodle}{20}{subsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.1.1}Género del usuario}{20}{subsubsection.5.1.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.1.2}Anonimización}{21}{subsubsection.5.1.1.2}%
-\contentsline {subsection}{\numberline {5.1.2}Estudio previo del desarrollo en Knime}{21}{subsection.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.1.2.1}Pasos para crear una extensión y nodo de ejemplo en KNIME}{21}{subsubsection.5.1.2.1}%
-\contentsline {subsubsection}{\numberline {5.1.2.2}Reutilización de nodos en KNIME a nivel de código}{22}{subsubsection.5.1.2.2}%
-\contentsline {subsubsection}{\numberline {5.1.2.3}Estudio de otros nodos}{22}{subsubsection.5.1.2.3}%
-\contentsline {subsubsection}{\numberline {5.1.2.4}Reutilización de librerías externas}{23}{subsubsection.5.1.2.4}%
-\contentsline {subsection}{\numberline {5.1.3}Datos de estudio y workflows a implementar}{23}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Diseño}{24}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Aspectos relevantes del diseño}{24}{subsection.5.2.1}%
-\contentsline {section}{\numberline {5.3}Implementación}{25}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Problemas encontrados durante la implementación}{25}{subsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.1.1}Versión de KNIME}{25}{subsubsection.5.3.1.1}%
-\contentsline {subsubsection}{\numberline {5.3.1.2}Entorno de desarrollo}{25}{subsubsection.5.3.1.2}%
-\contentsline {subsubsection}{\numberline {5.3.1.3}Integración de librerías externas}{26}{subsubsection.5.3.1.3}%
-\contentsline {subsubsection}{\numberline {5.3.1.4}Login de Moodle}{26}{subsubsection.5.3.1.4}%
-\contentsline {subsubsection}{\numberline {5.3.1.5}Despliegue de la extensión desarrollada}{26}{subsubsection.5.3.1.5}%
-\contentsline {section}{\numberline {5.4}Workflow de KNIME con datos reales}{28}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Datos de estudio}{28}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Objetivo del estudio}{28}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Recopilación, limpieza y preparación de los datos}{29}{subsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.4.4}Modelo de aprendizaje}{34}{subsection.5.4.4}%
-\contentsline {subsubsection}{\numberline {5.4.4.1}Modelo A}{35}{subsubsection.5.4.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.4.2}Modelo B}{38}{subsubsection.5.4.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.4.3}Modelo C}{40}{subsubsection.5.4.4.3}%
-\contentsline {chapter}{6. Trabajos relacionados}{43}{chapter*.11}%
-\contentsline {section}{\numberline {6.1}UBU Monitor}{43}{section.6.1}%
-\contentsline {chapter}{7. Conclusiones y Líneas de trabajo futuras}{45}{chapter*.12}%
-\contentsline {section}{\numberline {7.1}Conclusiones}{45}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Líneas de trabajo futuras}{46}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Desarrollo de plugins de Moodle para extraer información adicional}{46}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Colección de Flujos de trabajo de KNIME para Moodle}{46}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Knime en servidor}{46}{subsection.7.2.3}%
-\contentsline {subsection}{\numberline {7.2.4}Comunicación bidireccional entre KNIME y Moodle}{46}{subsection.7.2.4}%
-\contentsline {subsection}{\numberline {7.2.5}Datos Abiertos (Open Data)}{47}{subsection.7.2.5}%
-\contentsline {subsection}{\numberline {7.2.6}Anonimización}{47}{subsection.7.2.6}%
-\contentsline {subsection}{\numberline {7.2.7}Obtener género}{47}{subsection.7.2.7}%
-\contentsline {subsection}{\numberline {7.2.8}Desvincular de librerías externas}{47}{subsection.7.2.8}%
-\contentsline {subsection}{\numberline {7.2.9}Actualización}{47}{subsection.7.2.9}%
-\contentsline {subsection}{\numberline {7.2.10}Ampliación de funcionalidad}{47}{subsection.7.2.10}%
-\contentsline {subsection}{\numberline {7.2.11}Ampliar pruebas}{48}{subsection.7.2.11}%
-\contentsline {subsection}{\numberline {7.2.12}Compartir extensión}{48}{subsection.7.2.12}%
-\contentsline {part}{Apéndices}{49}{subsection.7.2.12}%
-\contentsline {appendix}{\chapternumberline {A}Plan de Proyecto Software}{51}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Metodología}{51}{section.Alph1.1}%
-\contentsline {section}{\numberline {A.2}Planificación temporal}{51}{section.Alph1.2}%
-\contentsline {subsection}{\numberline {A.2.1}Sprint 0}{51}{subsection.Alph1.2.1}%
-\contentsline {subsection}{\numberline {A.2.2}Sprint 1}{52}{subsection.Alph1.2.2}%
-\contentsline {subsection}{\numberline {A.2.3}Sprint 2}{52}{subsection.Alph1.2.3}%
-\contentsline {subsection}{\numberline {A.2.4}Sprint 3}{52}{subsection.Alph1.2.4}%
-\contentsline {subsection}{\numberline {A.2.5}Sprint 4}{53}{subsection.Alph1.2.5}%
-\contentsline {subsection}{\numberline {A.2.6}Sprint 5}{53}{subsection.Alph1.2.6}%
-\contentsline {subsection}{\numberline {A.2.7}Sprint 6}{53}{subsection.Alph1.2.7}%
-\contentsline {subsection}{\numberline {A.2.8}Sprint 7}{53}{subsection.Alph1.2.8}%
-\contentsline {subsection}{\numberline {A.2.9}Sprint 8}{54}{subsection.Alph1.2.9}%
-\contentsline {subsection}{\numberline {A.2.10}Sprint 9}{54}{subsection.Alph1.2.10}%
-\contentsline {subsection}{\numberline {A.2.11}Sprint 10}{54}{subsection.Alph1.2.11}%
-\contentsline {subsection}{\numberline {A.2.12}Sprint 11}{54}{subsection.Alph1.2.12}%
-\contentsline {subsection}{\numberline {A.2.13}Sprint 12}{55}{subsection.Alph1.2.13}%
-\contentsline {subsection}{\numberline {A.2.14}Sprint 13}{55}{subsection.Alph1.2.14}%
-\contentsline {subsection}{\numberline {A.2.15}Sprint 14}{55}{subsection.Alph1.2.15}%
-\contentsline {section}{\numberline {A.3}Estudio de viabilidad}{56}{section.Alph1.3}%
-\contentsline {subsection}{\numberline {A.3.1}Viabilidad económica}{56}{subsection.Alph1.3.1}%
-\contentsline {subsubsection}{\numberline {A.3.1.1}Costes de personal}{56}{subsubsection.Alph1.3.1.1}%
-\contentsline {subsubsection}{\numberline {A.3.1.2}Costes de \textit {hardware}}{56}{subsubsection.Alph1.3.1.2}%
-\contentsline {subsubsection}{\numberline {A.3.1.3}Costes totales}{57}{subsubsection.Alph1.3.1.3}%
-\contentsline {subsection}{\numberline {A.3.2}Viabilidad legal}{57}{subsection.Alph1.3.2}%
-\contentsline {appendix}{\chapternumberline {B}Especificación de requisitos}{59}{appendix.Alph2}%
-\contentsline {section}{\numberline {B.1}Introducción}{59}{section.Alph2.1}%
-\contentsline {section}{\numberline {B.2}Catálogo de requisitos}{59}{section.Alph2.2}%
-\contentsline {subsection}{\numberline {B.2.1}Requisitos funcionales}{59}{subsection.Alph2.2.1}%
-\contentsline {subsection}{\numberline {B.2.2}Requisitos no funcionales}{60}{subsection.Alph2.2.2}%
-\contentsline {appendix}{\chapternumberline {C}Especificación de diseño}{61}{appendix.Alph3}%
-\contentsline {section}{\numberline {C.1}Introducción}{61}{section.Alph3.1}%
-\contentsline {section}{\numberline {C.2}Diseño de la extensión KNIME Moodle Integration}{61}{section.Alph3.2}%
-\contentsline {subsection}{\numberline {C.2.1}Diseño del nodo Moodle Connector}{63}{subsection.Alph3.2.1}%
-\contentsline {subsection}{\numberline {C.2.2}Diseño del nodo Moodle Courses}{65}{subsection.Alph3.2.2}%
-\contentsline {subsection}{\numberline {C.2.3}Diseño del nodo Moodle Users}{68}{subsection.Alph3.2.3}%
-\contentsline {subsection}{\numberline {C.2.4}Diseño del nodo Moodle Reports Logs}{72}{subsection.Alph3.2.4}%
-\contentsline {subsection}{\numberline {C.2.5}Diseño del nodo Moodle Reports Grades}{74}{subsection.Alph3.2.5}%
-\contentsline {subsection}{\numberline {C.2.6}Diseño del nodo Moodle Reports Quizzes}{76}{subsection.Alph3.2.6}%
-\contentsline {appendix}{\chapternumberline {D}Documentación técnica de programación}{79}{appendix.Alph4}%
-\contentsline {section}{\numberline {D.1}Introducción}{79}{section.Alph4.1}%
-\contentsline {section}{\numberline {D.2}Estructura de directorios}{79}{section.Alph4.2}%
-\contentsline {subsection}{\numberline {D.2.1}Entorno de desarrollo con Eclipse y Knime SDK}{81}{subsection.Alph4.2.1}%
-\contentsline {subsection}{\numberline {D.2.2}Instalación y compilación de la extensión KNIME Moodle Integration}{82}{subsection.Alph4.2.2}%
-\contentsline {section}{\numberline {D.3}Desarrollo de nuevos nodos}{82}{section.Alph4.3}%
-\contentsline {appendix}{\chapternumberline {E}Documentación de usuario}{83}{appendix.Alph5}%
-\contentsline {section}{\numberline {E.1}Introducción}{83}{section.Alph5.1}%
-\contentsline {section}{\numberline {E.2}Instalación KNIME}{83}{section.Alph5.2}%
-\contentsline {section}{\numberline {E.3}Instalación extensión Moodle KNIME Integration}{83}{section.Alph5.3}%
-\contentsline {section}{\numberline {E.4}Crear un workflow y usar la extensión}{87}{section.Alph5.4}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{91}{appendix*.15}%
+\contentsline {section}{\numberline {4.2}Desarrollo}{18}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Java}{18}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Moodle API}{18}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}KNIME API}{18}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Bibliotecas externas}{18}{subsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.4.1}UBUMonitor}{18}{subsubsection.4.2.4.1}%
+\contentsline {subsubsection}{\numberline {4.2.4.2}Data Faker}{19}{subsubsection.4.2.4.2}%
+\contentsline {section}{\numberline {4.3}Memoria}{20}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Visual Studio Code}{20}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}\LaTeX }{20}{subsection.4.3.2}%
+\contentsline {chapter}{5. Aspectos relevantes del desarrollo del proyecto}{21}{chapter*.10}%
+\contentsline {section}{\numberline {5.1}Análisis}{21}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Extracción de datos de Moodle}{22}{subsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.1}Género del usuario}{22}{subsubsection.5.1.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.2}Anonimización}{23}{subsubsection.5.1.1.2}%
+\contentsline {subsection}{\numberline {5.1.2}Estudio previo del desarrollo en KNIME}{23}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}Pasos para crear una extensión y nodo de ejemplo en KNIME}{23}{subsubsection.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}Reutilización de nodos en KNIME a nivel de código}{24}{subsubsection.5.1.2.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.3}Estudio de otros nodos}{24}{subsubsection.5.1.2.3}%
+\contentsline {subsubsection}{\numberline {5.1.2.4}Reutilización de librerías externas}{25}{subsubsection.5.1.2.4}%
+\contentsline {subsection}{\numberline {5.1.3}Datos de estudio y \foreignlanguage {english}{\emph {workflows}} a implementar}{25}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Diseño}{26}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Aspectos relevantes del diseño}{26}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}Implementación}{27}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Problemas encontrados durante la implementación}{27}{subsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.1}Versión de KNIME}{27}{subsubsection.5.3.1.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.2}Entorno de desarrollo}{27}{subsubsection.5.3.1.2}%
+\contentsline {subsubsection}{\numberline {5.3.1.3}Integración de bibliotecas externas}{28}{subsubsection.5.3.1.3}%
+\contentsline {subsubsection}{\numberline {5.3.1.4}\foreignlanguage {english}{\emph {Login}} de Moodle}{28}{subsubsection.5.3.1.4}%
+\contentsline {subsubsection}{\numberline {5.3.1.5}Despliegue de la extensión desarrollada}{28}{subsubsection.5.3.1.5}%
+\contentsline {section}{\numberline {5.4}Workflow de KNIME con datos reales}{30}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Datos de estudio}{30}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Objetivo del estudio}{30}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Recopilación, limpieza y preparación de los datos}{31}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Modelo de aprendizaje}{36}{subsection.5.4.4}%
+\contentsline {subsubsection}{\numberline {5.4.4.1}Modelo A}{37}{subsubsection.5.4.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.4.2}Modelo B}{40}{subsubsection.5.4.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.4.3}Modelo C}{42}{subsubsection.5.4.4.3}%
+\contentsline {chapter}{6. Trabajos relacionados}{45}{chapter*.11}%
+\contentsline {section}{\numberline {6.1}UBU Monitor}{45}{section.6.1}%
+\contentsline {chapter}{7. Conclusiones y Líneas de trabajo futuras}{47}{chapter*.12}%
+\contentsline {section}{\numberline {7.1}Conclusiones}{47}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Líneas de trabajo futuras}{48}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Desarrollo de \foreignlanguage {english}{\emph {plugins}} de Moodle para extraer información adicional}{48}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Colección de Flujos de trabajo de KNIME para Moodle}{48}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}KNIME en servidor}{48}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}Comunicación bidireccional entre KNIME y Moodle}{48}{subsection.7.2.4}%
+\contentsline {subsection}{\numberline {7.2.5}Datos Abiertos (Open Data)}{49}{subsection.7.2.5}%
+\contentsline {subsection}{\numberline {7.2.6}Anonimización}{49}{subsection.7.2.6}%
+\contentsline {subsection}{\numberline {7.2.7}Obtener género}{49}{subsection.7.2.7}%
+\contentsline {subsection}{\numberline {7.2.8}Desvincular de librerías externas}{49}{subsection.7.2.8}%
+\contentsline {subsection}{\numberline {7.2.9}Actualización}{49}{subsection.7.2.9}%
+\contentsline {subsection}{\numberline {7.2.10}Ampliación de funcionalidad}{49}{subsection.7.2.10}%
+\contentsline {subsection}{\numberline {7.2.11}Ampliar pruebas}{50}{subsection.7.2.11}%
+\contentsline {subsection}{\numberline {7.2.12}Compartir extensión}{50}{subsection.7.2.12}%
+\contentsline {part}{Apéndices}{51}{subsection.7.2.12}%
+\contentsline {appendix}{\chapternumberline {A}Plan de Proyecto Software}{53}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Metodología}{53}{section.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Planificación temporal}{53}{section.Alph1.2}%
+\contentsline {subsection}{\numberline {A.2.1}\foreignlanguage {english}{\emph {Sprint}} 0}{53}{subsection.Alph1.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}\foreignlanguage {english}{\emph {Sprint}} 1}{54}{subsection.Alph1.2.2}%
+\contentsline {subsection}{\numberline {A.2.3}\foreignlanguage {english}{\emph {Sprint}} 2}{54}{subsection.Alph1.2.3}%
+\contentsline {subsection}{\numberline {A.2.4}\foreignlanguage {english}{\emph {Sprint}} 3}{54}{subsection.Alph1.2.4}%
+\contentsline {subsection}{\numberline {A.2.5}\foreignlanguage {english}{\emph {Sprint}} 4}{55}{subsection.Alph1.2.5}%
+\contentsline {subsection}{\numberline {A.2.6}\foreignlanguage {english}{\emph {Sprint}} 5}{55}{subsection.Alph1.2.6}%
+\contentsline {subsection}{\numberline {A.2.7}\foreignlanguage {english}{\emph {Sprint}} 6}{55}{subsection.Alph1.2.7}%
+\contentsline {subsection}{\numberline {A.2.8}\foreignlanguage {english}{\emph {Sprint}} 7}{55}{subsection.Alph1.2.8}%
+\contentsline {subsection}{\numberline {A.2.9}\foreignlanguage {english}{\emph {Sprint}} 8}{56}{subsection.Alph1.2.9}%
+\contentsline {subsection}{\numberline {A.2.10}\foreignlanguage {english}{\emph {Sprint}} 9}{56}{subsection.Alph1.2.10}%
+\contentsline {subsection}{\numberline {A.2.11}\foreignlanguage {english}{\emph {Sprint}} 10}{56}{subsection.Alph1.2.11}%
+\contentsline {subsection}{\numberline {A.2.12}\foreignlanguage {english}{\emph {Sprint}} 11}{56}{subsection.Alph1.2.12}%
+\contentsline {subsection}{\numberline {A.2.13}\foreignlanguage {english}{\emph {Sprint}} 12}{57}{subsection.Alph1.2.13}%
+\contentsline {subsection}{\numberline {A.2.14}\foreignlanguage {english}{\emph {Sprint}} 13}{57}{subsection.Alph1.2.14}%
+\contentsline {subsection}{\numberline {A.2.15}\foreignlanguage {english}{\emph {Sprint}} 14}{57}{subsection.Alph1.2.15}%
+\contentsline {section}{\numberline {A.3}Estudio de viabilidad}{58}{section.Alph1.3}%
+\contentsline {subsection}{\numberline {A.3.1}Viabilidad económica}{58}{subsection.Alph1.3.1}%
+\contentsline {subsubsection}{\numberline {A.3.1.1}Costes de personal}{58}{subsubsection.Alph1.3.1.1}%
+\contentsline {subsubsection}{\numberline {A.3.1.2}Costes de \textit {hardware}}{58}{subsubsection.Alph1.3.1.2}%
+\contentsline {subsubsection}{\numberline {A.3.1.3}Costes totales}{59}{subsubsection.Alph1.3.1.3}%
+\contentsline {subsection}{\numberline {A.3.2}Viabilidad legal}{59}{subsection.Alph1.3.2}%
+\contentsline {appendix}{\chapternumberline {B}Especificación de requisitos}{61}{appendix.Alph2}%
+\contentsline {section}{\numberline {B.1}Introducción}{61}{section.Alph2.1}%
+\contentsline {section}{\numberline {B.2}Catálogo de requisitos}{61}{section.Alph2.2}%
+\contentsline {subsection}{\numberline {B.2.1}Requisitos funcionales}{61}{subsection.Alph2.2.1}%
+\contentsline {subsection}{\numberline {B.2.2}Requisitos no funcionales}{62}{subsection.Alph2.2.2}%
+\contentsline {appendix}{\chapternumberline {C}Especificación de diseño}{63}{appendix.Alph3}%
+\contentsline {section}{\numberline {C.1}Introducción}{63}{section.Alph3.1}%
+\contentsline {section}{\numberline {C.2}Diseño de la extensión KNIME Moodle Integration}{63}{section.Alph3.2}%
+\contentsline {subsection}{\numberline {C.2.1}Diseño del nodo Moodle Connector}{65}{subsection.Alph3.2.1}%
+\contentsline {subsection}{\numberline {C.2.2}Diseño del nodo Moodle Courses}{67}{subsection.Alph3.2.2}%
+\contentsline {subsection}{\numberline {C.2.3}Diseño del nodo Moodle Users}{70}{subsection.Alph3.2.3}%
+\contentsline {subsection}{\numberline {C.2.4}Diseño del nodo Moodle Reports Logs}{74}{subsection.Alph3.2.4}%
+\contentsline {subsection}{\numberline {C.2.5}Diseño del nodo Moodle Reports Grades}{76}{subsection.Alph3.2.5}%
+\contentsline {subsection}{\numberline {C.2.6}Diseño del nodo Moodle Reports Quizzes}{78}{subsection.Alph3.2.6}%
+\contentsline {appendix}{\chapternumberline {D}Documentación técnica de programación}{81}{appendix.Alph4}%
+\contentsline {section}{\numberline {D.1}Introducción}{81}{section.Alph4.1}%
+\contentsline {section}{\numberline {D.2}Estructura de directorios}{81}{section.Alph4.2}%
+\contentsline {subsection}{\numberline {D.2.1}Entorno de desarrollo con Eclipse y KNIME SDK}{83}{subsection.Alph4.2.1}%
+\contentsline {subsection}{\numberline {D.2.2}Instalación y compilación de la extensión KNIME Moodle Integration}{84}{subsection.Alph4.2.2}%
+\contentsline {section}{\numberline {D.3}Desarrollo de nuevos nodos}{84}{section.Alph4.3}%
+\contentsline {appendix}{\chapternumberline {E}Documentación de usuario}{85}{appendix.Alph5}%
+\contentsline {section}{\numberline {E.1}Introducción}{85}{section.Alph5.1}%
+\contentsline {section}{\numberline {E.2}Instalación KNIME}{85}{section.Alph5.2}%
+\contentsline {section}{\numberline {E.3}Instalación de la extensión Moodle KNIME Integration}{85}{section.Alph5.3}%
+\contentsline {section}{\numberline {E.4}Crear un \foreignlanguage {english}{\emph {workflow}} y usar la extensión}{89}{section.Alph5.4}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{93}{appendix*.15}%

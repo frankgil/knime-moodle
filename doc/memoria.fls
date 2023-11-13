@@ -117,6 +117,10 @@ INPUT C:\Program Files\MiKTeX\tex\latex\arabi\bblopts.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\arabi\bblopts.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\arabi\bblopts.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\arabi\bblopts.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\babel-english\english.ldf
+INPUT C:\Program Files\MiKTeX\tex\latex\babel-english\english.ldf
+INPUT C:\Program Files\MiKTeX\tex\latex\babel-english\english.ldf
+INPUT C:\Program Files\MiKTeX\tex\latex\babel-english\english.ldf
 INPUT C:\Program Files\MiKTeX\tex\latex\babel-spanish\spanish.ldf
 INPUT C:\Program Files\MiKTeX\tex\latex\babel-spanish\spanish.ldf
 INPUT C:\Program Files\MiKTeX\tex\latex\babel-spanish\spanish.ldf
@@ -526,6 +530,17 @@ INPUT C:\Program Files\MiKTeX\tex\latex\bookmark\bkm-pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\bookmark\bkm-pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\bookmark\bkm-pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\bookmark\bkm-pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\bigfoot\perpage.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\bigfoot\perpage.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\bigfoot\perpage.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\bigfoot\perpage.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\bigfoot\perpage.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\bigfoot\perpage.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\bigfoot\perpage.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\bigfoot\perpage.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\bigfoot\perpage.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\bigfoot\perpage.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\bigfoot\perpage.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\koma-script\tocbasic.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\koma-script\tocbasic.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\koma-script\tocbasic.sty
@@ -638,6 +653,7 @@ INPUT C:\Program Files\MiKTeX\tex\latex\multirow\multirow.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\multirow\multirow.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\multirow\multirow.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\multirow\multirow.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
@@ -796,6 +812,7 @@ INPUT C:\Program Files\MiKTeX\tex\latex\microtype\mt-cmr.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\microtype\mt-cmr.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\microtype\mt-cmr.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\microtype\mt-cmr.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\color.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\nameref.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\nameref.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\nameref.sty
@@ -921,6 +938,7 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmro12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmcsc10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmri10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmss.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmss.fd
@@ -942,9 +960,11 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
 INPUT .\memoria.lof
 INPUT memoria.lof
 INPUT memoria.lof
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmss12.tfm
 INPUT .\memoria.lot
 INPUT memoria.lot
 INPUT memoria.lot
@@ -959,6 +979,13 @@ INPUT .\tex\1_Introduccion.tex
 INPUT tex\1_Introduccion.tex
 INPUT .\tex\1_Introduccion.tex
 INPUT tex\1_Introduccion.tex
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmss10.tfm
 INPUT .\tex\2_Objetivos_del_proyecto.tex
 INPUT .\tex\2_Objetivos_del_proyecto.tex
 INPUT .\tex\2_Objetivos_del_proyecto.tex
@@ -996,6 +1023,7 @@ INPUT .\tex\4_Tecnicas_y_herramientas.tex
 INPUT tex\4_Tecnicas_y_herramientas.tex
 INPUT .\tex\4_Tecnicas_y_herramientas.tex
 INPUT tex\4_Tecnicas_y_herramientas.tex
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
 INPUT .\tex\5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex
 INPUT .\tex\5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex
 INPUT .\tex\5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex
@@ -1006,6 +1034,13 @@ INPUT .\tex\5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex
 INPUT tex\5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex
 INPUT .\tex\5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex
 INPUT tex\5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbxi10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbxi10.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmtt12.tfm
 INPUT .\img\workflow0.png
 INPUT .\img\workflow0.png
 INPUT img\workflow0.png
@@ -1150,12 +1185,9 @@ INPUT .\tex\A_Plan_proyecto.tex
 INPUT tex\A_Plan_proyecto.tex
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmss17.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmsso17.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ts1-lmr8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ts1-lmr6.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbxi10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
 INPUT .\tex\B_Requisitos.tex
 INPUT .\tex\B_Requisitos.tex
 INPUT .\tex\B_Requisitos.tex
@@ -1291,11 +1323,6 @@ INPUT .\tex\D_Manual_programador.tex
 INPUT tex\D_Manual_programador.tex
 INPUT .\tex\D_Manual_programador.tex
 INPUT tex\D_Manual_programador.tex
-INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmtt.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmtt.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmtt.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmtt.fd
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmtt12.tfm
 INPUT .\tex\E_Manual_usuario.tex
 INPUT .\tex\E_Manual_usuario.tex
 INPUT .\tex\E_Manual_usuario.tex
@@ -1341,6 +1368,7 @@ INPUT .\img\manual_usuario_install_site_update5.png
 INPUT .\img\manual_usuario_install_site_update5.png
 INPUT .\img\manual_usuario_install_site_update5.png
 INPUT .\img\manual_usuario_install_site_update5.png
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbxi10.tfm
 INPUT .\img\manual_usuario_node_repository.png
 INPUT .\img\manual_usuario_node_repository.png
 INPUT img\manual_usuario_node_repository.png
@@ -1427,10 +1455,10 @@ INPUT tex\D_Manual_programador.aux
 INPUT .\tex\E_Manual_usuario.aux
 INPUT tex\E_Manual_usuario.aux
 INPUT tex\E_Manual_usuario.aux
-INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
@@ -1448,12 +1476,20 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr17.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr17.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr6.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr7.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr7.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmri10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmri10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmri12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmri12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmro12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmro12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmss10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmss10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmss12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmss12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmssbx10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmssbx10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsso17.pfb

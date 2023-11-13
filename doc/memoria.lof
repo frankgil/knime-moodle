@@ -1,50 +1,50 @@
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Ejemplo de Workflow en KNIME}}{10}{figure.3.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Workflow: preparación de datos}}{30}{figure.5.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Workflow: preparación de datos (Prepare data desplegado)}}{31}{figure.5.3}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Workflow: componente Video views count}}{32}{figure.5.4}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Workflow: preparación de datos (salida)}}{33}{figure.5.5}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Workflow: preparación de datos (diagrama de barras clase)}}{34}{figure.5.6}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Workflow completo}}{35}{figure.5.7}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Modelo A: Workflow}}{35}{figure.5.8}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Modelo A: Componente AutoML expandido}}{36}{figure.5.9}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Modelo A: Componente AutoML configuración}}{37}{figure.5.10}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Modelo A: Resultados}}{38}{figure.5.11}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Modelo B: Workflow}}{38}{figure.5.12}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Modelo B: SMOTE}}{39}{figure.5.13}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Modelo B: Resultados}}{40}{figure.5.14}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Modelo C: Workflow}}{40}{figure.5.15}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Modelo C: Best parameters}}{41}{figure.5.16}%
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Modelo C: Tabla de confusión}}{41}{figure.5.17}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Ejemplo de Workflow en KNIME.}}{10}{figure.3.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces \foreignlanguage {english}{\emph {Workflow}}: preparación de datos.}}{32}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces \foreignlanguage {english}{\emph {Workflow}}: preparación de datos (\leavevmode {\color {teal}\textsf {Prepare data}} desplegado).}}{33}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces \foreignlanguage {english}{\emph {Workflow}}: componente \leavevmode {\color {teal}\textsf {Video views count}}.}}{34}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces \foreignlanguage {english}{\emph {Workflow}}: preparación de datos (salida).}}{35}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces \foreignlanguage {english}{\emph {Workflow}}: preparación de datos (diagrama de barras clase).}}{36}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces \foreignlanguage {english}{\emph {Workflow}} completo.}}{37}{figure.5.7}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Modelo A: \foreignlanguage {english}{\emph {Workflow}}.}}{37}{figure.5.8}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Modelo A: Componente \leavevmode {\color {teal}\textsf {AutoML}} expandido.}}{38}{figure.5.9}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Modelo A: Componente \leavevmode {\color {teal}\textsf {AutoML}} configuración.}}{39}{figure.5.10}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Modelo A: Resultados.}}{40}{figure.5.11}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Modelo B: \foreignlanguage {english}{\emph {Workflow}}.}}{40}{figure.5.12}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Modelo B: \leavevmode {\color {teal}\textsf {SMOTE}}.}}{41}{figure.5.13}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Modelo B: Resultados.}}{42}{figure.5.14}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Modelo C: \foreignlanguage {english}{\emph {Workflow}}.}}{42}{figure.5.15}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Modelo C: \foreignlanguage {english}{\emph {Best parameters}}.}}{43}{figure.5.16}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Modelo C: Tabla de confusión.}}{43}{figure.5.17}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {C.2.1}{\ignorespaces Nodos implementados en la extensión Knime Moodle Integration}}{62}{figure.Alph3.2.1}%
-\contentsline {figure}{\numberline {C.2.2}{\ignorespaces Nodo Moodle Connector. Descripción}}{63}{figure.Alph3.2.2}%
-\contentsline {figure}{\numberline {C.2.3}{\ignorespaces Nodo Moodle Connector. Configuración}}{64}{figure.Alph3.2.3}%
-\contentsline {figure}{\numberline {C.2.4}{\ignorespaces Nodo Moodle Courses. Descripción}}{65}{figure.Alph3.2.4}%
-\contentsline {figure}{\numberline {C.2.5}{\ignorespaces Nodo Moodle Courses. Configuración}}{66}{figure.Alph3.2.5}%
-\contentsline {figure}{\numberline {C.2.6}{\ignorespaces Nodo Moodle Courses. Ejemplo de salida.}}{67}{figure.Alph3.2.6}%
-\contentsline {figure}{\numberline {C.2.7}{\ignorespaces Nodo Moodle Users. Descripción}}{69}{figure.Alph3.2.7}%
-\contentsline {figure}{\numberline {C.2.8}{\ignorespaces Nodo Moodle Users. Configuración}}{70}{figure.Alph3.2.8}%
-\contentsline {figure}{\numberline {C.2.9}{\ignorespaces Nodo Moodle Users. Salida de ejemplo. }}{71}{figure.Alph3.2.9}%
-\contentsline {figure}{\numberline {C.2.10}{\ignorespaces Nodo Moodle Reports Logs. Descripción}}{72}{figure.Alph3.2.10}%
-\contentsline {figure}{\numberline {C.2.11}{\ignorespaces Nodo Moodle Reports Logs. Salida}}{73}{figure.Alph3.2.11}%
-\contentsline {figure}{\numberline {C.2.12}{\ignorespaces Nodo Moodle Reports Grades. Descripción}}{74}{figure.Alph3.2.12}%
-\contentsline {figure}{\numberline {C.2.13}{\ignorespaces Nodo Moodle Reports Grades. Salida}}{75}{figure.Alph3.2.13}%
-\contentsline {figure}{\numberline {C.2.14}{\ignorespaces Nodo Moodle Reports Quizzes. Descripción}}{76}{figure.Alph3.2.14}%
-\contentsline {figure}{\numberline {C.2.15}{\ignorespaces Nodo Moodle Reports Quizzes. Salida}}{77}{figure.Alph3.2.15}%
+\contentsline {figure}{\numberline {C.2.1}{\ignorespaces Nodos implementados en la extensión \leavevmode {\color {teal}\textsf {KNIME Moodle Integration}}.}}{64}{figure.Alph3.2.1}%
+\contentsline {figure}{\numberline {C.2.2}{\ignorespaces Nodo \leavevmode {\color {teal}\textsf {Moodle Connector}}. Descripción.}}{65}{figure.Alph3.2.2}%
+\contentsline {figure}{\numberline {C.2.3}{\ignorespaces Nodo \leavevmode {\color {teal}\textsf {Moodle Connector}}. Configuración.}}{66}{figure.Alph3.2.3}%
+\contentsline {figure}{\numberline {C.2.4}{\ignorespaces Nodo \leavevmode {\color {teal}\textsf {Moodle Courses}}. Descripción.}}{67}{figure.Alph3.2.4}%
+\contentsline {figure}{\numberline {C.2.5}{\ignorespaces Nodo \leavevmode {\color {teal}\textsf {Moodle Courses}}. Configuración.}}{68}{figure.Alph3.2.5}%
+\contentsline {figure}{\numberline {C.2.6}{\ignorespaces \leavevmode {\color {teal}\textsf {Nodo Moodle Courses}}. Ejemplo de salida.}}{69}{figure.Alph3.2.6}%
+\contentsline {figure}{\numberline {C.2.7}{\ignorespaces Nodo \leavevmode {\color {teal}\textsf {Moodle Users}}. Descripción.}}{71}{figure.Alph3.2.7}%
+\contentsline {figure}{\numberline {C.2.8}{\ignorespaces Nodo \leavevmode {\color {teal}\textsf {Moodle Users}}. Configuración.}}{72}{figure.Alph3.2.8}%
+\contentsline {figure}{\numberline {C.2.9}{\ignorespaces Nodo \leavevmode {\color {teal}\textsf {Moodle Users}}. Salida de ejemplo. }}{73}{figure.Alph3.2.9}%
+\contentsline {figure}{\numberline {C.2.10}{\ignorespaces Nodo \leavevmode {\color {teal}\textsf {Moodle Reports Logs}}. Descripción.}}{74}{figure.Alph3.2.10}%
+\contentsline {figure}{\numberline {C.2.11}{\ignorespaces Nodo \leavevmode {\color {teal}\textsf {Moodle Reports Logs}}. Salida.}}{75}{figure.Alph3.2.11}%
+\contentsline {figure}{\numberline {C.2.12}{\ignorespaces Nodo \leavevmode {\color {teal}\textsf {Moodle Reports Grades}}. Descripción.}}{76}{figure.Alph3.2.12}%
+\contentsline {figure}{\numberline {C.2.13}{\ignorespaces Nodo \leavevmode {\color {teal}\textsf {Moodle Reports Grades}}. Salida.}}{77}{figure.Alph3.2.13}%
+\contentsline {figure}{\numberline {C.2.14}{\ignorespaces Nodo \leavevmode {\color {teal}\textsf {Moodle Reports Quizzes}}. Descripción.}}{78}{figure.Alph3.2.14}%
+\contentsline {figure}{\numberline {C.2.15}{\ignorespaces Nodo \leavevmode {\color {teal}\textsf {Moodle Reports Quizzes}}. Salida.}}{79}{figure.Alph3.2.15}%
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {E.3.1}{\ignorespaces Instalación de la extensión Moodle en KNIME 1}}{84}{figure.Alph5.3.1}%
-\contentsline {figure}{\numberline {E.3.2}{\ignorespaces Instalación de la extensión Moodle en KNIME 2}}{84}{figure.Alph5.3.2}%
-\contentsline {figure}{\numberline {E.3.3}{\ignorespaces Instalación de la extensión Moodle en KNIME 3}}{85}{figure.Alph5.3.3}%
-\contentsline {figure}{\numberline {E.3.4}{\ignorespaces Instalación de la extensión Moodle en KNIME 4}}{85}{figure.Alph5.3.4}%
-\contentsline {figure}{\numberline {E.3.5}{\ignorespaces Instalación de la extensión Moodle en KNIME 5}}{86}{figure.Alph5.3.5}%
-\contentsline {figure}{\numberline {E.4.1}{\ignorespaces Usando la extensión Moodle. Repositorio de nodos. }}{87}{figure.Alph5.4.1}%
-\contentsline {figure}{\numberline {E.4.2}{\ignorespaces Usando la extensión Moodle 1}}{88}{figure.Alph5.4.2}%
-\contentsline {figure}{\numberline {E.4.3}{\ignorespaces Usando la extensión Moodle 2}}{88}{figure.Alph5.4.3}%
-\contentsline {figure}{\numberline {E.4.4}{\ignorespaces Usando la extensión Moodle 3}}{89}{figure.Alph5.4.4}%
-\contentsline {figure}{\numberline {E.4.5}{\ignorespaces Usando la extensión Moodle 4}}{89}{figure.Alph5.4.5}%
-\contentsline {figure}{\numberline {E.4.6}{\ignorespaces Usando la extensión Moodle 5}}{90}{figure.Alph5.4.6}%
+\contentsline {figure}{\numberline {E.3.1}{\ignorespaces Instalación de la extensión \leavevmode {\color {teal}\textsf {Moodle}} en KNIME 1.}}{86}{figure.Alph5.3.1}%
+\contentsline {figure}{\numberline {E.3.2}{\ignorespaces Instalación de la extensión \leavevmode {\color {teal}\textsf {Moodle}} en KNIME 2.}}{86}{figure.Alph5.3.2}%
+\contentsline {figure}{\numberline {E.3.3}{\ignorespaces Instalación de la extensión \leavevmode {\color {teal}\textsf {Moodle}} en KNIME 3.}}{87}{figure.Alph5.3.3}%
+\contentsline {figure}{\numberline {E.3.4}{\ignorespaces Instalación de la extensión \leavevmode {\color {teal}\textsf {Moodle}} en KNIME 4.}}{87}{figure.Alph5.3.4}%
+\contentsline {figure}{\numberline {E.3.5}{\ignorespaces Instalación de la extensión \leavevmode {\color {teal}\textsf {Moodle}} en KNIME 5.}}{88}{figure.Alph5.3.5}%
+\contentsline {figure}{\numberline {E.4.1}{\ignorespaces Usando la extensión \leavevmode {\color {teal}\textsf {Moodle}}. Repositorio de nodos. }}{89}{figure.Alph5.4.1}%
+\contentsline {figure}{\numberline {E.4.2}{\ignorespaces Usando la extensión \leavevmode {\color {teal}\textsf {Moodle}} 1.}}{90}{figure.Alph5.4.2}%
+\contentsline {figure}{\numberline {E.4.3}{\ignorespaces Usando la extensión \leavevmode {\color {teal}\textsf {Moodle}} 2.}}{90}{figure.Alph5.4.3}%
+\contentsline {figure}{\numberline {E.4.4}{\ignorespaces Usando la extensión \leavevmode {\color {teal}\textsf {Moodle}} 3.}}{91}{figure.Alph5.4.4}%
+\contentsline {figure}{\numberline {E.4.5}{\ignorespaces Usando la extensión \leavevmode {\color {teal}\textsf {Moodle}} 4.}}{91}{figure.Alph5.4.5}%
+\contentsline {figure}{\numberline {E.4.6}{\ignorespaces Usando la extensión \leavevmode {\color {teal}\textsf {Moodle}} 5.}}{92}{figure.Alph5.4.6}%

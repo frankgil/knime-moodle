@@ -1,16 +1,16 @@
 \capitulo{5}{Aspectos relevantes del desarrollo del proyecto}
 
 En este apartado se recogen los aspectos más interesantes del desarrollo del proyecto que se han detectado 
-durante las fases de Análisis, Diseño e Implementación. Se incluye también un apartado con un workflow que sirve
+durante las fases de análisis, diseño e implementación. Se incluye también un apartado con un \english{workflow} que sirve
 de ejemplo de uso de los nodos desarrollados. 
 
 \section{Análisis}
 
-Como resultado de la fase de Análisis se han completado los apartados: 
+Como resultado de la fase de análisis se han completado los apartados: 
 
 \begin{itemize}
-	\item Plan de proyecto Software (Apéndice A)
-	\item Especificación de requisitos (Apéndice B)
+	\item Plan de proyecto software (Apéndice \ref{sec:appendixA})
+	\item Especificación de requisitos (Apéndice \ref{sec:appendixB})
 \end{itemize}
 
 Durante la fase de análisis se realiza un estudio previo para determinar el alcance del proyecto y 
@@ -19,10 +19,10 @@ de trabajo completo y se realizan las pruebas técnicas necesarias para asegurar
 del proyecto. Concretamente, se abordan las siguientes cuestiones: 
 
 \begin{itemize}
-	\item Extracción de datos de Moodle. Pruebas de acceso a la API de Moodle y los diferentes logs disponibles. 
+	\item Extracción de datos de Moodle. Pruebas de acceso a la API de Moodle y los diferentes \english{logs} disponibles. 
     \item Estudio previo del desarrollo en KNIME, incluyendo también la implementación de nodo KNIME de prueba y
-	 creación de un workflow para ejecutar el nodo desarrollado en combinación con otros nodos del núcleo de KNIME.
-	\item Elección de los datos de estudio y workflow a implementar.  
+	 creación de un \english{workflow} para ejecutar el nodo desarrollado en combinación con otros nodos del núcleo de KNIME.
+	\item Elección de los datos de estudio y \english{workflow} a implementar.  
 \end{itemize}
 
 
@@ -34,27 +34,27 @@ datos que se pueden visualizar desde Moodle.
 \
 
 Buscando métodos de acceso alternativos a Moodle, se localiza la aplicación UBUMonitor, un proyecto desarrollado 
-en Java que sí extrae de Moodle todos los logs que nos gustaría incorporar en nuestro proyecto. El código de UBUMonitor 
+en Java que sí extrae de Moodle todos los \english{logs} que nos gustaría incorporar en nuestro proyecto. El código de UBUMonitor 
 nos aporta dos soluciones importantes: 
 
 \begin{itemize}
-	\item Código de acceso a Moodle mediante Web Scrapping, simulando el acceso como si se tratara de un login realizado en el sitio web Moodle. 
-	\item Código de acceso a los logs.
+	\item Código de acceso a Moodle mediante \english{Web Scraping}, simulando el acceso como si se tratara de un \english{login} realizado en el sitio web Moodle. 
+	\item Código de acceso a los \english{logs}.
 \end{itemize}
 
 Se decide incorporar directamente a nuestro proyecto las clases relevantes de UBUMonitor, generando el archivo JAR que nos
 permite importar el código al proyecto. 
 \
 
-En resumen, como solución adoptada, se realizará un \textbf{doble login en Moodle}. El primer login se realiza siguiendo el modelo de webservice de la APP de Moodle. Esto 
-implica que \textbf{la plataforma Moodle debe tener activa la opción de acceso a la APP de Moodle}. El segundo login se realiza
-a través de Web Scrapping con las clases aportadas por UBUMonitor. Este doble acceso es transparente para el usuario. 
+En resumen, como solución adoptada, se realizará un \textbf{doble \english{login} en Moodle}. El primer \english{login} se realiza siguiendo el modelo de webservice de la APP de Moodle. Esto 
+implica que \textbf{la plataforma Moodle debe tener activa la opción de acceso a la APP de Moodle}. El segundo \english{login} se realiza
+a través de \english{Web Scraping} con las clases aportadas por UBUMonitor. Este doble acceso es transparente para el usuario. 
 
 \subsubsection{Género del usuario}
 
 Moodle no almacena información de género del usuario. Para poder realizar estudios teniendo en cuenta el género, se ha 
 utilizado el servicio externo \href{https://genderize.io/}{genderize.io}, que nos indica, a través de su API, el género de una 
-persona a partir de su nombre (male o female). 
+persona a partir de su nombre (\english{male} o \english{female}). 
 
 
 \subsubsection{Anonimización}
@@ -75,12 +75,12 @@ también la información relacionada con el usuario como, por ejemplo, su ID. En
 adicionales de anonimización que se podrían incorporar como parte del flujo de trabajo. 
 
 
-\subsection{Estudio previo del desarrollo en Knime}
+\subsection{Estudio previo del desarrollo en KNIME}
 
 \subsubsection{Pasos para crear una extensión y nodo de ejemplo en KNIME}
 
 Los nodos de KNIME son elementos que aportan una funcionalidad independiente. Estos nodos se pueden combinar dentro de un 
-flujo de trabajo o workflow para realizar funciones más complejas. Los nodos vienen empaquetados dentro de extensiones de KNIME, que 
+flujo de trabajo o \english{workflow} para realizar funciones más complejas. Los nodos vienen empaquetados dentro de extensiones de KNIME, que 
 pueden incluir uno o varios nodos relacionados. 
 \
 
@@ -94,7 +94,7 @@ Los pasos para crear una extensión en KNIME se pueden resumir en:
 	\item Desplegar la extensión. 
 \end{enumerate}
 
-KNIME nos facilita una \href{https://docs.knime.com/latest/analytics_platform_new_node_quickstart_guide/index.html#_introduction}{guía 
+KNIME nos facilita una \href{https://docs.knime.com/latest/analytics_platform_new_node_quickstart_guide/index.html\#_introduction}{guía 
 para desarrollar en Java una extensión con un primer nodo de ejemplo}, llamado \textbf{Number Formatter}. Este nodo recibe como entrada 
 una tabla de datos con una columna con números decimales, y devuelve una tabla similar con los datos redondeados al número 
 de decimales especificados en la configuración del nodo. 
@@ -106,7 +106,7 @@ a los que queremos desarrollar.
 
 \subsubsection{Reutilización de nodos en KNIME a nivel de código}
 
-Durante la fase de Análisis se realizan pruebas para verificar si un nodo de KNIME puede ejecutarse a nivel de código desde 
+Durante la fase de análisis se realizan pruebas para verificar si un nodo de KNIME puede ejecutarse a nivel de código desde 
 dentro de otro nodo. Esto podría ser interesante para reutilizar ciertas funcionalidades que están disponibles en KNIME 
 a través de nodos, como puede ser conversión de datos de unos tipos a otros. 
 \
@@ -120,8 +120,8 @@ de mantenimiento cuando un nodo queda obsoleto. Se puede consultar \href{https:/
 
 \subsubsection{Estudio de otros nodos}
 
-Las extensiones de KNIME están disponibles con código abierto. De entre las extensiones disponibles en KNIME Community Hub, la extensión 
-\href{https://hub.knime.com/knime/extensions/org.knime.features.ext.twitter/latest}{KNIME Twitter Connectors} dispone de un 
+Las extensiones de KNIME están disponibles con código abierto. De entre las extensiones disponibles en \english{KNIME Community Hub}, la extensión 
+\href{https://hub.knime.com/knime/extensions/org.knime.features.ext.twitter/latest}{\english{KNIME Twitter Connectors}} dispone de un 
 conjunto de nodos con una funcionalidad parecida a la que queremos implementar, por lo que se revisa el código de implementación
 como guía para nuestra implementación. En general, para futuros desarrolladores de KNIME, se aconseja seguir este procedimiento, 
 localizando nodos de funcionalidad o estructura similar a la que se quiera desarrollar. 
@@ -132,29 +132,29 @@ Al tratarse de un proyecto Java, se pueden importar en el proyecto librerías ex
 han sido importadas por esta vía. 
 
 
-\subsection{Datos de estudio y workflows a implementar}
+\subsection{Datos de estudio y \english{workflows} a implementar}
 
-Durante el análisis se evalúan las posibles fuentes de datos y posibles workflows de trabajo. Para el desarrollo se pueden 
-utilizar los datos de prueba disponibles en la \href{https://school.moodledemo.net/}{demo de Moodle Mount Orange School}, que es un 
+Durante el análisis se evalúan las posibles fuentes de datos y posibles \english{workflows} de trabajo. Para el desarrollo se pueden 
+utilizar los datos de prueba disponibles en la \href{https://school.moodledemo.net/}{demo de \english{Moodle Mount Orange School}}, que es un 
 Moodle ya montado con cursos, actividades y usuarios. 
 \
 
-Se decide implementar un único workflow sobre datos reales que utilice diferentes técnicas de Aprendizaje Supervisado. 
+Se decide implementar un único \english{workflow} sobre datos reales que utilice diferentes técnicas de aprendizaje supervisado. 
 
 \newpage
 \section{Diseño}
 
-Como resultado de la fase de Diseño se ha completado la Especificación de diseño, que se puede consultar en el Apéndice C de esta memoria. 
+Como resultado de la fase de diseño se ha completado la Especificación de diseño, que se puede consultar en el Apéndice \ref{sec:appendixC} de esta memoria. 
 
 \subsection{Aspectos relevantes del diseño}
 
 A la hora de decidir el Diseño de la extensión y tipos de nodos que incluirá, se evalúan las siguientes estrategias: 
 
 \begin{enumerate}
-	\item Crear nodos individuales por cada web service de Moodle o pieza de información a extraer. Por ejemplo, un nodo 
-	para extraer los logs de participación en foros, otro nodo para extraer los logs de consulta de actividades, etc. 
-	\item Crear nodos más genéricos que extraen información de varios web services relacionados. Por ejemplo, 
-	un nodo para extraer toda la información de usuarios, otro para cursos, otro para logs, etc. 
+	\item Crear nodos individuales por cada \english{web service} de Moodle o pieza de información a extraer. Por ejemplo, un nodo 
+	para extraer los \english{logs} de participación en foros, otro nodo para extraer los \english{logs} de consulta de actividades, etc. 
+	\item Crear nodos más genéricos que extraen información de varios \english{web services} relacionados. Por ejemplo, 
+	un nodo para extraer toda la información de usuarios, otro para cursos, otro para \english{logs}, etc. 
 \end{enumerate}
 
 Se opta por la segunda opción y se plantea el diseño de estos 6 nodos: 
@@ -163,7 +163,7 @@ Se opta por la segunda opción y se plantea el diseño de estos 6 nodos:
 	\item \textbf{Moodle Connector}. Establece la conexión con la plataforma. 
 	\item \textbf{Moodle Courses}. Devuelve información de cursos disponibles en la plataforma. 
 	\item \textbf{Moodle Users}. Devuelve el listado de usuarios matriculados en los cursos especificados. 
-	\item \textbf{Moodle Reports Logs}. Devuelve un amplio abanico de logs de interacción de los usuarios disponibles en Moodle. 
+	\item \textbf{Moodle Reports Logs}. Devuelve un amplio abanico de \english{logs} de interacción de los usuarios disponibles en Moodle. 
 	\item \textbf{Moodle Reports Grades}. Devuelve calificaciones de los alumnos en las actividades indicadas. 
 	\item \textbf{Moodle Reports Quizzes}. Devuelve información relacionada con los cuestionarios realizados por los alumnos. 
 \end{itemize}
@@ -172,11 +172,11 @@ Se opta por la segunda opción y se plantea el diseño de estos 6 nodos:
 \newpage
 \section{Implementación}
 
-Como resultado de la fase de Implementación se han completado los apartados: 
+Como resultado de la fase de implementación se han completado los apartados: 
 
 \begin{itemize}
-	\item Documentación técnica de programación (Apéndice D)
-	\item Documentación de usuario (Apéndice E)
+	\item Documentación técnica de programación (Apéndice \ref{sec:appendixD})
+	\item Documentación de usuario (Apéndice \ref{sec:appendixE})
 \end{itemize}
 
 
@@ -187,7 +187,7 @@ Se destacan en este apartado algunos de los problemas más relevantes encontrado
 
 \subsubsection{Versión de KNIME}
 
-El desarrolló del proyecto comenzó en la versión KNIME 4.5.2. Durante el desarrollo se lanzó la versión 4.7 
+El desarrolló del proyecto comenzó en la versión KNIME 4.5.2. Durante el desarrollo, se lanzó la versión 4.7 
 y se actualizó el código y el entorno de desarrollo para que la extensión desarrollara fuera compatible con 
 esta versión. 
 
@@ -197,15 +197,15 @@ sigue siendo compatible con la última versión 4.7.x lanzada, que es la versió
 
 \subsubsection{Entorno de desarrollo}
 
-En el apéndice D se describen los pasos requeridos para montar en entorno de desarrollo. 
+En el apéndice \ref{sec:appendixD} se describen los pasos requeridos para montar en entorno de desarrollo. 
 
-Como apunte, es importante establecer una versión fija de KNIME en Target definition para descargar los plugins 
-correspondientes. Por defecto KNIME establece la versión ``nightly'', con lo que el entorno se irá actualizando automáticamente a la última versión disponible. 
-Esto podría, ocasionalmente, ``romper'' nuestro entorno de trabajo al producirse un salto de versión mayor (por ejemplo, de 4.6 a 4.7, de 5.1 a 5.2, etc.). 
+Como apunte, es importante establecer una versión fija de KNIME en \english{Target definition} para descargar los \english{plugins} 
+correspondientes. Por defecto KNIME establece la versión <<\english{nightly}>>, con lo que el entorno se irá actualizando automáticamente a la última versión disponible. 
+Esto podría, ocasionalmente, <<romper>> nuestro entorno de trabajo al producirse un salto de versión mayor (por ejemplo, de 4.6 a 4.7, de 5.1 a 5.2, etc.). 
 Como ya hemos comentado, nosotros trabajaremos en la versión 4.7.7.
 
 
-\subsubsection{Integración de librerías externas}
+\subsubsection{Integración de bibliotecas externas}
 
 Ha sido necesario incorporar algunos proyectos externos, como:
 
@@ -215,34 +215,34 @@ Ha sido necesario incorporar algunos proyectos externos, como:
 	\item \href{https://github.com/stleary/JSON-java}{JSON in Java (20220320)}
 \end{itemize}
 
-Se puede consultar el listado completo de librerías externas en la carpeta /libraries de la extensión. 
+Se puede consultar el listado completo de bibliotecas externas en la carpeta \ruta{/libraries} de la extensión. 
 \
 
-Inicialmente se intentaron utilizar directamente las clases de logs de UBUMonitor, pero se 
-encuentraron problemas de dependencias que obligaron a extraer las clases directamente a nuestro proyecto. 
-La base del código es similar pero se ha modificado posteriormente para adaptar el código a los logs específicos que se incorporaron al proyecto. 
+Inicialmente se intentaron utilizar directamente las clases de \english{logs} de UBUMonitor, pero se 
+encontraron problemas de dependencias que obligaron a extraer las clases directamente a nuestro proyecto. 
+La base del código es similar pero se ha modificado posteriormente para adaptar el código a los \english{logs} específicos que se incorporaron al proyecto. 
 
-\subsubsection{Login de Moodle}
+\subsubsection{\english{Login} de Moodle}
 
 Como ya se comentó previamente, el acceso a los datos de Moodle está limitado, por lo que se ha tenido que utilizar 
-un doble acceso vía webservice similar al utilizado por la APP de Moodle, combinado con el acceso por Web Scrapping aportado 
+un doble acceso vía \english{web service} similar al utilizado por la APP de Moodle, combinado con el acceso por \english{Web Scraping} aportado 
 por UBUMonitor. Esto implica que la implementación de Moodle debe tener activa la opción de acceso de la APP, algo que ya es muy 
 habitual en las plataformas universitarias. 
 
 
 \subsubsection{Despliegue de la extensión desarrollada}
 
-En la \href{https://docs.knime.com/latest/analytics_platform_new_node_quickstart_guide/index.html#_deploy_your_extension}{guía para crear extensiones de KNIME en Java (apartado Deploy your extension)}, se explican dos métodos para desplegar la extensión 
+En la \href{https://docs.knime.com/latest/analytics_platform_new_node_quickstart_guide/index.html\#_deploy_your_extension}{guía para crear extensiones de KNIME en Java (apartado \english{Deploy your extension)}}, se explican dos métodos para desplegar la extensión 
 desarrollada de forma que pueda ser importada en cualquier instancia de KNIME sin necesidad de integración
 con Eclipse: 
 
 \begin{itemize}
-	\item \textbf{Opción 1. Sitio de actualización local  (Local Update Site)}. Esta es la opción recomendada y la que hemos 
+	\item \textbf{Opción 1. Sitio de actualización local  (\english{Local Update Site})}. Esta es la opción recomendada y la que hemos 
 	seguido en este proyecto. Se crea a partir de la extensión
-	desarrollada una "feature" que se añade a un sitio de actualización local. La carpeta generada, que se ha compartido 
+	desarrollada una <<\english{feature}>> que se añade a un sitio de actualización local. La carpeta generada, que se ha compartido 
 	en el repositorio del proyecto, se puede utilizar para importar el plugin desde cualquier instancia de KNIME. Las instrucciones de 
-	instalación se pueden consultar en el Manual de usuario de esta memoria (apéndice E). 
-	\item \textbf{Opción 2. dropin}. Se trata de exportar la extensión en formato JAR y añadirla en la carpeta "dropin" 
+	instalación se pueden consultar en el Manual de usuario de esta memoria (apéndice \ref{sec:appendixE}). 
+	\item \textbf{Opción 2. \english{dropin}}. Se trata de exportar la extensión en formato JAR y añadirla en la carpeta \ruta{dropin} 
 	de la instalación de KNIME. Aunque no está correctamente documentado, esta opción dejó de funcionar en la versión KNIME 4.1 y 
 	se recuperó posteriormente en la versión 4.2. Sin embargo, nunca ha sido un método recomendado porque Eclipse tenía intención de eliminarlo. 
 	\textbf{En las últimas versiones de KNIME probadas (4.5 y 4.7) esta funcionalidad parece no estar disponible}. 
@@ -253,23 +253,23 @@ con Eclipse:
 \section{Workflow de KNIME con datos reales}
 
 A continuación presentamos un estudio práctico utilizando la extensión desarrollada dentro 
-de un workflow de KNIME aplicado al Aprendizaje Supervisado. 
+de un \english{workflow} de KNIME aplicado al aprendizaje supervisado. 
 
 \subsection{Datos de estudio}
 
-Los datos se corresponden con copias de seguridad de Moodle de la asignatura ``Aprendizaje no supervisado'' que se imparte en este Máster dentro del bloque de Ciencia de Datos. 
+Los datos se corresponden con copias de seguridad de Moodle de la asignatura <<Aprendizaje no supervisado>> que se imparte en este máster dentro del bloque de Ciencia de Datos. 
 Concretamente se disponen de los datos correspondientes a los cursos 2021/2022 y 2022/2023. Las copias de seguridad son completas, por lo que incluyen todas las interacciones de los alumnos y sus calificaciones parciales y finales. 
 Aunque se disponía también de los datos del curso 2018/2019, finalmente se descartaron porque el curso había cambiado significativamente a nivel estructural, y las actividades y su evaluación no se correspondían con los datos de años posteriores. 
 \
 
-Los datos se han importado en una instancia de Moodle local para su acceso desde Knime con el rol de Profesor. 
+Los datos se han importado en una instancia de Moodle local para su acceso desde KNIME con el rol de profesor. 
 \
 
 En total disponemos de registros de 56 estudiantes, 26 matriculados en el curso de 2021/2022 y 30 en el de 2022/2023. 
 
 \subsection{Objetivo del estudio}
 
-Para entender el siguiente estudio necesitamos conocer la metodología de estudio y evaluación utilizada dentro de la asignatura ``Aprendizaje no supervisado''. 
+Para entender el siguiente estudio necesitamos conocer la metodología de estudio y evaluación utilizada dentro de la asignatura <<Aprendizaje no supervisado>>. 
 \
 
 La asignatura se divide en cuatro unidades (UD1, UD2, UD3 y UD4), con evaluación teórica y práctica. La evaluación teórica consiste
@@ -277,7 +277,7 @@ en un cuestionario final por bloque (C1, C2, C3 y C4), donde el estudiante tiene
 La calificación final de cada cuestionario será la calificación máxima obtenida en los intentos realizados. 
 \
 
-Para preparar estos cuestionarios finales, en cada unidad se dispone de una serie de documentos en PDF y Vídeos con \textbf{cuestionarios de autoevaluación} asociados. 
+Para preparar estos cuestionarios finales, en cada unidad se dispone de una serie de documentos en PDF y vídeos con \textbf{cuestionarios de autoevaluación} asociados. 
 Estos cuestionarios de autoevaluación no computan para la calificación final y tienen intentos ilimitados. Cada cuestionario solo está disponible cuando se 
 completa y supera el cuestionario inmediatamente anterior, según la calificación mínima requerida en cada cuestionario. Si el estudiante desea mejorar el resultado, incluso si 
 el cuestionario ya está superado, puede volver a visualizar el vídeo correspondiente y realizar nuevamente el cuestionario. Hay que recalcar que tanto la visualización de 
@@ -305,44 +305,44 @@ Siendo la clase a predecir:
 
 \subsection{Recopilación, limpieza y preparación de los datos}
 
-En la Figura ~\ref{fig:workflow0} se muestra la parte del workflow relativa a la recopilación, limpieza y preparación de los datos. De la extensión desarrollada en 
-este proyecto, necesitamos los nodos Moodle Connector, Moodle Users, Moodle Reports Logs y Moodle Reports Quizzes. Para este caso de estudio no 
-será necesario el nodo Moodle Reports Grades, ya que las calificaciones que necesitamos están relacionadas con cuestionarios y ya están disponibles a través del nodo Moodle Reports Quizzes. 
+En la Figura ~\ref{fig:workflow0} se muestra la parte del \english{workflow} relativa a la recopilación, limpieza y preparación de los datos. De la extensión desarrollada en 
+este proyecto, necesitamos los nodos \node{Moodle Connector}, \node{Moodle Users}, \node{Moodle Reports Logs} y \node{Moodle Reports Quizzes}. Para este caso de estudio no 
+será necesario el nodo \node{Moodle Reports Grades}, ya que las calificaciones que necesitamos están relacionadas con cuestionarios y ya están disponibles a través del nodo \node{Moodle Reports Quizzes}. 
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{img/workflow0.png}
-	\caption{Workflow: preparación de datos}
+	\caption{\english{Workflow}: preparación de datos.}
 	\label{fig:workflow0}
 \end{figure}
 \FloatBarrier
 
-Si desplegamos el componente Prepare data, veremos componentes adicionales para la extracción y tratamiento de datos específicos (Figura ~\ref{fig:workflow1}): 
+Si desplegamos el componente \node{Prepare data}, veremos componentes adicionales para la extracción y tratamiento de datos específicos (Figura ~\ref{fig:workflow1}): 
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{img/workflow1.png}
-	\caption{Workflow: preparación de datos (Prepare data desplegado)}
+	\caption{\english{Workflow}: preparación de datos (\node{Prepare data} desplegado).}
 	\label{fig:workflow1}
 \end{figure}
 \FloatBarrier
 
-El componente \textbf{Video View Count} ~\ref{fig:workflow1a} obtiene los datos de log desde el nodo \textbf{Moodle Reports Logs} y filtra aquellos
-logs relacionados con la visualización de vídeos. Utilizando un nodo \textbf{GroupBy} realiza un conteo agrupando por curso y usuario, devolviendo el campo \textbf{videosviews}.
+El componente \node{Video View Count} ~\ref{fig:workflow1a} obtiene los datos de log desde el nodo \node{Moodle Reports Logs} y filtra aquellos
+\english{logs} relacionados con la visualización de vídeos. Utilizando un nodo \node{GroupBy} realiza un conteo agrupando por curso y usuario, devolviendo el campo \field{videosviews}.
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{img/workflow1a.png}
-	\caption{Workflow: componente Video views count}
+	\caption{\english{Workflow}: componente \node{Video views count}.}
 	\label{fig:workflow1a}
 \end{figure}
 \FloatBarrier
 
-Los componentes \textbf{Course views count} y \textbf{Forum count} funcionan de forma similar al anterior pero filtrando por los logs correspondientes a cada caso y 
-devolviendo los campos \textbf{courseviews} y \textbf{forumcount} respectivamente. 
+Los componentes \node{Course views count} y \node{Forum count} funcionan de forma similar al anterior pero filtrando por los \english{logs} correspondientes a cada caso y 
+devolviendo los campos \field{courseviews} y \field{forumcount} respectivamente. 
 
-El componente \textbf{Quizzes counters} obtiene, a partir del nodo \textbf{Moodle Reports Quizzies}, información de los intentos de cuestionarios 
-realizados por los usuarios y agrupa los resultados para obtener los otros campos que necesitamos \textbf{autoevaltotalattempts}, \textbf{autoevalgrademean} y la clase, \textbf{evalgradecategory}.
+El componente \node{Quizzes counters} obtiene, a partir del nodo \node{Moodle Reports Quizzies}, información de los intentos de cuestionarios 
+realizados por los usuarios y agrupa los resultados para obtener los otros campos que necesitamos \field{autoevaltotalattempts}, \field{autoevalgrademean} y la clase, \field{evalgradecategory}.
 
 Se han realizado las siguientes operaciones de preparación y limpieza de los datos: 
 
@@ -356,7 +356,7 @@ Tras la limpieza de datos, nos hemos quedado con un conjunto de 53 registros. En
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{img/workflow2.png}
-	\caption{Workflow: preparación de datos (salida)}
+	\caption{\english{Workflow}: preparación de datos (salida).}
 	\label{fig:workflow2}
 \end{figure}
 \FloatBarrier
@@ -366,7 +366,7 @@ Como la clase es una variable cualitativa nominal, mostramos un diagrama de barr
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{img/workflow3.png}
-	\caption{Workflow: preparación de datos (diagrama de barras clase)}
+	\caption{\english{Workflow}: preparación de datos (diagrama de barras clase).}
 	\label{fig:workflow3}
 \end{figure}
 \FloatBarrier
@@ -374,35 +374,35 @@ Como la clase es una variable cualitativa nominal, mostramos un diagrama de barr
 
 \subsection{Modelo de aprendizaje}
 
-En la Figura ~\ref{fig:workflow4} se muestra el workflow completo. Se han implementando tres variantes del modelo con el mismo 
+En la Figura ~\ref{fig:workflow4} se muestra el \english{workflow} completo. Se han implementando tres variantes del modelo con el mismo 
 objetivo, identificadas como Modelo A, Modelo B y Modelo C. 
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{img/workflow4.png}
-	\caption{Workflow completo}
+	\caption{\english{Workflow} completo.}
 	\label{fig:workflow4}
 \end{figure}
 \FloatBarrier
 
 \subsubsection{Modelo A}
 
-En el modelo A, mostrado en la Figura ~\ref{fig:workflowA1} utilizamos el componente \textbf{AutoML} de KNIME. Este componente entrena automáticamente modelos 
+En el modelo A, mostrado en la Figura ~\ref{fig:workflowA1} utilizamos el componente \node{AutoML} de KNIME. Este componente entrena automáticamente modelos 
 de aprendizaje automático supervisados para clasificación binaria o multiclase, siendo este segundo nuestro objetivo. 
 
-El componente incluye y automatiza todo el ciclo de Machine Learning, incluyendo preparación de datos, optimización 
+El componente incluye y automatiza todo el ciclo de \english{Machine Learning}, incluyendo preparación de datos, optimización 
 de parámetros con validación cruzada y evaluación y selección del mejor modelo. 
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{img/workflowA1.png}
-	\caption{Modelo A: Workflow}
+	\caption{Modelo A: \english{Workflow}.}
 	\label{fig:workflowA1}
 \end{figure}
 \FloatBarrier
 
-No tenemos que ver AutoML como una caja cerrada que lo hace todo por nosotros. Lo interesante está en el hecho de que 
-AutoML se ha construido como un componente y no como un nodo, con lo que realmente se trata de un workflow más complejo 
+No tenemos que ver \node{AutoML} como una caja cerrada que lo hace todo por nosotros. Lo interesante está en el hecho de que 
+\node{AutoML} se ha construido como un componente y no como un nodo, con lo que realmente se trata de un \english{workflow} más complejo 
 que se ha agrupado como componente. Este componente puede ser expandido y podemos visualizar sus elementos y modificarlos 
 según las necesidades del proyecto. En la Figura ~\ref{fig:workflowA3} se muestra el primer nivel de expansión del componente,
 que a su vez está formado por otros componetes que también se pueden abrir. 
@@ -410,16 +410,16 @@ que a su vez está formado por otros componetes que también se pueden abrir.
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{img/workflowA3.png}
-	\caption{Modelo A: Componente AutoML expandido}
+	\caption{Modelo A: Componente \node{AutoML} expandido.}
 	\label{fig:workflowA3}
 \end{figure}
 \FloatBarrier
 
-En la Figura ~\ref{fig:workflowA2} se muestra la configuración del componente AutoML para nuestro modelo, donde hemos seleccionado los 
+En la Figura ~\ref{fig:workflowA2} se muestra la configuración del componente \node{AutoML} para nuestro modelo, donde hemos seleccionado los 
 modelos a entrenar: 
 
 \begin{itemize}
-	\item Naive Bayes
+	\item Naïve Bayes
 	\item Logistic Regression
 	\item Gradient Boosted Trees 
 	\item Decision Tree 
@@ -430,34 +430,34 @@ modelos a entrenar:
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{img/workflowA2.png}
-	\caption{Modelo A: Componente AutoML configuración}
+	\caption{Modelo A: Componente \node{AutoML} configuración.}
 	\label{fig:workflowA2}
 \end{figure}
 \FloatBarrier
 
-Como resultado de la ejecución, AutoML nos muestra un listado de los modelos ordenados por Accuracy (Figura ~\ref{fig:workflowA4}). 
-Los modelos Gradient Boosted Trees, Logistic Regression, Decision Tree y Random Forest obtienen los valores más altos (Accuracy = 0.67)
+Como resultado de la ejecución, \node{AutoML} nos muestra un listado de los modelos ordenados por \english{Accuracy} (Figura ~\ref{fig:workflowA4}). 
+Los modelos \english{Gradient Boosted Trees}, \english{Logistic Regression}, \english{Decision Tree} y \english{Random Forest} obtienen los valores más altos (\english{Accuracy} = 0.67)
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{img/workflowA4.png}
-	\caption{Modelo A: Resultados}
+	\caption{Modelo A: Resultados.}
 	\label{fig:workflowA4}
 \end{figure}
 \FloatBarrier
 
 \subsubsection{Modelo B}
 
-El modelo B (Figura ~\ref{fig:workflowB1}) es una variante del anterior, usando también AutoML, pero añadiendo previamente sobremuestreo a los datos 
+El modelo B (Figura ~\ref{fig:workflowB1}) es una variante del anterior, usando también \node{AutoML}, pero añadiendo previamente sobremuestreo a los datos 
 de entrada para enriquecer los datos de entrenamiento e igualar la distribución de clases. Esta técnica se llama 
-SMOTE \cite{smote} (Synthetic Minority Over-sampling Technique) y KNIME dispone de un nodo que la implementa y que hemos 
-configurado para que relice un sobremuestreo de las clases minoritarias. Esta técnica ha sido utilizada en otros estudios similares de 
+\english{SMOTE} \cite{smote} (\english{Synthetic Minority Over-sampling Technique}) y KNIME dispone de un nodo que la implementa y que hemos 
+configurado para que realice un sobremuestreo de las clases minoritarias. Esta técnica ha sido utilizada en otros estudios similares de 
 predicción de calificaciones de estudiantes \cite{multiclass-pred}. 
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{img/workflowB1.png}
-	\caption{Modelo B: Workflow}
+	\caption{Modelo B: \english{Workflow}.}
 	\label{fig:workflowB1}
 \end{figure}
 \FloatBarrier
@@ -467,51 +467,51 @@ La distribución de clases ahora se muestra en la Figura ~\ref{fig:workflowB2}
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{img/workflowB2.png}
-	\caption{Modelo B: SMOTE}
+	\caption{Modelo B: \node{SMOTE}.}
 	\label{fig:workflowB2}
 \end{figure}
 \FloatBarrier
 
-Como resultado, vemos que se obtiene un valor mayor de Accuracy (0.76) en todos los modelos a excepción de Naive Bayes. 
+Como resultado, vemos que se obtiene un valor mayor de \english{Accuracy} (0.76) en todos los modelos a excepción de \english{Naïve Bayes}. 
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{img/workflowB3.png}
-	\caption{Modelo B: Resultados}
+	\caption{Modelo B: Resultados.}
 	\label{fig:workflowB3}
 \end{figure}
 \FloatBarrier
 
 \subsubsection{Modelo C}
 
-En modelo C (Figura ~\ref{fig:workflowC1}) se entrena un modelo Random Forest con optimización de parámetros. 
+En modelo C (Figura ~\ref{fig:workflowC1}) se entrena un modelo \english{Random Forest} con optimización de parámetros. 
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{img/workflowC1.png}
-	\caption{Modelo C: Workflow}
+	\caption{Modelo C: \english{Workflow}.}
 	\label{fig:workflowC1}
 \end{figure}
 \FloatBarrier
 
 En la parte superior se observa el flujo desarrollado para ejecutar el modelo con varios parámetros y seleccionar la combinación con la 
-que se obtiene un mejor valor de Accuracy (Figura ~\ref{fig:workflowC2}). 
+que se obtiene un mejor valor de \english{Accuracy} (Figura ~\ref{fig:workflowC2}). 
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{img/workflowC2.png}
-	\caption{Modelo C: Best parameters}
+	\caption{Modelo C: \english{Best parameters}.}
 	\label{fig:workflowC2}
 \end{figure}
 \FloatBarrier
 
 Estos parámetros se utilizarán para configurar el modelo y obtener el modelo final. En la Figura ~\ref{fig:workflowC3} se muestra
-el valor de Accuracy de este modelo (0.818) y la tabla de confusión correspondiente. 
+el valor de \english{Accuracy} de este modelo (0.818) y la tabla de confusión correspondiente. 
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{img/workflowC3.png}
-	\caption{Modelo C: Tabla de confusión}
+	\caption{Modelo C: Tabla de confusión.}
 	\label{fig:workflowC3}
 \end{figure}
 \FloatBarrier
