@@ -13,8 +13,8 @@
 \contentsline {section}{\numberline {2.3}Objetivos personales}{8}{section.2.3}%
 \contentsline {chapter}{3. Conceptos teóricos}{9}{chapter*.8}%
 \contentsline {section}{\numberline {3.1}KNIME}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Moodle}{11}{section.3.2}%
-\contentsline {section}{\numberline {3.3}ETL}{12}{section.3.3}%
+\contentsline {section}{\numberline {3.2}Moodle}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.3}ETL}{13}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Aprendizaje supervisado}{13}{section.3.4}%
 \contentsline {chapter}{4. Técnicas y herramientas}{15}{chapter*.9}%
 \contentsline {section}{\numberline {4.1}Entorno de desarrollo}{15}{section.4.1}%
@@ -86,24 +86,24 @@
 \contentsline {subsection}{\numberline {A.2.1}\foreignlanguage {english}{\emph {Sprint}} 0}{53}{subsection.Alph1.2.1}%
 \contentsline {subsection}{\numberline {A.2.2}\foreignlanguage {english}{\emph {Sprint}} 1}{54}{subsection.Alph1.2.2}%
 \contentsline {subsection}{\numberline {A.2.3}\foreignlanguage {english}{\emph {Sprint}} 2}{54}{subsection.Alph1.2.3}%
-\contentsline {subsection}{\numberline {A.2.4}\foreignlanguage {english}{\emph {Sprint}} 3}{54}{subsection.Alph1.2.4}%
+\contentsline {subsection}{\numberline {A.2.4}\foreignlanguage {english}{\emph {Sprint}} 3}{55}{subsection.Alph1.2.4}%
 \contentsline {subsection}{\numberline {A.2.5}\foreignlanguage {english}{\emph {Sprint}} 4}{55}{subsection.Alph1.2.5}%
 \contentsline {subsection}{\numberline {A.2.6}\foreignlanguage {english}{\emph {Sprint}} 5}{55}{subsection.Alph1.2.6}%
-\contentsline {subsection}{\numberline {A.2.7}\foreignlanguage {english}{\emph {Sprint}} 6}{55}{subsection.Alph1.2.7}%
-\contentsline {subsection}{\numberline {A.2.8}\foreignlanguage {english}{\emph {Sprint}} 7}{55}{subsection.Alph1.2.8}%
+\contentsline {subsection}{\numberline {A.2.7}\foreignlanguage {english}{\emph {Sprint}} 6}{56}{subsection.Alph1.2.7}%
+\contentsline {subsection}{\numberline {A.2.8}\foreignlanguage {english}{\emph {Sprint}} 7}{56}{subsection.Alph1.2.8}%
 \contentsline {subsection}{\numberline {A.2.9}\foreignlanguage {english}{\emph {Sprint}} 8}{56}{subsection.Alph1.2.9}%
 \contentsline {subsection}{\numberline {A.2.10}\foreignlanguage {english}{\emph {Sprint}} 9}{56}{subsection.Alph1.2.10}%
-\contentsline {subsection}{\numberline {A.2.11}\foreignlanguage {english}{\emph {Sprint}} 10}{56}{subsection.Alph1.2.11}%
-\contentsline {subsection}{\numberline {A.2.12}\foreignlanguage {english}{\emph {Sprint}} 11}{56}{subsection.Alph1.2.12}%
+\contentsline {subsection}{\numberline {A.2.11}\foreignlanguage {english}{\emph {Sprint}} 10}{57}{subsection.Alph1.2.11}%
+\contentsline {subsection}{\numberline {A.2.12}\foreignlanguage {english}{\emph {Sprint}} 11}{57}{subsection.Alph1.2.12}%
 \contentsline {subsection}{\numberline {A.2.13}\foreignlanguage {english}{\emph {Sprint}} 12}{57}{subsection.Alph1.2.13}%
-\contentsline {subsection}{\numberline {A.2.14}\foreignlanguage {english}{\emph {Sprint}} 13}{57}{subsection.Alph1.2.14}%
-\contentsline {subsection}{\numberline {A.2.15}\foreignlanguage {english}{\emph {Sprint}} 14}{57}{subsection.Alph1.2.15}%
-\contentsline {section}{\numberline {A.3}Estudio de viabilidad}{58}{section.Alph1.3}%
-\contentsline {subsection}{\numberline {A.3.1}Viabilidad económica}{58}{subsection.Alph1.3.1}%
-\contentsline {subsubsection}{\numberline {A.3.1.1}Costes de personal}{58}{subsubsection.Alph1.3.1.1}%
-\contentsline {subsubsection}{\numberline {A.3.1.2}Costes de \textit {hardware}}{58}{subsubsection.Alph1.3.1.2}%
-\contentsline {subsubsection}{\numberline {A.3.1.3}Costes totales}{59}{subsubsection.Alph1.3.1.3}%
-\contentsline {subsection}{\numberline {A.3.2}Viabilidad legal}{59}{subsection.Alph1.3.2}%
+\contentsline {subsection}{\numberline {A.2.14}\foreignlanguage {english}{\emph {Sprint}} 13}{58}{subsection.Alph1.2.14}%
+\contentsline {subsection}{\numberline {A.2.15}\foreignlanguage {english}{\emph {Sprint}} 14}{58}{subsection.Alph1.2.15}%
+\contentsline {section}{\numberline {A.3}Estudio de viabilidad}{59}{section.Alph1.3}%
+\contentsline {subsection}{\numberline {A.3.1}Viabilidad económica}{59}{subsection.Alph1.3.1}%
+\contentsline {subsubsection}{\numberline {A.3.1.1}Costes de personal}{59}{subsubsection.Alph1.3.1.1}%
+\contentsline {subsubsection}{\numberline {A.3.1.2}Costes de \textit {hardware}}{59}{subsubsection.Alph1.3.1.2}%
+\contentsline {subsubsection}{\numberline {A.3.1.3}Costes totales}{60}{subsubsection.Alph1.3.1.3}%
+\contentsline {subsection}{\numberline {A.3.2}Viabilidad legal}{60}{subsection.Alph1.3.2}%
 \contentsline {appendix}{\chapternumberline {B}Especificación de requisitos}{61}{appendix.Alph2}%
 \contentsline {section}{\numberline {B.1}Introducción}{61}{section.Alph2.1}%
 \contentsline {section}{\numberline {B.2}Catálogo de requisitos}{61}{section.Alph2.2}%

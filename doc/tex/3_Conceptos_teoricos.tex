@@ -2,9 +2,9 @@
 
 \section{KNIME}
 
-KNIME es un software de código abierto orientado a la ciencia de datos. A través de una interfaz gráfica intuitiva, 
+KNIME es un software de código abierto orientado a la ciencia de datos. Puede ser descargado y utilizado gratuitamente bajo los términos de la Licencia Pública General de GNU versión 3 (GPLv3). A través de una interfaz gráfica intuitiva, 
 permite crear flujos de trabajo de análisis de datos y minería de datos. KNIME fue desarrollado en la Universidad de 
-Konstanz (Alemania) en 2004, y su nombre proviene de su denominación en inglés <<\english{Konstanz Information Miner}>>\cite{knime-whitepaper}. 
+Konstanz (Alemania) en 2004, y su nombre proviene de su denominación en inglés <<\english{Konstanz Information Miner}>>\cite{BCDG+07} \cite{knime-whitepaper}. 
 \
 
 \begin{figure}[!h]
@@ -28,8 +28,8 @@ datos hasta darles sentido con técnicas sofisticadas de modelado y visualizaci�
 \
 
 El carácter abierto de la herramienta hace posible su extensión mediante la creación de nuevos nodos que 
-implementen algoritmos a la medida del usuario. Además, existe la posibilidad de utilizar llamadas directas a Weka y 
-o de incorporar de manera sencilla código desarrollado en R o Python.
+implementen algoritmos a la medida del usuario. Además, existe la posibilidad de utilizar llamadas directas 
+a Weka o de incorporar de manera sencilla código desarrollado en R o Python.
 \
 
 Además de la versión \english{Community}, que es libre y gratuita, KNIME ofrece soluciones de pago para empresas, como \english{KNIME Server} 
@@ -41,19 +41,41 @@ en la versión \english{Community}.
 En la arquitectura de KNIME se compone principalmente de los siguientes elementos: 
 
 \begin{itemize}
-	\item \textbf{Nodos}. Un nodo representa una función específica que se aplica a los datos. Los nodos tienen conexiones de
-	 entrada y salida para conectarse y comunicarse entre ellos. Los nodos realizan operaciones específicas, 
-	 como lectura de datos, preprocesamiento, análisis, visualización o exportación de datos. 
+	\item \textbf{Nodos}. Un nodo representa una función específica que se aplica a los datos. Los nodos realizan operaciones específicas, 
+	 como lectura de datos, preprocesamiento, análisis, visualización o exportación de datos.
+	\item \textbf{Puertos}. Los puertos son las conexiones de entrada y salida que los nodos pueden tener para conectarse y 
+	 comunicarse entre ellos. 
 	\item \textbf{Workflows}. Un \english{workflow} o flujo de trabajo es una representación visual de un conjunto de operaciones que se realiza 
 	mediante nodos interconectados. 
-	\item \textbf{Componentes}. Los componentes son nodos que contienen un subflujo de trabajo, lo que nos permite agrupar 
-	funciones para reutilizar en diferentes flujos de trabajo. 	
+	\item \textbf{Componentes}. Los componentes son nodos que contienen un subflujo de trabajo, lo que nos permite encapsular
+	funcionalidad para reutilizar en diferentes flujos de trabajo. Pueden tener su propio cuadro de diálogo de configuración, lo que nos permite 
+	ajustar la funcionalidad sin necesidad de modificar los componentes que contiene. 
 	\item \textbf{Metanodos}. Los metanodos se utilizan para simplificar los flujos de trabajo. Se trata de seleccionar una parte del flujo, 
 	compuesta por varios nodos y sus relaciones, y agruparlos en un nodo especial llamado metanodo, con lo que ocultamos esa parte del flujo 
-	y lo simplificamos visualmente. En cualquier momento podemos volver a expandir el metanodo para visualizar esa parte del flujo. 
+	y lo simplificamos visualmente. A diferencia de los componentes, los metanodos se utilizan solo como contenedores para mejorar la visualización 
+	de un flujo complejo, teniendo siempre que expandirlos para realizar modificaciones en esa parte del flujo de trabajo.
 	\item \textbf{Extensiones}. Las extensiones son \english{plugins} adicionales que podemos añadir a KNIME para ampliar las funcionalidades que 
 	no están incluidas en el núcleo. Generalmente las extensiones incluyen nodos agrupados dentro de una misma temática. 
 \end{itemize}
+
+En la Figura~\ref{fig:knime_elementos1} se muestra un \english{workflow} muy básico con dos nodos interconectados entre sí. El nodo 
+\node{Table Creator} permite definir una tabla de datos con varias columnas y filas. Este nodo no tiene puerto de entrada. El puerto de salida 
+devuelve los datos, y se conecta a un nodo de tipo \node{Sorter} a través de su puerto de entrada. Este otro nodo ordena los datos 
+en función de la columna indicada en su configuración. El puerto de salida del nodo \node{Sorter} será 
+una tabla similar a la definida en \node{Table Creator}, pero ordenada según lo especificado. 
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=1\textwidth]{img/knime_elementos1.png}
+	\caption{\english{Workflow} de ejemplo con elementos de KNIME.}
+	\label{fig:knime_elementos1}
+\end{figure}
+\FloatBarrier
+
+
+
+
+
 
 \section{Moodle}
 

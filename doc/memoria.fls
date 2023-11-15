@@ -1013,6 +1013,13 @@ INPUT .\img\3_ejemplo_workflow_knime.png
 INPUT .\img\3_ejemplo_workflow_knime.png
 INPUT .\img\3_ejemplo_workflow_knime.png
 INPUT .\img\3_ejemplo_workflow_knime.png
+INPUT .\img\knime_elementos1.png
+INPUT .\img\knime_elementos1.png
+INPUT img\knime_elementos1.png
+INPUT .\img\knime_elementos1.png
+INPUT .\img\knime_elementos1.png
+INPUT .\img\knime_elementos1.png
+INPUT .\img\knime_elementos1.png
 INPUT .\tex\4_Tecnicas_y_herramientas.tex
 INPUT .\tex\4_Tecnicas_y_herramientas.tex
 INPUT .\tex\4_Tecnicas_y_herramientas.tex
@@ -1455,10 +1462,10 @@ INPUT tex\D_Manual_programador.aux
 INPUT .\tex\E_Manual_usuario.aux
 INPUT tex\E_Manual_usuario.aux
 INPUT tex\E_Manual_usuario.aux
-INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
-INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx10.pfb

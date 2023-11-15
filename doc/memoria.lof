@@ -1,22 +1,23 @@
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Ejemplo de Workflow en KNIME.}}{10}{figure.3.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces \foreignlanguage {english}{\emph {Workflow}}: preparación de datos.}}{32}{figure.5.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces \foreignlanguage {english}{\emph {Workflow}}: preparación de datos (\leavevmode {\color {teal}\textsf {Prepare data}} desplegado).}}{33}{figure.5.3}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces \foreignlanguage {english}{\emph {Workflow}}: componente \leavevmode {\color {teal}\textsf {Video views count}}.}}{34}{figure.5.4}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces \foreignlanguage {english}{\emph {Workflow}}: preparación de datos (salida).}}{35}{figure.5.5}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces \foreignlanguage {english}{\emph {Workflow}}: preparación de datos (diagrama de barras clase).}}{36}{figure.5.6}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces \foreignlanguage {english}{\emph {Workflow}} completo.}}{37}{figure.5.7}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Modelo A: \foreignlanguage {english}{\emph {Workflow}}.}}{37}{figure.5.8}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Modelo A: Componente \leavevmode {\color {teal}\textsf {AutoML}} expandido.}}{38}{figure.5.9}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Modelo A: Componente \leavevmode {\color {teal}\textsf {AutoML}} configuración.}}{39}{figure.5.10}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Modelo A: Resultados.}}{40}{figure.5.11}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Modelo B: \foreignlanguage {english}{\emph {Workflow}}.}}{40}{figure.5.12}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Modelo B: \leavevmode {\color {teal}\textsf {SMOTE}}.}}{41}{figure.5.13}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Modelo B: Resultados.}}{42}{figure.5.14}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Modelo C: \foreignlanguage {english}{\emph {Workflow}}.}}{42}{figure.5.15}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Modelo C: \foreignlanguage {english}{\emph {Best parameters}}.}}{43}{figure.5.16}%
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Modelo C: Tabla de confusión.}}{43}{figure.5.17}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces \foreignlanguage {english}{\emph {Workflow}} de ejemplo con elementos de KNIME.}}{12}{figure.3.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces \foreignlanguage {english}{\emph {Workflow}}: preparación de datos.}}{32}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces \foreignlanguage {english}{\emph {Workflow}}: preparación de datos (\leavevmode {\color {teal}\textsf {Prepare data}} desplegado).}}{33}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces \foreignlanguage {english}{\emph {Workflow}}: componente \leavevmode {\color {teal}\textsf {Video views count}}.}}{34}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces \foreignlanguage {english}{\emph {Workflow}}: preparación de datos (salida).}}{35}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces \foreignlanguage {english}{\emph {Workflow}}: preparación de datos (diagrama de barras clase).}}{36}{figure.5.7}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces \foreignlanguage {english}{\emph {Workflow}} completo.}}{37}{figure.5.8}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Modelo A: \foreignlanguage {english}{\emph {Workflow}}.}}{37}{figure.5.9}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Modelo A: Componente \leavevmode {\color {teal}\textsf {AutoML}} expandido.}}{38}{figure.5.10}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Modelo A: Componente \leavevmode {\color {teal}\textsf {AutoML}} configuración.}}{39}{figure.5.11}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Modelo A: Resultados (verde $\rightarrow $ \foreignlanguage {english}{\emph {Accuracy}}).}}{40}{figure.5.12}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Modelo B: \foreignlanguage {english}{\emph {Workflow}}.}}{40}{figure.5.13}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Modelo B: \leavevmode {\color {teal}\textsf {SMOTE}}.}}{41}{figure.5.14}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Modelo B: Resultados (verde $\rightarrow $ \foreignlanguage {english}{\emph {Accuracy}}).}}{42}{figure.5.15}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Modelo C: \foreignlanguage {english}{\emph {Workflow}}.}}{42}{figure.5.16}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Modelo C: \foreignlanguage {english}{\emph {Best parameters}}.}}{43}{figure.5.17}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Modelo C: Tabla de confusión.}}{43}{figure.5.18}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

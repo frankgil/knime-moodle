@@ -22,6 +22,14 @@ Supervised learning workflow and algorithms.
 {UBUMonitor. Manual de usuario}.
 \newblock \url{https://ubumonitordocs.readthedocs.io/es/latest/}.
 
+\bibitem{BCDG+07}
+Michael~R. Berthold, Nicolas Cebron, Fabian Dill, Thomas~R. Gabriel, Tobias
+  K\"{o}tter, Thorsten Meinl, Peter Ohl, Christoph Sieb, Kilian Thiel, and
+  Bernd Wiswedel.
+\newblock {KNIME}: The {K}onstanz {I}nformation {M}iner.
+\newblock In {\em Studies in Classification, Data Analysis, and Knowledge
+  Organization (GfKL 2007)}. Springer, 2007.
+
 \bibitem{smote}
 N.~V. et~al. Chawla.
 \newblock Smote: Synthetic minority over-sampling technique.

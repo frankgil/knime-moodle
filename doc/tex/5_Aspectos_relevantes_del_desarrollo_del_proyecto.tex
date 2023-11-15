@@ -96,8 +96,8 @@ Los pasos para crear una extensión en KNIME se pueden resumir en:
 
 KNIME nos facilita una \href{https://docs.knime.com/latest/analytics_platform_new_node_quickstart_guide/index.html\#_introduction}{guía 
 para desarrollar en Java una extensión con un primer nodo de ejemplo}, llamado \textbf{Number Formatter}. Este nodo recibe como entrada 
-una tabla de datos con una columna con números decimales, y devuelve una tabla similar con los datos redondeados al número 
-de decimales especificados en la configuración del nodo. 
+una tabla de datos con una columna de números con decimales (del tipo Double de Java), y devuelve una tabla similar con los datos redondeados 
+al número de decimales especificados en la configuración del nodo. 
 \
 
 En este punto se estudia el código generado por KNIME para este nodo de ejemplo, además de otros nodos de ejemplo similares 
@@ -404,7 +404,14 @@ de parámetros con validación cruzada y evaluación y selección del mejor mode
 No tenemos que ver \node{AutoML} como una caja cerrada que lo hace todo por nosotros. Lo interesante está en el hecho de que 
 \node{AutoML} se ha construido como un componente y no como un nodo, con lo que realmente se trata de un \english{workflow} más complejo 
 que se ha agrupado como componente. Este componente puede ser expandido y podemos visualizar sus elementos y modificarlos 
-según las necesidades del proyecto. En la Figura ~\ref{fig:workflowA3} se muestra el primer nivel de expansión del componente,
+según las necesidades del proyecto. 
+
+El componente viene por defecto enlazado con el repositorio de KNIME. Esto permite, por ejemplo, actualizarlo cuando se publican nuevas versiones. 
+Cuando el componente está enlazado al repositorio, podemos expandirlo y ver los elementos que lo componen, pero no podemos 
+modificar su contenido. Para desenlazar el componente y, con ello, desbloquearlo, accederemos al menú contextual (clic con el botón derecho sobre el componente), y 
+seleccionaremos \textbf{\english{Component} $\triangleright$ \english{Disconnect Link}}. 
+
+En la Figura ~\ref{fig:workflowA3} se muestra el primer nivel de expansión del componente,
 que a su vez está formado por otros componetes que también se pueden abrir. 
 
 \begin{figure}[!htb]
@@ -441,7 +448,7 @@ Los modelos \english{Gradient Boosted Trees}, \english{Logistic Regression}, \en
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{img/workflowA4.png}
-	\caption{Modelo A: Resultados.}
+	\caption{Modelo A: Resultados (verde $\rightarrow$ \english{Accuracy}).}
 	\label{fig:workflowA4}
 \end{figure}
 \FloatBarrier
@@ -477,7 +484,7 @@ Como resultado, vemos que se obtiene un valor mayor de \english{Accuracy} (0.76)
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{img/workflowB3.png}
-	\caption{Modelo B: Resultados.}
+	\caption{Modelo B: Resultados (verde $\rightarrow$ \english{Accuracy}).}
 	\label{fig:workflowB3}
 \end{figure}
 \FloatBarrier
